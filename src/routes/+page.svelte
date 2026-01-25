@@ -47,8 +47,8 @@
       <div class="hidden md:flex items-center gap-8">
         <a href="#features" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Features</a>
         <a href="#pricing" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Pricing</a>
-        <a href="#solutions" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Solutions</a>
-        <a href="#security" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Security</a>
+        <a href="/integrations" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Integrations</a>
+        <a href="/security" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Security</a>
         <a href="/contact" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Contact</a>
       </div>
 
@@ -524,6 +524,16 @@
         <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Cloud & DevOps</h3>
         <p class="text-sm text-gray-600 dark:text-gray-400">AWS, Azure, GCP, GitHub, Jira</p>
       </div>
+    </div>
+
+    <div class="text-center">
+      <a
+        href="/integrations"
+        class="inline-flex items-center gap-2 px-6 py-3 text-lg font-semibold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20 border-2 border-amber-200 dark:border-amber-800 rounded-xl hover:bg-amber-100 dark:hover:bg-amber-900/30 transition-all"
+      >
+        Browse All 80+ Integrations
+        <ArrowRight class="w-5 h-5" />
+      </a>
     </div>
   </div>
 </section>
