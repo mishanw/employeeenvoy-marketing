@@ -131,11 +131,11 @@
 
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center gap-8">
+        <a href="#how-it-works" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">How It Works</a>
         <a href="#features" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Features</a>
         <a href="#pricing" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Pricing</a>
         <a href="/integrations" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Integrations</a>
         <a href="/security" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Security</a>
-        <a href="/contact" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Contact</a>
       </div>
 
       <div class="flex items-center gap-3">
@@ -166,11 +166,11 @@
   {#if mobileMenuOpen}
     <div class="md:hidden bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 shadow-xl">
       <div class="px-4 py-4 space-y-3">
+        <a href="#how-it-works" onclick={() => mobileMenuOpen = false} class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors">How It Works</a>
         <a href="#features" onclick={() => mobileMenuOpen = false} class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors">Features</a>
         <a href="#pricing" onclick={() => mobileMenuOpen = false} class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors">Pricing</a>
         <a href="/integrations" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors">Integrations</a>
         <a href="/security" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors">Security</a>
-        <a href="/contact" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors">Contact</a>
         <a
           href="/contact"
           class="block w-full text-center px-4 py-3 text-base font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg mt-4"
@@ -343,36 +343,7 @@
   </div>
 </section>
 
-<!-- Trusted By / Social Proof Section -->
-<section class="py-12 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900 border-y border-gray-100 dark:border-slate-800">
-  <div class="max-w-7xl mx-auto">
-    <p class="text-center text-sm font-medium text-gray-500 dark:text-gray-400 mb-8">BUILT FOR TEAMS THAT USE</p>
-    <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-60">
-      <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-        <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center text-white font-bold text-sm">M</div>
-        <span class="font-semibold">Microsoft 365</span>
-      </div>
-      <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-        <div class="w-8 h-8 bg-red-500 rounded flex items-center justify-center text-white font-bold text-sm">G</div>
-        <span class="font-semibold">Google Workspace</span>
-      </div>
-      <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-        <div class="w-8 h-8 bg-purple-600 rounded flex items-center justify-center text-white font-bold text-sm">S</div>
-        <span class="font-semibold">Slack</span>
-      </div>
-      <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-        <div class="w-8 h-8 bg-blue-500 rounded flex items-center justify-center text-white font-bold text-sm">O</div>
-        <span class="font-semibold">Okta</span>
-      </div>
-      <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-        <div class="w-8 h-8 bg-orange-500 rounded flex items-center justify-center text-white font-bold text-sm">A</div>
-        <span class="font-semibold">AWS</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Problem Section -->
+<!-- Problem Section - Lead with Pain Points -->
 <section id="problem" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
@@ -418,8 +389,123 @@
   </div>
 </section>
 
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        How It Works
+      </h2>
+      <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Three simple steps to automate your employee lifecycle
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Step 1 -->
+      <div class="relative">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-white text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Connect Your Apps</h3>
+        </div>
+        <p class="text-gray-600 dark:text-gray-300 ml-16">
+          Link your identity providers, productivity suites, and business apps with guided setup wizards. No coding required.
+        </p>
+        <!-- Connector line -->
+        <div class="hidden md:block absolute top-6 left-full w-full h-0.5 bg-gradient-to-r from-amber-500 to-transparent -translate-x-8"></div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="relative">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-white text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Create Playbooks</h3>
+        </div>
+        <p class="text-gray-600 dark:text-gray-300 ml-16">
+          Define onboarding and offboarding workflows by role, department, or customer. Use templates or customize your own.
+        </p>
+        <div class="hidden md:block absolute top-6 left-full w-full h-0.5 bg-gradient-to-r from-amber-500 to-transparent -translate-x-8"></div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="relative">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-white text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Automate & Track</h3>
+        </div>
+        <p class="text-gray-600 dark:text-gray-300 ml-16">
+          Submit requests and watch tasks execute automatically. Track progress in real-time with full audit trails.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a
+        href="#features"
+        class="inline-flex items-center gap-2 text-amber-600 dark:text-amber-400 font-semibold hover:gap-3 transition-all"
+      >
+        Explore all features
+        <ChevronRight class="w-4 h-4" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section - Social Proof with Numbers -->
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-amber-500 to-orange-500">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+      <div>
+        <p class="text-4xl sm:text-5xl font-bold mb-2">80+</p>
+        <p class="text-amber-100 font-medium">Integrations</p>
+      </div>
+      <div>
+        <p class="text-4xl sm:text-5xl font-bold mb-2">4-6hrs</p>
+        <p class="text-amber-100 font-medium">Saved per Employee</p>
+      </div>
+      <div>
+        <p class="text-4xl sm:text-5xl font-bold mb-2">99.9%</p>
+        <p class="text-amber-100 font-medium">Uptime SLA</p>
+      </div>
+      <div>
+        <p class="text-4xl sm:text-5xl font-bold mb-2">256-bit</p>
+        <p class="text-amber-100 font-medium">Encryption</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trusted By / Social Proof Section -->
+<section class="py-12 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800">
+  <div class="max-w-7xl mx-auto">
+    <p class="text-center text-sm font-medium text-gray-500 dark:text-gray-400 mb-8">BUILT FOR TEAMS THAT USE</p>
+    <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-70">
+      <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+        <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center text-white font-bold text-sm">M</div>
+        <span class="font-semibold">Microsoft 365</span>
+      </div>
+      <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+        <div class="w-8 h-8 bg-red-500 rounded flex items-center justify-center text-white font-bold text-sm">G</div>
+        <span class="font-semibold">Google Workspace</span>
+      </div>
+      <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+        <div class="w-8 h-8 bg-purple-600 rounded flex items-center justify-center text-white font-bold text-sm">S</div>
+        <span class="font-semibold">Slack</span>
+      </div>
+      <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+        <div class="w-8 h-8 bg-blue-500 rounded flex items-center justify-center text-white font-bold text-sm">O</div>
+        <span class="font-semibold">Okta</span>
+      </div>
+      <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+        <div class="w-8 h-8 bg-orange-500 rounded flex items-center justify-center text-white font-bold text-sm">A</div>
+        <span class="font-semibold">AWS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Features Section -->
-<section id="features" class="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
+<section id="features" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
       <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -586,12 +672,67 @@
   </div>
 </section>
 
-<!-- Pricing Section -->
-<section id="pricing" class="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
+<!-- Integration Showcase Section -->
+<section id="integrations" class="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
       <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-        Simple Bucket Pricing
+        Integrate with Your Stack
+      </h2>
+      <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Connect with 80+ business applications your team already uses
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
+      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:border-amber-300 transition-all">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+          <Code class="w-7 h-7 text-blue-600 dark:text-blue-400" />
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Identity & SSO</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Okta, Azure AD, JumpCloud, Active Directory</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:border-amber-300 transition-all">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+          <MessageSquare class="w-7 h-7 text-green-600 dark:text-green-400" />
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Communication</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Slack, Microsoft Teams, Zoom, RingCentral</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:border-amber-300 transition-all">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
+          <Database class="w-7 h-7 text-purple-600 dark:text-purple-400" />
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Productivity</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Microsoft 365, Google Workspace, Adobe</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:border-amber-300 transition-all">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
+          <Cloud class="w-7 h-7 text-orange-600 dark:text-orange-400" />
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Cloud & DevOps</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">AWS, Azure, GCP, GitHub, Jira</p>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a
+        href="/integrations"
+        class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20 border-2 border-amber-200 dark:border-amber-800 rounded-xl hover:bg-amber-100 dark:hover:bg-amber-900/30 hover:scale-105 transition-all"
+      >
+        Browse All 80+ Integrations
+        <ArrowRight class="w-5 h-5" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        Simple, Transparent Pricing
       </h2>
       <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
         No per-user fees. No surprise charges. Pick your bucket and go.
@@ -731,61 +872,6 @@
       <p class="text-sm text-gray-500 dark:text-gray-500">
         Annual billing: <span class="font-semibold text-amber-600 dark:text-amber-400">Save 2 months free</span> when you pay yearly
       </p>
-    </div>
-  </div>
-</section>
-
-<!-- Integration Showcase Section -->
-<section id="integrations" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-        Integrate with Your Stack
-      </h2>
-      <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-        Connect with 80+ business applications your team already uses
-      </p>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
-      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:border-amber-300 transition-all">
-        <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-          <Code class="w-7 h-7 text-blue-600 dark:text-blue-400" />
-        </div>
-        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Identity & SSO</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Okta, Azure AD, JumpCloud, Active Directory</p>
-      </div>
-      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:border-amber-300 transition-all">
-        <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
-          <MessageSquare class="w-7 h-7 text-green-600 dark:text-green-400" />
-        </div>
-        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Communication</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Slack, Microsoft Teams, Zoom, RingCentral</p>
-      </div>
-      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:border-amber-300 transition-all">
-        <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
-          <Database class="w-7 h-7 text-purple-600 dark:text-purple-400" />
-        </div>
-        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Productivity</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Microsoft 365, Google Workspace, Adobe</p>
-      </div>
-      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:border-amber-300 transition-all">
-        <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
-          <Cloud class="w-7 h-7 text-orange-600 dark:text-orange-400" />
-        </div>
-        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Cloud & DevOps</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">AWS, Azure, GCP, GitHub, Jira</p>
-      </div>
-    </div>
-
-    <div class="text-center">
-      <a
-        href="/integrations"
-        class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20 border-2 border-amber-200 dark:border-amber-800 rounded-xl hover:bg-amber-100 dark:hover:bg-amber-900/30 hover:scale-105 transition-all"
-      >
-        Browse All 80+ Integrations
-        <ArrowRight class="w-5 h-5" />
-      </a>
     </div>
   </div>
 </section>
@@ -1041,16 +1127,18 @@
       <div>
         <h4 class="text-white font-semibold mb-4">Product</h4>
         <ul class="space-y-2 text-sm">
+          <li><a href="#how-it-works" class="hover:text-amber-400 transition-colors">How It Works</a></li>
           <li><a href="#features" class="hover:text-amber-400 transition-colors">Features</a></li>
+          <li><a href="#integrations" class="hover:text-amber-400 transition-colors">Integrations</a></li>
           <li><a href="#pricing" class="hover:text-amber-400 transition-colors">Pricing</a></li>
-          <li><a href="/integrations" class="hover:text-amber-400 transition-colors">Integrations</a></li>
-          <li><a href="/security" class="hover:text-amber-400 transition-colors">Security</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="text-white font-semibold mb-4">Company</h4>
+        <h4 class="text-white font-semibold mb-4">Resources</h4>
         <ul class="space-y-2 text-sm">
-          <li><a href="/contact" class="hover:text-amber-400 transition-colors">Contact</a></li>
+          <li><a href="/security" class="hover:text-amber-400 transition-colors">Security</a></li>
+          <li><a href="/contact" class="hover:text-amber-400 transition-colors">Contact Us</a></li>
+          <li><a href="#faq" class="hover:text-amber-400 transition-colors">FAQ</a></li>
         </ul>
       </div>
       <div>
