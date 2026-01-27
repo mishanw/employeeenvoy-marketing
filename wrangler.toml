@@ -1,0 +1,8 @@
+name = "employeeenvoy-marketing"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+# Secrets are configured via wrangler secret put or Cloudflare dashboard
+# Required secrets:
+# - RESEND_API_KEY (for contact form emails)

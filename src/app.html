@@ -2,12 +2,42 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+
+		<!-- Favicons -->
+		<link rel="icon" type="image/png" sizes="32x32" href="%sveltekit.assets%/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="%sveltekit.assets%/favicon-16x16.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="%sveltekit.assets%/apple-touch-icon.png" />
+		<link rel="manifest" href="%sveltekit.assets%/site.webmanifest" />
+		<meta name="msapplication-TileColor" content="#f97316" />
+		<meta name="theme-color" content="#f97316" />
+
+		<!-- Viewport & SEO -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Employee Envoy - Your Trusted Partner for Employee Transitions. Streamline onboarding, offboarding, and access management." />
+		<meta name="description" content="Employee Envoy - Your Trusted Partner for Employee Transitions. Streamline onboarding, offboarding, and access management for MSPs and Enterprises." />
+		<meta name="keywords" content="employee onboarding, offboarding, access management, MSP, IT automation, employee lifecycle, HR software" />
+		<meta name="author" content="Employee Envoy" />
+
+		<!-- Open Graph / Social Media -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Employee Envoy" />
+		<meta property="og:title" content="Employee Envoy - Employee Lifecycle Management" />
+		<meta property="og:description" content="Your Trusted Partner for Employee Transitions. Automate onboarding, offboarding, and access management." />
+		<meta property="og:image" content="%sveltekit.assets%/og-default.png" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Employee Envoy" />
+		<meta name="twitter:description" content="Your Trusted Partner for Employee Transitions" />
+		<meta name="twitter:image" content="%sveltekit.assets%/og-default.png" />
+
+		<!-- Google Fonts: Plus Jakarta Sans + Inter -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" class="font-body antialiased">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

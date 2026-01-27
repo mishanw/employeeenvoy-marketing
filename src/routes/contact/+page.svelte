@@ -18,6 +18,7 @@
   let errors = $state<Record<string, string>>({});
   let isSubmitting = $state(false);
   let submitted = $state(false);
+  let submitError = $state('');
 
   function validate() {
     errors = {};
@@ -47,11 +48,30 @@
     if (!validate()) return;
 
     isSubmitting = true;
+    submitError = '';
 
-    // Simulate form submission (in production, connect to form service like Formspree)
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    submitted = true;
-    isSubmitting = false;
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send message');
+      }
+
+      submitted = true;
+    } catch (err) {
+      console.error('Form submission error:', err);
+      submitError = err instanceof Error ? err.message : 'Failed to send message. Please try again.';
+    } finally {
+      isSubmitting = false;
+    }
   }
 </script>
 
@@ -165,6 +185,12 @@
             </h2>
 
             <form onsubmit={(e) => { e.preventDefault(); handleSubmit(); }} class="space-y-6">
+              {#if submitError}
+                <div class="p-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
+                  <p class="text-sm text-red-600 dark:text-red-400">{submitError}</p>
+                </div>
+              {/if}
+
               <div>
                 <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Subject
