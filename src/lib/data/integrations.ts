@@ -1,7 +1,20 @@
 /**
  * Integration Catalog for Marketing Site
  * Static data extracted from the app catalog for public display
+ *
+ * NOTE: This is a SUBSET of integrations for marketing display.
+ * The full catalog with 127 integrations is in the main app:
+ * ~/Documents/Cursor Workspace/ipeople/packages/shared/src/app-catalog.ts
+ *
+ * For accurate integration counts, use FULL_CATALOG_COUNT constant.
  */
+
+/**
+ * Full integration count from the ipeople app catalog
+ * Source: ipeople/packages/shared/src/app-catalog.ts
+ * Last verified: 2026-02-03
+ */
+export const FULL_CATALOG_COUNT = 127;
 
 export type IntegrationCategory =
   | 'identity'
@@ -151,6 +164,15 @@ export const CAPABILITY_LABELS: Record<string, string> = {
   'transfer-onedrive': 'Transfer OneDrive',
   'transfer-drive': 'Transfer Drive',
   'set-email-delegation': 'Email Delegation',
+  // Google Workspace Automation (GAT Flow-inspired)
+  'set-auto-reply': 'Auto-Reply Setup',
+  'set-email-forwarding': 'Email Forwarding',
+  'force-signout': 'Force Sign Out',
+  'wipe-mobile-device': 'Wipe Mobile Device',
+  'share-calendar': 'Share Calendar',
+  'remove-calendar-access': 'Remove Calendar Access',
+  'set-email-signature': 'Email Signature',
+  'remove-from-all-groups': 'Remove From Groups',
 };
 
 export const INTEGRATIONS: Integration[] = [
@@ -268,12 +290,18 @@ export const INTEGRATIONS: Integration[] = [
   {
     id: 'googleWorkspace',
     name: 'Google Workspace',
-    description: 'Google Workspace (Gmail, Drive, Calendar, Meet)',
+    description: 'Google Workspace (Gmail, Drive, Calendar, Meet) with advanced automation',
     category: 'productivity',
     tier: 'core',
     scimSupport: true,
     ssoSupport: true,
-    capabilities: ['create-user', 'disable-user', 'delete-user', 'manage-groups', 'transfer-drive', 'set-email-delegation'],
+    capabilities: [
+      'create-user', 'disable-user', 'delete-user', 'manage-groups',
+      'transfer-drive', 'set-email-delegation', 'set-auto-reply',
+      'set-email-forwarding', 'force-signout', 'suspend-user',
+      'wipe-mobile-device', 'share-calendar', 'remove-calendar-access',
+      'set-email-signature', 'remove-from-all-groups', 'reset-password'
+    ],
     estimatedSetupTime: '20 minutes',
     popularity: 95,
   },
@@ -1125,6 +1153,14 @@ export function getCategoriesWithCounts(): Array<{ category: IntegrationCategory
 
 export function getTotalCount(): number {
   return INTEGRATIONS.length;
+}
+
+/**
+ * Returns the full catalog count from the main app (ipeople)
+ * Use this for marketing claims about total integrations
+ */
+export function getFullCatalogCount(): number {
+  return FULL_CATALOG_COUNT;
 }
 
 export function getScimCount(): number {

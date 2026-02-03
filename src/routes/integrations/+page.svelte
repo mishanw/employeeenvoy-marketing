@@ -18,6 +18,7 @@
     CAPABILITY_LABELS,
     getCategoriesWithCounts,
     getTotalCount,
+    getFullCatalogCount,
     getScimCount,
     getSsoCount,
     type Integration,
@@ -36,6 +37,7 @@
   // Derived data
   const categories = getCategoriesWithCounts();
   const totalCount = getTotalCount();
+  const fullCatalogCount = getFullCatalogCount();
   const scimCount = getScimCount();
   const ssoCount = getSsoCount();
 
@@ -107,8 +109,22 @@
 </script>
 
 <svelte:head>
-  <title>Integrations - Employee Envoy</title>
-  <meta name="description" content="Browse 80+ integrations supported by Employee Envoy. Connect your identity providers, productivity tools, HR systems, and more." />
+  <title>127 Integrations - Employee Envoy</title>
+  <meta name="description" content="Browse 127 integrations supported by Employee Envoy. Connect your identity providers, productivity tools, HR systems, and more." />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://employeeenvoy.com/integrations" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="127 Integrations - Employee Envoy" />
+  <meta property="og:description" content="Connect with Microsoft 365, Google Workspace, Slack, Okta, and 123 more business applications." />
+  <meta property="og:url" content="https://employeeenvoy.com/integrations" />
+  <meta property="og:image" content="https://employeeenvoy.com/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:title" content="127 Integrations - Employee Envoy" />
+  <meta name="twitter:description" content="Connect with Microsoft 365, Google Workspace, Slack, Okta, and 123 more business applications." />
+  <meta name="twitter:image" content="https://employeeenvoy.com/og-image.png" />
 </svelte:head>
 
 <!-- Navigation -->
@@ -137,7 +153,7 @@
       Integration Catalog
     </h1>
     <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-      Connect Employee Envoy with {totalCount}+ business applications to automate your employee lifecycle management.
+      Connect Employee Envoy with {fullCatalogCount} business applications to automate your employee lifecycle management.
     </p>
 
     <!-- Stats -->
@@ -146,7 +162,7 @@
         <div class="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center">
           <Check class="w-4 h-4 text-amber-600 dark:text-amber-400" />
         </div>
-        <span class="text-sm font-medium text-gray-900 dark:text-white">{totalCount}+ Integrations</span>
+        <span class="text-sm font-medium text-gray-900 dark:text-white">{fullCatalogCount} Integrations</span>
       </div>
       <div class="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-full shadow-sm border border-gray-200 dark:border-slate-700">
         <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
@@ -304,7 +320,7 @@
         </button>
       </div>
     {:else}
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {#each filteredIntegrations() as integration (integration.id)}
           <div class="group p-5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 hover:border-amber-300 dark:hover:border-amber-600 hover:shadow-lg transition-all">
             <!-- Header -->
