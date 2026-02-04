@@ -43,4 +43,4 @@ This folder contains marketing content and assets for Employee Envoy social medi
 All content is aligned with the verified data from:
 - Integration count: 120 (from `ipeople/packages/shared/src/app-catalog.ts`)
 - Features: SCIM, SSO, audit logging
-- Pricing: Starter ($99), Professional ($249), Enterprise (custom)
+- Pricing: Starter ($199), Professional ($399), Enterprise ($799)

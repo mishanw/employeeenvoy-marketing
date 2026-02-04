@@ -3,7 +3,7 @@
 ```
 src/
 ├── lib/
-│   ├── components/    # Reusable (Logo, etc.)
+│   ├── components/    # Reusable (Logo, SpotlightCard, etc.)
 │   └── data/          # Marketing data
 └── routes/
     ├── +page.svelte   # Landing

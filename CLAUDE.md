@@ -7,6 +7,12 @@ Marketing site for employeeenvoy.com | SvelteKit 2.0 + Svelte 5 + Tailwind + Clo
 Integration count source of truth: `~/Documents/Cursor Workspace/ipeople/packages/shared/src/app-catalog.ts` (121 integrations)
 
 Local `src/lib/data/integrations.ts` is for display only - NOT the source of truth.
+ 
+ ## Design System
+ 
+ - **Visual Style**: "Premium SaaS" aesthetic with cinematic noise, glassmorphism, and spotlight effects.
+ - **Key Components**: `SpotlightCard.svelte` for interactive feature grids.
+ - **Global Effects**: Noise texture defined in `+layout.svelte`, strict typography tracking in global CSS.
 
 ## Commands
 

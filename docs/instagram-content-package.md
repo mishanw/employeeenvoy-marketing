@@ -109,7 +109,9 @@ Rotate through these 5 content themes to maintain variety and engagement:
 3. **Gradient Accents:** Subtle amber-to-orange gradients for emphasis
 4. **Grid Patterns:** Subtle dot or line grids as background texture
 5. **Glassmorphism:** Light frosted glass effects for modern tech aesthetic
-6. **App Icons:** Display recognizable integration logos (Microsoft, Google, Slack, etc.)
+6. **Spotlight Effects:** Interactive radial gradients that follow cursor movement
+7. **Cinematic Noise:** Subtle film grain texture overlay for premium feel
+8. **App Icons:** Display recognizable integration logos (Microsoft, Google, Slack, etc.)
 
 ### Photography Style
 - Clean, bright imagery
