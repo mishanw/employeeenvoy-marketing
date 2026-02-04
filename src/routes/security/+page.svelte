@@ -16,8 +16,22 @@
 </script>
 
 <svelte:head>
-  <title>Security - Employee Envoy</title>
-  <meta name="description" content="Learn about Employee Envoy's security practices, compliance, encryption, and data protection measures." />
+  <title>Security & Compliance - Employee Envoy</title>
+  <meta name="description" content="Learn about Employee Envoy's security practices, compliance, encryption, and data protection measures. GDPR & CCPA compliant." />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://employeeenvoy.com/security" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Security & Compliance - Employee Envoy" />
+  <meta property="og:description" content="Enterprise-grade security with AES-256 encryption, TOTP MFA, audit logging, and GDPR/CCPA compliance." />
+  <meta property="og:url" content="https://employeeenvoy.com/security" />
+  <meta property="og:image" content="https://employeeenvoy.com/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:title" content="Security & Compliance - Employee Envoy" />
+  <meta name="twitter:description" content="Enterprise-grade security with AES-256 encryption, TOTP MFA, and GDPR/CCPA compliance." />
+  <meta name="twitter:image" content="https://employeeenvoy.com/og-image.png" />
 </svelte:head>
 
 <!-- Navigation -->

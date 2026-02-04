@@ -1,0 +1,11 @@
+# Employee Envoy Robots.txt
+# https://employeeenvoy.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://employeeenvoy.com/sitemap.xml
+
+# Crawl-delay (optional, be polite to crawlers)
+Crawl-delay: 1

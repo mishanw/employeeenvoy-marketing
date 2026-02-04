@@ -4,7 +4,21 @@
 
 <svelte:head>
   <title>Privacy Policy - Employee Envoy</title>
-  <meta name="description" content="Privacy Policy for Employee Envoy - Employee Lifecycle Management" />
+  <meta name="description" content="Privacy Policy for Employee Envoy. Learn how we collect, use, and protect your data." />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://employeeenvoy.com/privacy" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy - Employee Envoy" />
+  <meta property="og:description" content="Learn how Employee Envoy collects, uses, and protects your data." />
+  <meta property="og:url" content="https://employeeenvoy.com/privacy" />
+  <meta property="og:image" content="https://employeeenvoy.com/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:title" content="Privacy Policy - Employee Envoy" />
+  <meta name="twitter:description" content="Learn how Employee Envoy collects, uses, and protects your data." />
+  <meta name="twitter:image" content="https://employeeenvoy.com/og-image.png" />
 </svelte:head>
 
 <!-- Navigation -->
@@ -32,7 +46,7 @@
         Privacy Policy
       </h1>
       <p class="text-gray-600 dark:text-gray-400">
-        Last updated: January 21, 2026
+        Last updated: February 2, 2026
       </p>
     </div>
 
@@ -77,8 +91,8 @@
         We implement industry-standard security measures to protect your information:
       </p>
       <ul>
-        <li><strong>Encryption:</strong> Data is encrypted in transit using TLS/SSL and at rest using AES-256 encryption</li>
-        <li><strong>Password Security:</strong> Passwords are hashed using PBKDF2 with 100,000 iterations</li>
+        <li><strong>Encryption:</strong> Data is encrypted in transit using TLS/SSL and at rest using industry-standard encryption protocols</li>
+        <li><strong>Password Security:</strong> Passwords are protected using strong cryptographic hashing algorithms</li>
         <li><strong>Access Controls:</strong> Role-based access control and authentication requirements</li>
         <li><strong>Secure Storage:</strong> Data is stored in secure, monitored data centers</li>
       </ul>
