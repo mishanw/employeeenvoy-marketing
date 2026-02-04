@@ -3,16 +3,27 @@
   import { Mail, Phone, Building2, Send } from '@lucide/svelte';
   import Logo from '$lib/components/Logo.svelte';
 
-  const plan = $derived($page.url.searchParams.get('plan') || '');
+  const planParam = $derived($page.url.searchParams.get('plan') || '');
 
   let formData = $state({
     name: '',
     email: '',
     company: '',
     phone: '',
-    plan: plan || 'enterprise',
+    plan: 'enterprise',
     message: '',
-    subject: 'General Inquiry'
+    subject: 'General Inquiry',
+    // Honeypot field - bots will fill this, humans won't see it
+    website: '',
+    // Timestamp for time-based validation
+    _ts: Date.now().toString()
+  });
+
+  // Update plan when URL param changes
+  $effect(() => {
+    if (planParam) {
+      formData.plan = planParam;
+    }
   });
 
   let errors = $state<Record<string, string>>({});
@@ -47,6 +58,14 @@
   async function handleSubmit() {
     if (!validate()) return;
 
+    // Check honeypot - if filled, silently "succeed" but don't submit
+    if (formData.website) {
+      // Fake success for bots
+      await new Promise(r => setTimeout(r, 1000));
+      submitted = true;
+      return;
+    }
+
     isSubmitting = true;
     submitError = '';
 
@@ -56,7 +75,10 @@
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          ...formData,
+          _ts: formData._ts // Include timestamp for server validation
+        })
       });
 
       const result = await response.json();
@@ -77,6 +99,21 @@
 
 <svelte:head>
   <title>Contact Us - Employee Envoy</title>
+  <meta name="description" content="Get in touch with Employee Envoy. Start your free trial, request a demo, or ask questions about employee lifecycle management." />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://employeeenvoy.com/contact" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Employee Envoy" />
+  <meta property="og:description" content="Get in touch with us. Start your free trial, request a demo, or ask questions about employee lifecycle management." />
+  <meta property="og:url" content="https://employeeenvoy.com/contact" />
+  <meta property="og:image" content="https://employeeenvoy.com/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:title" content="Contact Employee Envoy" />
+  <meta name="twitter:description" content="Get in touch with us. Start your free trial or request a demo." />
+  <meta name="twitter:image" content="https://employeeenvoy.com/og-image.png" />
 </svelte:head>
 
 <!-- Navigation -->
@@ -185,6 +222,21 @@
             </h2>
 
             <form onsubmit={(e) => { e.preventDefault(); handleSubmit(); }} class="space-y-6">
+              <!-- Honeypot field - hidden from humans, bots will fill it -->
+              <div class="absolute -left-[9999px]" aria-hidden="true">
+                <label for="website">Website</label>
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  bind:value={formData.website}
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </div>
+              <!-- Hidden timestamp -->
+              <input type="hidden" name="_ts" bind:value={formData._ts} />
+
               {#if submitError}
                 <div class="p-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
                   <p class="text-sm text-red-600 dark:text-red-400">{submitError}</p>

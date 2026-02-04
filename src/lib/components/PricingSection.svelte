@@ -14,7 +14,7 @@
       annualPrice: 1990,
       employeeLimit: 50,
       features: [
-        "All 127 integrations",
+        "All 185 integrations",
         "Unlimited playbooks",
         "Welcome letter portal",
         "Email support (24hr response)",
@@ -48,8 +48,7 @@
       features: [
         "Everything in Professional",
         "SCIM user provisioning",
-        "Dedicated account manager",
-        "99.9% SLA guarantee",
+        "Priority email support",
         "Audit logs (unlimited)",
         "Operations dashboard & health monitoring",
       ],
