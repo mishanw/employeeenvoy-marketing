@@ -51,6 +51,7 @@
         "Priority email support",
         "Audit logs (unlimited)",
         "Operations dashboard & health monitoring",
+        "Guided onboarding available",
       ],
       popular: false,
     },

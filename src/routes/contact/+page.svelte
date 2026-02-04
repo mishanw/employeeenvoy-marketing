@@ -191,6 +191,9 @@
             <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
               Need a custom plan or on-premise deployment? Our sales team can help design a solution that fits your needs.
             </p>
+            <p class="text-sm text-gray-600 dark:text-gray-300">
+              <span class="font-medium">Need help getting started?</span> Ask about our guided onboarding service.
+            </p>
           </div>
         </div>
       </div>
