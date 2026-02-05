@@ -28,7 +28,7 @@
     UserMinus,
   } from "@lucide/svelte";
   import Logo from "$lib/components/Logo.svelte";
-  import Navigation from "$lib/components/Navigation.svelte";
+
   import SpotlightCard from "$lib/components/SpotlightCard.svelte";
   import HeroSection from "$lib/components/HeroSection.svelte";
   import ProblemSection from "$lib/components/ProblemSection.svelte";
@@ -52,8 +52,7 @@
   />
 </svelte:head>
 
-<!-- Navigation -->
-<Navigation currentPage="home" />
+<!-- Navigation is now in +layout.svelte -->
 
 <!-- Hero Section with Dashboard Mockup -->
 <HeroSection {mounted} />

@@ -1,20 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { page } from "$app/stores";
   import { Menu, X, ChevronDown } from "@lucide/svelte";
   import Logo from "./Logo.svelte";
-
-  interface NavigationProps {
-    currentPage?:
-      | "home"
-      | "compare-bamboohr"
-      | "compare-rippling"
-      | "integrations"
-      | "roi-calculator"
-      | "security"
-      | "other";
-  }
-
-  let { currentPage = "other" }: NavigationProps = $props();
 
   let mobileMenuOpen = $state(false);
   let compareMenuOpen = $state(false);
@@ -43,6 +31,11 @@
     { href: "/compare/bamboohr", label: "vs BambooHR" },
     { href: "/compare/rippling", label: "vs Rippling" },
   ];
+
+  function isActive(path: string) {
+    if (path.startsWith("/#")) return false; // Don't highlight hash links
+    return $page.url.pathname === path;
+  }
 </script>
 
 <nav
@@ -62,7 +55,11 @@
         {#each navItems as item}
           <a
             href={item.href}
-            class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
+            class="text-sm font-medium transition-all duration-200 {isActive(
+              item.href,
+            )
+              ? 'text-amber-600 dark:text-amber-400 font-semibold'
+              : 'text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-400'}"
             >{item.label}</a
           >
         {/each}
@@ -83,7 +80,7 @@
           </button>
           {#if compareMenuOpen}
             <div
-              class="absolute top-full right-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-slate-700 py-2 z-50"
+              class="absolute top-full right-0 mt-2 w-48 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl rounded-xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-slate-700/50 py-2 z-50 overflow-hidden ring-1 ring-black/5"
             >
               {#each compareItems as item}
                 <a
@@ -124,7 +121,7 @@
   <!-- Mobile Navigation -->
   {#if mobileMenuOpen}
     <div
-      class="md:hidden bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 shadow-xl"
+      class="md:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-t border-gray-200 dark:border-slate-800 shadow-xl"
     >
       <div class="px-4 py-4 space-y-3">
         {#each navItems as item}

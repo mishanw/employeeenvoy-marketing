@@ -11,7 +11,7 @@
     ChevronDown,
   } from "@lucide/svelte";
   import Logo from "$lib/components/Logo.svelte";
-  import Navigation from "$lib/components/Navigation.svelte";
+
   import {
     INTEGRATIONS,
     CATEGORY_LABELS,
@@ -143,8 +143,7 @@
   <meta name="twitter:image" content="https://employeeenvoy.com/og-image.png" />
 </svelte:head>
 
-<!-- Navigation -->
-<Navigation currentPage="integrations" />
+<!-- Navigation is global -->
 
 <!-- Hero Section -->
 <section
