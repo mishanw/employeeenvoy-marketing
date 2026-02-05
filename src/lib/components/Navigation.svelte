@@ -1,38 +1,53 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import { Menu, X, ChevronDown } from "@lucide/svelte";
   import Logo from "./Logo.svelte";
 
   interface NavigationProps {
-    scrollY?: number;
-    currentPage?: 'home' | 'compare-bamboohr' | 'compare-rippling' | 'integrations' | 'roi-calculator' | 'security' | 'other';
+    currentPage?:
+      | "home"
+      | "compare-bamboohr"
+      | "compare-rippling"
+      | "integrations"
+      | "roi-calculator"
+      | "security"
+      | "other";
   }
 
-  let {
-    scrollY = 0,
-    currentPage = 'other'
-  }: NavigationProps = $props();
+  let { currentPage = "other" }: NavigationProps = $props();
 
   let mobileMenuOpen = $state(false);
   let compareMenuOpen = $state(false);
+  let scrollY = $state(0);
+
+  onMount(() => {
+    const handleScroll = () => {
+      scrollY = window.scrollY;
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
 
   // Navigation items - consistent across all pages
   const navItems = [
-    { href: '/#how-it-works', label: 'How It Works', isHash: true },
-    { href: '/#features', label: 'Features', isHash: true },
-    { href: '/#pricing', label: 'Pricing', isHash: true },
-    { href: '/roi-calculator', label: 'ROI Calculator', isHash: false },
-    { href: '/integrations', label: 'Integrations', isHash: false },
-    { href: '/security', label: 'Security', isHash: false },
+    { href: "/#how-it-works", label: "How It Works", isHash: true },
+    { href: "/#features", label: "Features", isHash: true },
+    { href: "/#pricing", label: "Pricing", isHash: true },
+    { href: "/roi-calculator", label: "ROI Calculator", isHash: false },
+    { href: "/integrations", label: "Integrations", isHash: false },
+    { href: "/security", label: "Security", isHash: false },
   ];
 
   const compareItems = [
-    { href: '/compare/bamboohr', label: 'vs BambooHR' },
-    { href: '/compare/rippling', label: 'vs Rippling' },
+    { href: "/compare/bamboohr", label: "vs BambooHR" },
+    { href: "/compare/rippling", label: "vs Rippling" },
   ];
 </script>
 
 <nav
-  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 {scrollY > 50
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 {scrollY >
+  50
     ? 'bg-white/95 dark:bg-slate-900/95 shadow-lg'
     : 'bg-white/80 dark:bg-slate-900/80'} backdrop-blur-lg border-b border-gray-200/50 dark:border-slate-800/50"
 >
@@ -48,7 +63,8 @@
           <a
             href={item.href}
             class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
-          >{item.label}</a>
+            >{item.label}</a
+          >
         {/each}
 
         <!-- Compare Dropdown -->
@@ -59,15 +75,22 @@
             class="flex items-center gap-1 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
           >
             Compare
-            <ChevronDown class="w-4 h-4 transition-transform {compareMenuOpen ? 'rotate-180' : ''}" />
+            <ChevronDown
+              class="w-4 h-4 transition-transform {compareMenuOpen
+                ? 'rotate-180'
+                : ''}"
+            />
           </button>
           {#if compareMenuOpen}
-            <div class="absolute top-full right-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-slate-700 py-2 z-50">
+            <div
+              class="absolute top-full right-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-slate-700 py-2 z-50"
+            >
               {#each compareItems as item}
                 <a
                   href={item.href}
                   class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 hover:text-amber-600"
-                >{item.label}</a>
+                  >{item.label}</a
+                >
               {/each}
             </div>
           {/if}
@@ -109,18 +132,23 @@
             href={item.href}
             onclick={() => (mobileMenuOpen = false)}
             class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
-          >{item.label}</a>
+            >{item.label}</a
+          >
         {/each}
 
         <!-- Compare section -->
         <div class="pt-2 border-t border-gray-200 dark:border-slate-700 mt-2">
-          <span class="block px-4 py-1 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Compare</span>
+          <span
+            class="block px-4 py-1 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider"
+            >Compare</span
+          >
           {#each compareItems as item}
             <a
               href={item.href}
               onclick={() => (mobileMenuOpen = false)}
               class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
-            >{item.label}</a>
+              >{item.label}</a
+            >
           {/each}
         </div>
 
