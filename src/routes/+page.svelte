@@ -781,10 +781,10 @@
         </div>
         <!-- Connector line -->
         <div
-          class="hidden md:block absolute top-1/2 -right-6 lg:-right-10 w-12 lg:w-20 h-0.5 bg-gradient-to-r from-amber-400 to-amber-200"
+          class="hidden md:block absolute top-1/2 right-0 translate-x-1/2 w-8 lg:w-12 h-0.5 bg-gradient-to-r from-amber-400 to-amber-300"
         ></div>
         <div
-          class="hidden md:block absolute top-1/2 -right-2 w-3 h-3 rounded-full bg-amber-400 -translate-y-1/2"
+          class="hidden md:block absolute top-1/2 right-0 translate-x-full w-3 h-3 rounded-full bg-amber-400 -translate-y-1/2 ml-1"
         ></div>
       </div>
 
@@ -826,11 +826,12 @@
             </div>
           </div>
         </div>
+        <!-- Connector line -->
         <div
-          class="hidden md:block absolute top-1/2 -right-6 lg:-right-10 w-12 lg:w-20 h-0.5 bg-gradient-to-r from-amber-400 to-amber-200"
+          class="hidden md:block absolute top-1/2 right-0 translate-x-1/2 w-8 lg:w-12 h-0.5 bg-gradient-to-r from-amber-400 to-amber-300"
         ></div>
         <div
-          class="hidden md:block absolute top-1/2 -right-2 w-3 h-3 rounded-full bg-amber-400 -translate-y-1/2"
+          class="hidden md:block absolute top-1/2 right-0 translate-x-full w-3 h-3 rounded-full bg-amber-400 -translate-y-1/2 ml-1"
         ></div>
       </div>
 
