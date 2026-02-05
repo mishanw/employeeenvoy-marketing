@@ -19,7 +19,7 @@ Local `src/lib/data/integrations.ts` is for display only - NOT the source of tru
 ```bash
 pnpm dev                # Development
 pnpm build              # Build
-npx wrangler pages deploy .svelte-kit/cloudflare --project-name=employeeenvoy  # Deploy
+npx wrangler pages deploy .svelte-kit/cloudflare --project-name=employeeenvoy-marketing  # Deploy
 ```
 
 ## See Also
