@@ -35,6 +35,7 @@
   let mounted = $state(false);
   let mobileMenuOpen = $state(false);
   let scrollY = $state(0);
+  let compareMenuOpen = $state(false);
 
   onMount(() => {
     mounted = true;
@@ -108,6 +109,29 @@
           class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
           >Security</a
         >
+        <!-- Compare Dropdown -->
+        <div class="relative">
+          <button
+            onclick={() => (compareMenuOpen = !compareMenuOpen)}
+            onblur={() => setTimeout(() => (compareMenuOpen = false), 150)}
+            class="flex items-center gap-1 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
+          >
+            Compare
+            <ChevronDown class="w-4 h-4 transition-transform {compareMenuOpen ? 'rotate-180' : ''}" />
+          </button>
+          {#if compareMenuOpen}
+            <div class="absolute top-full right-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-slate-700 py-2 z-50">
+              <a
+                href="/compare/bamboohr"
+                class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 hover:text-amber-600"
+              >vs BambooHR</a>
+              <a
+                href="/compare/rippling"
+                class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 hover:text-amber-600"
+              >vs Rippling</a>
+            </div>
+          {/if}
+        </div>
       </div>
 
       <div class="flex items-center gap-3">
@@ -173,6 +197,20 @@
           class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
           >Security</a
         >
+        <!-- Compare section -->
+        <div class="pt-2 border-t border-gray-200 dark:border-slate-700 mt-2">
+          <span class="block px-4 py-1 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Compare</span>
+          <a
+            href="/compare/bamboohr"
+            class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
+            >vs BambooHR</a
+          >
+          <a
+            href="/compare/rippling"
+            class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
+            >vs Rippling</a
+          >
+        </div>
         <a
           href="/contact"
           class="block w-full text-center px-4 py-3 text-base font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg mt-4"

@@ -185,32 +185,13 @@
       </a>
 
       <!-- Desktop Navigation -->
-      <div class="hidden md:flex items-center gap-8">
-        <a
-          href="/#how-it-works"
-          class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
-          >How It Works</a
-        >
-        <a
-          href="/#features"
-          class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
-          >Features</a
-        >
-        <a
-          href="/#pricing"
-          class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
-          >Pricing</a
-        >
-        <a
-          href="/integrations"
-          class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
-          >Integrations</a
-        >
-        <a
-          href="/security"
-          class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
-          >Security</a
-        >
+      <div class="hidden md:flex items-center gap-6">
+        <a href="/" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Home</a>
+        <a href="/#features" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Features</a>
+        <a href="/#pricing" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Pricing</a>
+        <a href="/roi-calculator" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">ROI Calculator</a>
+        <a href="/integrations" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Integrations</a>
+        <a href="/compare/bamboohr" class="text-sm font-medium text-amber-600 dark:text-amber-400 hover:text-amber-500 transition-colors">vs BambooHR</a>
       </div>
 
       <div class="flex items-center gap-3">
