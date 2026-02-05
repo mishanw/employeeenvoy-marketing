@@ -653,13 +653,11 @@
           MSP-Friendly Pricing
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Volume discounts for managing multiple clients (10-25% off). Flat
-          $10 PEPM with transparent pricing. Rippling has complex pricing with
-          multiple add-ons.
+          Simple $4 PEPM pricing focused on lifecycle automation. Rippling
+          charges $8+ PEPM with complex pricing and multiple add-ons.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
-          Example: 500 employees across 20 clients = $4,500/month (with
-          discount)
+          Example: 500 employees across 20 clients = $2,000/month
         </p>
       </div>
 
@@ -711,7 +709,7 @@
         <div class="mb-6">
           <div class="flex items-baseline gap-2 mb-2">
             <span class="text-4xl font-bold text-gray-900 dark:text-white"
-              >$10</span
+              >$4</span
             >
             <span class="text-gray-600 dark:text-gray-400"
               >per employee/month</span
@@ -720,7 +718,7 @@
           <div
             class="text-sm font-medium text-green-600 dark:text-green-400"
           >
-            Volume discounts: 10-25% off for 10+ clients
+            Transparent pricing, no hidden fees
           </div>
         </div>
 
@@ -764,10 +762,10 @@
             Example: MSP with 500 employees across 20 clients
           </div>
           <div class="text-xl font-bold text-gray-900 dark:text-white">
-            $4,500/month
+            $2,000/month
           </div>
           <div class="text-xs text-green-600 dark:text-green-400 mt-1">
-            ($10 × 500 × 0.9 volume discount)
+            ($4 × 500, no hidden fees)
           </div>
         </div>
       </div>

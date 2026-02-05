@@ -707,7 +707,7 @@
         <div class="mb-6">
           <div class="flex items-baseline gap-2 mb-2">
             <span class="text-4xl font-bold text-gray-900 dark:text-white"
-              >$10</span
+              >$4</span
             >
             <span class="text-gray-600 dark:text-gray-400"
               >per employee/month</span
@@ -716,7 +716,7 @@
           <div
             class="text-sm font-medium text-green-600 dark:text-green-400"
           >
-            Volume discounts: 10-25% off for 10+ clients
+            Focused lifecycle automation at a competitive price
           </div>
         </div>
 
@@ -760,10 +760,10 @@
             Example: Company with 100 employees
           </div>
           <div class="text-xl font-bold text-gray-900 dark:text-white">
-            $1,000/month
+            $400/month
           </div>
           <div class="text-xs text-green-600 dark:text-green-400 mt-1">
-            ($10 × 100, no hidden fees)
+            ($4 × 100, no hidden fees)
           </div>
         </div>
       </div>

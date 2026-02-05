@@ -3,29 +3,38 @@
   import Logo from '$lib/components/Logo.svelte';
 
   // Reactive state using Svelte 5 runes
-  let numClients = $state(20);
-  let employeesPerClient = $state(25);
-  let monthlyOnboardings = $state(10);
-  let monthlyOffboardings = $state(5);
-  let hourlyRate = $state(100);
+  let numClients = $state(15);
+  let employeesPerClient = $state(20);
+  let monthlyOnboardings = $state(8);
+  let monthlyOffboardings = $state(4);
+  let hourlyRate = $state(85);
+
+  // Pricing: $4 PEPM - competitive for focused lifecycle automation tool
+  // (Full HRIS like BambooHR: $12-22 PEPM, Rippling: $8+ PEPM)
+  const PEPM_PRICE = 4;
 
   // Derived calculations
   const totalEmployees = $derived(numClients * employeesPerClient);
-  const hoursPerOnboardingBaseline = 4;
-  const hoursPerOnboardingWithEnvoy = 1;
+  const hoursPerOnboardingBaseline = 4; // Industry average for manual IT onboarding
+  const hoursPerOnboardingWithEnvoy = 1; // With automation
   const hoursSavedPerRequest = hoursPerOnboardingBaseline - hoursPerOnboardingWithEnvoy; // 3 hours
   const monthlyRequests = $derived(monthlyOnboardings + monthlyOffboardings);
   const hoursSavedPerMonth = $derived(monthlyRequests * hoursSavedPerRequest);
   const costSavedPerMonth = $derived(hoursSavedPerMonth * hourlyRate);
-  const employeeEnvoyCostPerMonth = $derived(totalEmployees * 10); // $10 PEPM
+  const employeeEnvoyCostPerMonth = $derived(totalEmployees * PEPM_PRICE);
   const netSavingsPerMonth = $derived(costSavedPerMonth - employeeEnvoyCostPerMonth);
   const roiPercentage = $derived(
     employeeEnvoyCostPerMonth > 0 ? (netSavingsPerMonth / employeeEnvoyCostPerMonth) * 100 : 0
   );
   const paybackPeriodMonths = $derived(
-    costSavedPerMonth > 0 ? employeeEnvoyCostPerMonth / costSavedPerMonth : 0
+    netSavingsPerMonth > 0 ? employeeEnvoyCostPerMonth / netSavingsPerMonth : 999
   );
   const annualSavings = $derived(netSavingsPerMonth * 12);
+
+  // Calculate implied annual turnover rate for context
+  const annualTurnoverRate = $derived(
+    totalEmployees > 0 ? ((monthlyRequests * 12) / totalEmployees) * 100 : 0
+  );
 
   // Format currency
   function formatCurrency(value: number): string {
@@ -124,11 +133,11 @@
     "applicationCategory": "UtilityApplication",
     "offers": {
       "@type": "Offer",
-      "price": "10",
+      "price": "4",
       "priceCurrency": "USD",
       "priceSpecification": {
         "@type": "UnitPriceSpecification",
-        "price": "10",
+        "price": "4",
         "priceCurrency": "USD",
         "unitText": "per employee per month"
       }
@@ -337,7 +346,11 @@
             <li>
               • Time savings: <strong>{hoursSavedPerRequest} hours</strong> per onboarding/offboarding
             </li>
-            <li>• Employee Envoy pricing: <strong>$10 PEPM</strong> (per employee per month)</li>
+            <li>• Employee Envoy pricing: <strong>$4 PEPM</strong> (per employee per month)</li>
+            <li>
+              • Your turnover rate: <strong>{annualTurnoverRate.toFixed(0)}%</strong> annual
+              <span class="text-xs">(avg: 15-20%)</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -411,7 +424,7 @@
             {formatCurrency(employeeEnvoyCostPerMonth)}
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-500 mt-1">
-            {formatNumber(totalEmployees)} employees × $10 PEPM
+            {formatNumber(totalEmployees)} employees × ${PEPM_PRICE} PEPM
           </p>
         </div>
 
@@ -419,23 +432,32 @@
         <div
           class="p-8 bg-gradient-to-br {netSavingsPerMonth >= 0
             ? 'from-green-500 to-emerald-600'
-            : 'from-red-500 to-rose-600'} rounded-2xl shadow-2xl"
+            : 'from-slate-600 to-slate-700'} rounded-2xl shadow-2xl"
         >
           <div class="flex items-center justify-between mb-4">
             <span class="text-sm font-semibold text-white/90">Net Savings Per Month</span>
             <TrendingUp class="w-6 h-6 text-white" />
           </div>
           <div class="text-5xl font-bold text-white mb-2">
-            {formatCurrency(netSavingsPerMonth)}
+            {formatCurrency(Math.max(0, netSavingsPerMonth))}
           </div>
           <p class="text-sm text-white/80 mb-4">
             {formatCurrency(costSavedPerMonth)} saved - {formatCurrency(employeeEnvoyCostPerMonth)} cost
           </p>
-          <div class="pt-4 border-t border-white/20">
-            <p class="text-lg font-semibold text-white">
-              Annual Savings: {formatCurrency(annualSavings)}
-            </p>
-          </div>
+          {#if netSavingsPerMonth < 0}
+            <div class="pt-4 border-t border-white/20">
+              <p class="text-sm text-white/90">
+                💡 Tip: Increase requests or reduce managed employees to see positive ROI.
+                Most MSPs with 10%+ turnover see strong savings.
+              </p>
+            </div>
+          {:else}
+            <div class="pt-4 border-t border-white/20">
+              <p class="text-lg font-semibold text-white">
+                Annual Savings: {formatCurrency(annualSavings)}
+              </p>
+            </div>
+          {/if}
         </div>
 
         <!-- ROI Percentage -->
@@ -474,13 +496,19 @@
             <Calendar class="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
           </div>
           <div class="text-4xl font-bold text-gray-900 dark:text-white">
-            {paybackPeriodMonths < 1
-              ? '<1'
-              : paybackPeriodMonths > 12
-                ? '>12'
-                : paybackPeriodMonths.toFixed(1)}
+            {#if netSavingsPerMonth <= 0}
+              N/A
+            {:else if paybackPeriodMonths < 1}
+              &lt;1
+            {:else if paybackPeriodMonths > 12}
+              &gt;12
+            {:else}
+              {paybackPeriodMonths.toFixed(1)}
+            {/if}
           </div>
-          <p class="text-sm text-gray-500 dark:text-gray-500 mt-1">months to break even</p>
+          <p class="text-sm text-gray-500 dark:text-gray-500 mt-1">
+            {netSavingsPerMonth > 0 ? 'months to break even' : 'increase requests to see payback'}
+          </p>
         </div>
       </div>
     </div>
@@ -496,9 +524,14 @@
       See These Savings in Action
     </h2>
     <p class="text-xl text-amber-100 mb-10 max-w-2xl mx-auto">
-      Join MSPs and IT teams who are saving
-      <strong>{formatNumber(hoursSavedPerMonth)} hours</strong>
-      and <strong>{formatCurrency(netSavingsPerMonth)}</strong> every month with Employee Envoy.
+      {#if netSavingsPerMonth > 0}
+        Join MSPs and IT teams who are saving
+        <strong>{formatNumber(hoursSavedPerMonth)} hours</strong>
+        and <strong>{formatCurrency(netSavingsPerMonth)}</strong> every month with Employee Envoy.
+      {:else}
+        Employee Envoy helps MSPs and IT teams automate employee lifecycle management.
+        Talk to us about a plan that fits your organization.
+      {/if}
     </p>
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
       <a
