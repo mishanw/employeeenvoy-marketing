@@ -12,13 +12,11 @@
     DollarSign,
     TrendingUp,
     Shield,
-    Menu,
-    X as Close,
   } from "@lucide/svelte";
-  import Logo from "$lib/components/Logo.svelte";
+  import Navigation from "$lib/components/Navigation.svelte";
+  import Footer from "$lib/components/Footer.svelte";
 
   let mounted = $state(false);
-  let mobileMenuOpen = $state(false);
   let scrollY = $state(0);
 
   onMount(() => {
@@ -96,7 +94,7 @@
       feature: "Number of Integrations",
       envoy: "partial",
       bamboohr: "yes",
-      description: "Employee Envoy: 189 catalog (14 full API), BambooHR: 700+",
+      description: "Employee Envoy: 121 (IT-focused), BambooHR: 700+ (HR-focused)",
     },
     {
       feature: "HR & Compliance Features",
@@ -171,97 +169,7 @@
   />
 </svelte:head>
 
-<!-- Navigation -->
-<nav
-  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 {scrollY >
-  50
-    ? 'bg-white/95 dark:bg-slate-900/95 shadow-lg'
-    : 'bg-white/80 dark:bg-slate-900/80'} backdrop-blur-lg border-b border-gray-200/50 dark:border-slate-800/50"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      <a href="/" class="flex-shrink-0">
-        <Logo size="sm" variant="default" />
-      </a>
-
-      <!-- Desktop Navigation -->
-      <div class="hidden md:flex items-center gap-6">
-        <a href="/" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Home</a>
-        <a href="/#features" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Features</a>
-        <a href="/#pricing" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Pricing</a>
-        <a href="/roi-calculator" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">ROI Calculator</a>
-        <a href="/integrations" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Integrations</a>
-        <a href="/compare/rippling" class="text-sm font-medium text-amber-600 dark:text-amber-400 hover:text-amber-500 transition-colors">vs Rippling</a>
-      </div>
-
-      <div class="flex items-center gap-3">
-        <a
-          href="/contact"
-          class="hidden sm:inline-flex px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg hover:from-amber-400 hover:to-orange-400 transition-all shadow-lg hover:shadow-xl hover:scale-105"
-        >
-          Get Started
-        </a>
-
-        <!-- Mobile menu button -->
-        <button
-          onclick={() => (mobileMenuOpen = !mobileMenuOpen)}
-          class="md:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"
-          aria-label="Toggle menu"
-        >
-          {#if mobileMenuOpen}
-            <Close class="w-6 h-6" />
-          {:else}
-            <Menu class="w-6 h-6" />
-          {/if}
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mobile Navigation -->
-  {#if mobileMenuOpen}
-    <div
-      class="md:hidden bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 shadow-xl"
-    >
-      <div class="px-4 py-4 space-y-3">
-        <a
-          href="/#how-it-works"
-          onclick={() => (mobileMenuOpen = false)}
-          class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
-          >How It Works</a
-        >
-        <a
-          href="/#features"
-          onclick={() => (mobileMenuOpen = false)}
-          class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
-          >Features</a
-        >
-        <a
-          href="/#pricing"
-          onclick={() => (mobileMenuOpen = false)}
-          class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
-          >Pricing</a
-        >
-        <a
-          href="/integrations"
-          class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
-          >Integrations</a
-        >
-        <a
-          href="/security"
-          class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
-          >Security</a
-        >
-        <a
-          href="/contact"
-          class="block w-full text-center px-4 py-3 text-base font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg mt-4"
-        >
-          Get Started Free
-        </a>
-      </div>
-    </div>
-  {/if}
-</nav>
+<Navigation {scrollY} currentPage="compare-bamboohr" />
 
 <!-- Hero Section -->
 <section
@@ -723,7 +631,7 @@
           <div class="flex items-start gap-3">
             <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >All 189 integrations + MDM depth</span
+              >All 121 integrations + MDM depth</span
             >
           </div>
           <div class="flex items-start gap-3">
@@ -1160,102 +1068,7 @@
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-4 gap-8 mb-8">
-      <div>
-        <h3 class="text-white font-bold mb-4">Product</h3>
-        <ul class="space-y-2 text-sm">
-          <li>
-            <a href="/#features" class="hover:text-amber-400 transition-colors"
-              >Features</a
-            >
-          </li>
-          <li>
-            <a href="/#pricing" class="hover:text-amber-400 transition-colors"
-              >Pricing</a
-            >
-          </li>
-          <li>
-            <a
-              href="/integrations"
-              class="hover:text-amber-400 transition-colors">Integrations</a
-            >
-          </li>
-          <li>
-            <a href="/security" class="hover:text-amber-400 transition-colors"
-              >Security</a
-            >
-          </li>
-          <li>
-            <a href="/roi-calculator" class="hover:text-amber-400 transition-colors"
-              >ROI Calculator</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-white font-bold mb-4">Compare</h3>
-        <ul class="space-y-2 text-sm">
-          <li>
-            <a
-              href="/compare/rippling"
-              class="hover:text-amber-400 transition-colors">vs. Rippling</a
-            >
-          </li>
-          <li>
-            <a
-              href="/compare/bamboohr"
-              class="hover:text-amber-400 transition-colors">vs. BambooHR</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-white font-bold mb-4">Company</h3>
-        <ul class="space-y-2 text-sm">
-          <li>
-            <a href="/about" class="hover:text-amber-400 transition-colors"
-              >About</a
-            >
-          </li>
-          <li>
-            <a href="/contact" class="hover:text-amber-400 transition-colors"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-white font-bold mb-4">Legal</h3>
-        <ul class="space-y-2 text-sm">
-          <li>
-            <a href="/privacy" class="hover:text-amber-400 transition-colors"
-              >Privacy Policy</a
-            >
-          </li>
-          <li>
-            <a href="/terms" class="hover:text-amber-400 transition-colors"
-              >Terms of Service</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div
-      class="pt-8 border-t border-gray-800 text-center text-sm text-gray-400"
-    >
-      <p>
-        &copy; {new Date().getFullYear()} Employee Envoy. All rights reserved.
-      </p>
-    </div>
-  </div>
-</footer>
+<Footer />
 
 <style>
   @keyframes blob {

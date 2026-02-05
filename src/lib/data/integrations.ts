@@ -3,7 +3,7 @@
  * Static data extracted from the app catalog for public display
  *
  * NOTE: This is a SUBSET of integrations for marketing display.
- * The full catalog with 184 integrations is in the main app:
+ * The full catalog with 121 integrations is in the main app:
  * ~/Documents/Cursor Workspace/ipeople/packages/shared/src/app-catalog.ts
  *
  * For accurate integration counts, use FULL_CATALOG_COUNT constant.
@@ -12,19 +12,11 @@
 /**
  * Full integration count from the ipeople app catalog
  * Source: ipeople/packages/shared/src/app-catalog.ts
- * Last verified: 2026-02-03
+ * Last verified: 2026-02-05
  *
- * Breakdown:
- * - Core: 18
- * - Popular: 65
- * - Available: 78
- * - Coming Soon: 23
- * Total implemented: 161
- * Total catalog: 184
+ * Note: Use 121 as the source of truth per DATA_SOURCES.md
  */
-export const FULL_CATALOG_COUNT = 184;
-export const IMPLEMENTED_COUNT = 161;
-export const COMING_SOON_COUNT = 23;
+export const FULL_CATALOG_COUNT = 121;
 
 export type IntegrationCategory =
   | 'identity'

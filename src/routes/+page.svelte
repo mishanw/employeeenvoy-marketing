@@ -60,7 +60,7 @@
   >
   <meta
     name="description"
-    content="Streamline employee onboarding, offboarding, and status changes across 180+ business applications. Built for MSPs and IT teams."
+    content="Streamline employee onboarding, offboarding, and status changes across 120+ business applications. Built for MSPs and IT teams."
   />
 </svelte:head>
 
@@ -302,7 +302,7 @@
           >
             Automate onboarding, offboarding, and status changes across <span
               class="font-semibold text-amber-600 dark:text-amber-400"
-              >180+ business applications</span
+              >120+ business applications</span
             >. Built for MSPs and enterprises.
           </p>
 
@@ -353,7 +353,7 @@
               >
                 <CheckCircle2 class="w-3.5 h-3.5 text-green-500" />
               </div>
-              <span>180+ integrations</span>
+              <span>120+ integrations</span>
             </div>
           </div>
         {/if}
@@ -919,7 +919,7 @@
           <p
             class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-3 group-hover:scale-110 transition-transform"
           >
-            180+
+            120+
           </p>
           <div
             class="absolute -top-2 -right-2 w-4 h-4 bg-white/30 rounded-full"
@@ -1096,7 +1096,7 @@
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
             Automate onboarding and offboarding across <span
               class="font-semibold text-amber-600 dark:text-amber-400"
-              >180+ applications</span
+              >120+ applications</span
             > with customizable playbooks
           </p>
         </div>
@@ -1145,7 +1145,7 @@
             <Globe class="w-8 h-8 text-white" />
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            180+ Integrations
+            120+ Integrations
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
             Connect Microsoft 365, Google Workspace, Slack, Okta, and dozens
@@ -1468,7 +1468,7 @@
       <p
         class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
       >
-        Connect with 180+ business applications your team already uses
+        Connect with 120+ business applications your team already uses
       </p>
     </div>
 
@@ -1608,7 +1608,7 @@
         href="/integrations"
         class="group inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl hover:from-amber-400 hover:to-orange-400 shadow-xl shadow-amber-500/25 hover:shadow-2xl hover:shadow-amber-500/30 hover:scale-105 transition-all"
       >
-        Browse All 180+ Integrations
+        Browse All 120+ Integrations
         <ArrowRight
           class="w-5 h-5 group-hover:translate-x-1 transition-transform"
         />
@@ -1687,7 +1687,7 @@
               <Check class="w-3 h-3 text-green-600 dark:text-green-400" />
             </div>
             <span class="text-gray-700 dark:text-gray-300"
-              >All 180+ integrations</span
+              >All 120+ integrations</span
             >
           </li>
           <li class="flex items-start gap-3">
@@ -2451,7 +2451,7 @@
             class="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed"
           >
             We support <span class="font-medium text-gray-900 dark:text-white"
-              >180+ integrations</span
+              >120+ integrations</span
             >
             including Microsoft 365, Google Workspace, Slack, Okta, Azure AD,
             Active Directory, GitHub, Jira, and many more.

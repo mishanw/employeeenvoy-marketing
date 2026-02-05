@@ -576,7 +576,7 @@
         Trusted by Leading MSPs
       </h3>
       <p class="text-gray-600 dark:text-gray-400">
-        Automating employee lifecycles across 189 integrations
+        Automating employee lifecycles across 121 integrations
       </p>
     </div>
 
@@ -589,7 +589,7 @@
         </p>
       </div>
       <div class="text-center p-6">
-        <div class="text-4xl font-bold text-amber-600 dark:text-amber-400 mb-2">189</div>
+        <div class="text-4xl font-bold text-amber-600 dark:text-amber-400 mb-2">121</div>
         <p class="text-gray-600 dark:text-gray-400">Integrations</p>
         <p class="text-sm text-gray-500 dark:text-gray-500 mt-2">
           Connect all your business apps
