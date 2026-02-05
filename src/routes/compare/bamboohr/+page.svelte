@@ -567,7 +567,7 @@
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
         <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
-          <Settings class="w-6 h-6 text-green-600 dark:text-green-400" />
+          <Zap class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
           IT-First, Not HR-First
