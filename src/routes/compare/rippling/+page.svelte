@@ -598,16 +598,16 @@
         <div class="mb-6">
           <div class="flex items-baseline gap-2 mb-2">
             <span class="text-4xl font-bold text-gray-900 dark:text-white"
-              >$4</span
+              >$199-$799</span
             >
             <span class="text-gray-600 dark:text-gray-400"
-              >per employee/month</span
+              >/month</span
             >
           </div>
           <div
             class="text-sm font-medium text-green-600 dark:text-green-400"
           >
-            Transparent pricing, no hidden fees
+            Flat-rate pricing by employee bucket, no per-user fees
           </div>
         </div>
 
@@ -615,31 +615,31 @@
           <div class="flex items-start gap-3">
             <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >Multi-tenant architecture included</span
+              >Starter: $199/mo (up to 50 employees)</span
             >
           </div>
           <div class="flex items-start gap-3">
             <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >PSA integration (ConnectWise, Autotask)</span
+              >Professional: $399/mo (up to 200 employees)</span
             >
           </div>
           <div class="flex items-start gap-3">
             <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >Visual workflow builder (unlimited workflows)</span
+              >Enterprise: $799/mo (up to 500 employees)</span
             >
           </div>
           <div class="flex items-start gap-3">
             <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >All 121 integrations</span
+              >All 121 integrations included</span
             >
           </div>
           <div class="flex items-start gap-3">
             <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >Priority support included</span
+              >Multi-tenant architecture (MSP-ready)</span
             >
           </div>
         </div>
@@ -648,13 +648,13 @@
           class="bg-white dark:bg-slate-800 p-4 rounded-lg border border-green-200 dark:border-green-800"
         >
           <div class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">
-            Example: MSP with 500 employees across 20 clients
+            Example: MSP with 200 employees across clients
           </div>
           <div class="text-xl font-bold text-gray-900 dark:text-white">
-            $2,000/month
+            $399/month
           </div>
           <div class="text-xs text-green-600 dark:text-green-400 mt-1">
-            ($4 × 500, no hidden fees)
+            (Professional plan, flat rate)
           </div>
         </div>
       </div>
