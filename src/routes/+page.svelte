@@ -59,7 +59,7 @@
   >
   <meta
     name="description"
-    content="Streamline employee onboarding, offboarding, and status changes across 185 business applications. Built for MSPs and IT teams."
+    content="Streamline employee onboarding, offboarding, and status changes across 180+ business applications. Built for MSPs and IT teams."
   />
 </svelte:head>
 
@@ -92,6 +92,11 @@
           href="#pricing"
           class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
           >Pricing</a
+        >
+        <a
+          href="/roi-calculator"
+          class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
+          >ROI Calculator</a
         >
         <a
           href="/integrations"
@@ -152,6 +157,11 @@
           onclick={() => (mobileMenuOpen = false)}
           class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
           >Pricing</a
+        >
+        <a
+          href="/roi-calculator"
+          class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
+          >ROI Calculator</a
         >
         <a
           href="/integrations"
@@ -254,7 +264,7 @@
           >
             Automate onboarding, offboarding, and status changes across <span
               class="font-semibold text-amber-600 dark:text-amber-400"
-              >185 business applications</span
+              >180+ business applications</span
             >. Built for MSPs and enterprises.
           </p>
 
@@ -305,7 +315,7 @@
               >
                 <CheckCircle2 class="w-3.5 h-3.5 text-green-500" />
               </div>
-              <span>185 integrations</span>
+              <span>180+ integrations</span>
             </div>
           </div>
         {/if}
@@ -871,7 +881,7 @@
           <p
             class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-3 group-hover:scale-110 transition-transform"
           >
-            185
+            180+
           </p>
           <div
             class="absolute -top-2 -right-2 w-4 h-4 bg-white/30 rounded-full"
@@ -1048,7 +1058,7 @@
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
             Automate onboarding and offboarding across <span
               class="font-semibold text-amber-600 dark:text-amber-400"
-              >185 applications</span
+              >180+ applications</span
             > with customizable playbooks
           </p>
         </div>
@@ -1097,7 +1107,7 @@
             <Globe class="w-8 h-8 text-white" />
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            127 Integrations
+            180+ Integrations
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
             Connect Microsoft 365, Google Workspace, Slack, Okta, and dozens
@@ -1420,7 +1430,7 @@
       <p
         class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
       >
-        Connect with 185 business applications your team already uses
+        Connect with 180+ business applications your team already uses
       </p>
     </div>
 
@@ -1560,7 +1570,7 @@
         href="/integrations"
         class="group inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl hover:from-amber-400 hover:to-orange-400 shadow-xl shadow-amber-500/25 hover:shadow-2xl hover:shadow-amber-500/30 hover:scale-105 transition-all"
       >
-        Browse All 185 Integrations
+        Browse All 180+ Integrations
         <ArrowRight
           class="w-5 h-5 group-hover:translate-x-1 transition-transform"
         />
@@ -1639,7 +1649,7 @@
               <Check class="w-3 h-3 text-green-600 dark:text-green-400" />
             </div>
             <span class="text-gray-700 dark:text-gray-300"
-              >All 185 integrations</span
+              >All 180+ integrations</span
             >
           </li>
           <li class="flex items-start gap-3">
@@ -2403,7 +2413,7 @@
             class="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed"
           >
             We support <span class="font-medium text-gray-900 dark:text-white"
-              >185 integrations</span
+              >180+ integrations</span
             >
             including Microsoft 365, Google Workspace, Slack, Okta, Azure AD,
             Active Directory, GitHub, Jira, and many more.
