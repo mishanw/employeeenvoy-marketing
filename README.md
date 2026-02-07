@@ -27,13 +27,20 @@ npm run preview
 
 ## Deployment
 
-This site is configured for deployment to Cloudflare Pages.
+This site is deployed to **Cloudflare Pages** under the project name `employeeenvoy`.
+
+> **⚠️ Important:** The Cloudflare Pages project is `employeeenvoy` (NOT `employeeenvoy-marketing`).
+> The project name is configured in `wrangler.toml`. Do not change this unless you intend to deploy to a different Cloudflare Pages project.
 
 ```bash
 # Build and deploy
 npm run build
-npx wrangler pages deploy .svelte-kit/cloudflare --project-name=employeeenvoy-marketing
+npx wrangler pages deploy
 ```
+
+**Production URLs:**
+- `employeeenvoy.pages.dev`
+- Custom domains configured in Cloudflare Dashboard
 
 ## Pages
 

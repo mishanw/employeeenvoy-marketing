@@ -94,7 +94,8 @@
       feature: "Number of Integrations",
       envoy: "partial",
       bamboohr: "yes",
-      description: "Employee Envoy: 121 (IT-focused), BambooHR: 700+ (HR-focused)",
+      description:
+        "Employee Envoy: 184 (IT-focused), BambooHR: 700+ (HR-focused)",
     },
     {
       feature: "HR & Compliance Features",
@@ -111,7 +112,7 @@
   ];
 
   function getIcon(
-    value: "yes" | "no" | "partial"
+    value: "yes" | "no" | "partial",
   ): typeof Check | typeof X | typeof AlertTriangle {
     if (value === "yes") return Check;
     if (value === "no") return X;
@@ -217,15 +218,15 @@
       </p>
 
       <!-- Quick Verdict -->
-      <div
-        class="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto text-left"
-      >
+      <div class="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto text-left">
         <div
           class="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-6 rounded-xl border-2 border-green-200 dark:border-green-800"
         >
           <div class="flex items-center gap-3 mb-3">
             <div class="p-2 bg-green-100 dark:bg-green-900/50 rounded-lg">
-              <CheckCircle2 class="w-6 h-6 text-green-600 dark:text-green-400" />
+              <CheckCircle2
+                class="w-6 h-6 text-green-600 dark:text-green-400"
+              />
             </div>
             <h3 class="text-lg font-bold text-gray-900 dark:text-white">
               Employee Envoy
@@ -251,8 +252,8 @@
           </div>
           <p class="text-sm text-gray-700 dark:text-gray-300">
             <strong>Best for:</strong> HR departments managing employee records,
-            organizations needing compliance tracking, companies where HR leads
-            onboarding processes
+            organizations needing compliance tracking, companies where HR leads onboarding
+            processes
           </p>
         </div>
       </div>
@@ -275,7 +276,9 @@
     </div>
 
     <!-- Desktop Table -->
-    <div class="hidden lg:block overflow-hidden rounded-xl border border-gray-200 dark:border-slate-800">
+    <div
+      class="hidden lg:block overflow-hidden rounded-xl border border-gray-200 dark:border-slate-800"
+    >
       <table class="w-full">
         <thead class="bg-gray-50 dark:bg-slate-800">
           <tr>
@@ -317,7 +320,7 @@
                 <div class="flex justify-center">
                   <div
                     class="inline-flex items-center justify-center w-8 h-8 rounded-full {getIconBgClass(
-                      row.envoy
+                      row.envoy,
                     )}"
                   >
                     <svelte:component
@@ -331,7 +334,7 @@
                 <div class="flex justify-center">
                   <div
                     class="inline-flex items-center justify-center w-8 h-8 rounded-full {getIconBgClass(
-                      row.bamboohr
+                      row.bamboohr,
                     )}"
                   >
                     <svelte:component
@@ -366,13 +369,15 @@
             <div
               class="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-200 dark:border-green-800"
             >
-              <div class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">
+              <div
+                class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
+              >
                 Employee Envoy
               </div>
               <div class="flex items-center gap-2">
                 <div
                   class="inline-flex items-center justify-center w-8 h-8 rounded-full {getIconBgClass(
-                    row.envoy
+                    row.envoy,
                   )}"
                 >
                   <svelte:component
@@ -384,13 +389,15 @@
             </div>
 
             <div class="bg-gray-50 dark:bg-slate-700 p-4 rounded-lg">
-              <div class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">
+              <div
+                class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
+              >
                 BambooHR
               </div>
               <div class="flex items-center gap-2">
                 <div
                   class="inline-flex items-center justify-center w-8 h-8 rounded-full {getIconBgClass(
-                    row.bamboohr
+                    row.bamboohr,
                   )}"
                 >
                   <svelte:component
@@ -455,16 +462,18 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <Zap class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
           IT-First, Not HR-First
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Starts with account provisioning, device setup, and system access.
-          HR features complement IT workflows. BambooHR starts with HR forms
-          and paperwork, IT is secondary.
+          Starts with account provisioning, device setup, and system access. HR
+          features complement IT workflows. BambooHR starts with HR forms and
+          paperwork, IT is secondary.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
           Example: Day 1 workflow creates Google account, enrolls device,
@@ -475,7 +484,9 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <Zap class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -483,8 +494,8 @@
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
           55-node workflow builder with triggers, actions, and conditions. No
-          coding required. BambooHR lacks visual workflow automation - relies
-          on basic task lists.
+          coding required. BambooHR lacks visual workflow automation - relies on
+          basic task lists.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
           Example: Build "if contractor, then skip MDM" logic in minutes
@@ -494,7 +505,9 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <Shield class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -502,8 +515,8 @@
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
           Full device lifecycle with Jamf Pro, Microsoft Intune, and Kandji.
-          Device enrollment, compliance tracking, remote lock/wipe. BambooHR
-          has no MDM integration.
+          Device enrollment, compliance tracking, remote lock/wipe. BambooHR has
+          no MDM integration.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
           Example: Offboarding triggers device lock + remote wipe automatically
@@ -513,7 +526,9 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <Building2 class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -532,7 +547,9 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <Users class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -551,7 +568,9 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <TrendingUp class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -598,44 +617,50 @@
             <span class="text-4xl font-bold text-gray-900 dark:text-white"
               >$199-$799</span
             >
-            <span class="text-gray-600 dark:text-gray-400"
-              >/month</span
-            >
+            <span class="text-gray-600 dark:text-gray-400">/month</span>
           </div>
-          <div
-            class="text-sm font-medium text-green-600 dark:text-green-400"
-          >
+          <div class="text-sm font-medium text-green-600 dark:text-green-400">
             Flat-rate pricing by employee bucket, no per-user fees
           </div>
         </div>
 
         <div class="space-y-3 mb-6">
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Starter: $199/mo (up to 50 employees)</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Professional: $399/mo (up to 200 employees)</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Enterprise: $799/mo (up to 500 employees)</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >All 121 integrations included</span
+              >All 184 integrations included</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Unlimited playbooks & workflows</span
             >
@@ -645,7 +670,9 @@
         <div
           class="bg-white dark:bg-slate-800 p-4 rounded-lg border border-green-200 dark:border-green-800"
         >
-          <div class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">
+          <div
+            class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
+          >
             Example: Company with 100 employees
           </div>
           <div class="text-xl font-bold text-gray-900 dark:text-white">
@@ -681,31 +708,41 @@
 
         <div class="space-y-3 mb-6">
           <div class="flex items-start gap-3">
-            <X class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
+            <X
+              class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >No multi-tenant architecture</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <X class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
+            <X
+              class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >No PSA integration</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <X class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
+            <X
+              class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >No visual workflow automation</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >700+ integrations (HR-focused)</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Strong HR & compliance features</span
             >
@@ -715,7 +752,9 @@
         <div
           class="bg-gray-50 dark:bg-slate-700 p-4 rounded-lg border border-gray-200 dark:border-slate-600"
         >
-          <div class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">
+          <div
+            class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
+          >
             Example: Company with 100 employees
           </div>
           <div class="text-xl font-bold text-gray-900 dark:text-white">
@@ -733,9 +772,7 @@
       class="mt-12 max-w-4xl mx-auto bg-gradient-to-r from-amber-500 to-orange-500 p-8 rounded-2xl shadow-xl text-white"
     >
       <div class="text-center">
-        <h3 class="text-2xl font-bold mb-3">
-          See How Much Time You'll Save
-        </h3>
+        <h3 class="text-2xl font-bold mb-3">See How Much Time You'll Save</h3>
         <p class="text-white/90 mb-6">
           Calculate ROI by switching from manual HR processes to automated IT
           workflows
@@ -753,9 +790,7 @@
 </section>
 
 <!-- Use Case Comparison -->
-<section
-  class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-800"
->
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-800">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12">
       <h2
@@ -779,11 +814,15 @@
           </h3>
         </div>
 
-        <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-slate-700">
+        <div
+          class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-slate-700"
+        >
           <div class="p-6">
             <div class="flex items-center gap-2 mb-4">
               <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                <CheckCircle2 class="w-5 h-5 text-green-600 dark:text-green-400" />
+                <CheckCircle2
+                  class="w-5 h-5 text-green-600 dark:text-green-400"
+                />
               </div>
               <h4 class="font-semibold text-gray-900 dark:text-white">
                 Employee Envoy
@@ -819,8 +858,7 @@
                   >4</span
                 >
                 <span
-                  >Generate secure credentials, send welcome email with
-                  links</span
+                  >Generate secure credentials, send welcome email with links</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -867,8 +905,7 @@
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >3</span
                 >
-                <span
-                  >IT manually creates Google account, adds to services</span
+                <span>IT manually creates Google account, adds to services</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -907,11 +944,15 @@
           </h3>
         </div>
 
-        <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-slate-700">
+        <div
+          class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-slate-700"
+        >
           <div class="p-6">
             <div class="flex items-center gap-2 mb-4">
               <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                <CheckCircle2 class="w-5 h-5 text-green-600 dark:text-green-400" />
+                <CheckCircle2
+                  class="w-5 h-5 text-green-600 dark:text-green-400"
+                />
               </div>
               <h4 class="font-semibold text-gray-900 dark:text-white">
                 Employee Envoy
@@ -931,8 +972,7 @@
                   >2</span
                 >
                 <span
-                  >Workflow triggers: Transfer Drive ownership to
-                  manager</span
+                  >Workflow triggers: Transfer Drive ownership to manager</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -997,8 +1037,7 @@
                   >3</span
                 >
                 <span
-                  >IT logs into Google Admin, manually transfers Drive
-                  ownership</span
+                  >IT logs into Google Admin, manually transfers Drive ownership</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -1107,10 +1146,7 @@
   }
 
   .bg-grid-pattern {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.05) 1px,
-        transparent 1px
-      ),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
       linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
     background-size: 20px 20px;
   }

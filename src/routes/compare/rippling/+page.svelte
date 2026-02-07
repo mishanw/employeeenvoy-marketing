@@ -94,7 +94,7 @@
       feature: "Number of Integrations",
       envoy: "partial",
       rippling: "yes",
-      description: "Employee Envoy: 121 (IT-focused), Rippling: 600+",
+      description: "Employee Envoy: 184 (IT-focused), Rippling: 600+",
     },
     {
       feature: "MSP-Friendly Pricing",
@@ -111,7 +111,7 @@
   ];
 
   function getIcon(
-    value: "yes" | "no" | "partial"
+    value: "yes" | "no" | "partial",
   ): typeof Check | typeof X | typeof AlertTriangle {
     if (value === "yes") return Check;
     if (value === "no") return X;
@@ -143,10 +143,7 @@
   />
 
   <!-- Open Graph -->
-  <meta
-    property="og:title"
-    content="Employee Envoy vs. Rippling for MSPs"
-  />
+  <meta property="og:title" content="Employee Envoy vs. Rippling for MSPs" />
   <meta
     property="og:description"
     content="Purpose-built for MSPs managing multiple clients. Compare features, pricing, and see why Employee Envoy is the better choice."
@@ -159,10 +156,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta
-    name="twitter:title"
-    content="Employee Envoy vs. Rippling for MSPs"
-  />
+  <meta name="twitter:title" content="Employee Envoy vs. Rippling for MSPs" />
   <meta
     name="twitter:description"
     content="Purpose-built for MSPs managing multiple clients. Compare features and pricing."
@@ -218,15 +212,15 @@
       </p>
 
       <!-- Quick Verdict -->
-      <div
-        class="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto text-left"
-      >
+      <div class="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto text-left">
         <div
           class="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-6 rounded-xl border-2 border-green-200 dark:border-green-800"
         >
           <div class="flex items-center gap-3 mb-3">
             <div class="p-2 bg-green-100 dark:bg-green-900/50 rounded-lg">
-              <CheckCircle2 class="w-6 h-6 text-green-600 dark:text-green-400" />
+              <CheckCircle2
+                class="w-6 h-6 text-green-600 dark:text-green-400"
+              />
             </div>
             <h3 class="text-lg font-bold text-gray-900 dark:text-white">
               Employee Envoy
@@ -276,7 +270,9 @@
     </div>
 
     <!-- Desktop Table -->
-    <div class="hidden lg:block overflow-hidden rounded-xl border border-gray-200 dark:border-slate-800">
+    <div
+      class="hidden lg:block overflow-hidden rounded-xl border border-gray-200 dark:border-slate-800"
+    >
       <table class="w-full">
         <thead class="bg-gray-50 dark:bg-slate-800">
           <tr>
@@ -318,7 +314,7 @@
                 <div class="flex justify-center">
                   <div
                     class="inline-flex items-center justify-center w-8 h-8 rounded-full {getIconBgClass(
-                      row.envoy
+                      row.envoy,
                     )}"
                   >
                     <svelte:component
@@ -332,7 +328,7 @@
                 <div class="flex justify-center">
                   <div
                     class="inline-flex items-center justify-center w-8 h-8 rounded-full {getIconBgClass(
-                      row.rippling
+                      row.rippling,
                     )}"
                   >
                     <svelte:component
@@ -367,13 +363,15 @@
             <div
               class="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-200 dark:border-green-800"
             >
-              <div class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">
+              <div
+                class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
+              >
                 Employee Envoy
               </div>
               <div class="flex items-center gap-2">
                 <div
                   class="inline-flex items-center justify-center w-8 h-8 rounded-full {getIconBgClass(
-                    row.envoy
+                    row.envoy,
                   )}"
                 >
                   <svelte:component
@@ -385,13 +383,15 @@
             </div>
 
             <div class="bg-gray-50 dark:bg-slate-700 p-4 rounded-lg">
-              <div class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">
+              <div
+                class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
+              >
                 Rippling
               </div>
               <div class="flex items-center gap-2">
                 <div
                   class="inline-flex items-center justify-center w-8 h-8 rounded-full {getIconBgClass(
-                    row.rippling
+                    row.rippling,
                   )}"
                 >
                   <svelte:component
@@ -456,16 +456,18 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <Building2 class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
           True Multi-Tenant Architecture
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Manage 100+ client organizations with complete data isolation.
-          Switch between clients instantly with CustomerSwitcher. Rippling
-          requires separate accounts for each organization.
+          Manage 100+ client organizations with complete data isolation. Switch
+          between clients instantly with CustomerSwitcher. Rippling requires
+          separate accounts for each organization.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
           Example: MSP managing 50 clients sees unified dashboard, not 50
@@ -476,7 +478,9 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <Zap class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -496,7 +500,9 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <Users class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -504,8 +510,8 @@
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
           Starts with IT provisioning, extends to HR workflows. Visual workflow
-          builder with 55 employee-specific nodes. Rippling is
-          HR-first, IT-second.
+          builder with 55 employee-specific nodes. Rippling is HR-first,
+          IT-second.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
           Example: Automate Google Workspace setup, MDM enrollment, credential
@@ -516,7 +522,9 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <Shield class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -535,7 +543,9 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <DollarSign class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -553,7 +563,9 @@
       <div
         class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
       >
-        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4">
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
           <TrendingUp class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -561,8 +573,8 @@
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
           Manager prep checklists, smart reminders, welcome letter templates.
-          Everything designed for MSPs managing hundreds of employee
-          lifecycles per month.
+          Everything designed for MSPs managing hundreds of employee lifecycles
+          per month.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
           Example: Hiring managers get automated reminders for onboarding prep
@@ -600,44 +612,50 @@
             <span class="text-4xl font-bold text-gray-900 dark:text-white"
               >$199-$799</span
             >
-            <span class="text-gray-600 dark:text-gray-400"
-              >/month</span
-            >
+            <span class="text-gray-600 dark:text-gray-400">/month</span>
           </div>
-          <div
-            class="text-sm font-medium text-green-600 dark:text-green-400"
-          >
+          <div class="text-sm font-medium text-green-600 dark:text-green-400">
             Flat-rate pricing by employee bucket, no per-user fees
           </div>
         </div>
 
         <div class="space-y-3 mb-6">
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Starter: $199/mo (up to 50 employees)</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Professional: $399/mo (up to 200 employees)</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Enterprise: $799/mo (up to 500 employees)</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >All 121 integrations included</span
+              >All 184 integrations included</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Multi-tenant architecture (MSP-ready)</span
             >
@@ -647,7 +665,9 @@
         <div
           class="bg-white dark:bg-slate-800 p-4 rounded-lg border border-green-200 dark:border-green-800"
         >
-          <div class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">
+          <div
+            class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
+          >
             Example: MSP with 200 employees across clients
           </div>
           <div class="text-xl font-bold text-gray-900 dark:text-white">
@@ -683,31 +703,41 @@
 
         <div class="space-y-3 mb-6">
           <div class="flex items-start gap-3">
-            <X class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
+            <X
+              class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >No multi-tenant architecture</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <X class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
+            <X
+              class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >No PSA integration</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <AlertTriangle class="w-5 h-5 text-yellow-600 dark:text-yellow-400 flex-shrink-0 mt-0.5" />
+            <AlertTriangle
+              class="w-5 h-5 text-yellow-600 dark:text-yellow-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Workflow automation (complex setup)</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <Check class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >600+ integrations</span
             >
           </div>
           <div class="flex items-start gap-3">
-            <AlertTriangle class="w-5 h-5 text-yellow-600 dark:text-yellow-400 flex-shrink-0 mt-0.5" />
+            <AlertTriangle
+              class="w-5 h-5 text-yellow-600 dark:text-yellow-400 flex-shrink-0 mt-0.5"
+            />
             <span class="text-sm text-gray-700 dark:text-gray-300"
               >Complex pricing with add-ons</span
             >
@@ -717,7 +747,9 @@
         <div
           class="bg-gray-50 dark:bg-slate-700 p-4 rounded-lg border border-gray-200 dark:border-slate-600"
         >
-          <div class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">
+          <div
+            class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
+          >
             Example: 500 employees (single organization)
           </div>
           <div class="text-xl font-bold text-gray-900 dark:text-white">
@@ -739,8 +771,7 @@
           Calculate Your ROI with Employee Envoy
         </h3>
         <p class="text-white/90 mb-6">
-          See how much time and money you'll save by switching to
-          Employee Envoy
+          See how much time and money you'll save by switching to Employee Envoy
         </p>
         <a
           href="/roi-calculator"
@@ -755,9 +786,7 @@
 </section>
 
 <!-- Use Case Comparison -->
-<section
-  class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-800"
->
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-800">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12">
       <h2
@@ -781,11 +810,15 @@
           </h3>
         </div>
 
-        <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-slate-700">
+        <div
+          class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-slate-700"
+        >
           <div class="p-6">
             <div class="flex items-center gap-2 mb-4">
               <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                <CheckCircle2 class="w-5 h-5 text-green-600 dark:text-green-400" />
+                <CheckCircle2
+                  class="w-5 h-5 text-green-600 dark:text-green-400"
+                />
               </div>
               <h4 class="font-semibold text-gray-900 dark:text-white">
                 Employee Envoy
@@ -797,9 +830,7 @@
                   class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >1</span
                 >
-                <span
-                  >Switch to client organization with CustomerSwitcher</span
-                >
+                <span>Switch to client organization with CustomerSwitcher</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
@@ -807,8 +838,7 @@
                   >2</span
                 >
                 <span
-                  >Create onboarding request, auto-generates ConnectWise
-                  ticket</span
+                  >Create onboarding request, auto-generates ConnectWise ticket</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -817,8 +847,8 @@
                   >3</span
                 >
                 <span
-                  >Workflow triggers: Google Workspace account, MDM
-                  enrollment, credential creation</span
+                  >Workflow triggers: Google Workspace account, MDM enrollment,
+                  credential creation</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -826,7 +856,8 @@
                   class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >4</span
                 >
-                <span>Welcome letter sent automatically with client branding</span
+                <span
+                  >Welcome letter sent automatically with client branding</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -871,9 +902,7 @@
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >2</span
                 >
-                <span
-                  >Manually create employee, configure IT provisioning</span
-                >
+                <span>Manually create employee, configure IT provisioning</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
@@ -881,8 +910,7 @@
                   >3</span
                 >
                 <span
-                  >Manually create ticket in ConnectWise (no
-                  integration)</span
+                  >Manually create ticket in ConnectWise (no integration)</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -899,8 +927,7 @@
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >5</span
                 >
-                <span
-                  >Manually track progress across 5 separate dashboards</span
+                <span>Manually track progress across 5 separate dashboards</span
                 >
               </li>
             </ol>
@@ -927,11 +954,15 @@
           </h3>
         </div>
 
-        <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-slate-700">
+        <div
+          class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-slate-700"
+        >
           <div class="p-6">
             <div class="flex items-center gap-2 mb-4">
               <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                <CheckCircle2 class="w-5 h-5 text-green-600 dark:text-green-400" />
+                <CheckCircle2
+                  class="w-5 h-5 text-green-600 dark:text-green-400"
+                />
               </div>
               <h4 class="font-semibold text-gray-900 dark:text-white">
                 Employee Envoy
@@ -952,8 +983,7 @@
                   >2</span
                 >
                 <span
-                  >Workflow triggers: Disable Google Workspace, revoke
-                  access</span
+                  >Workflow triggers: Disable Google Workspace, revoke access</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -1004,8 +1034,7 @@
                   >1</span
                 >
                 <span
-                  >Log into Google Workspace admin, manually disable
-                  account</span
+                  >Log into Google Workspace admin, manually disable account</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -1020,18 +1049,14 @@
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >3</span
                 >
-                <span
-                  >Manually create ConnectWise ticket, type details</span
-                >
+                <span>Manually create ConnectWise ticket, type details</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >4</span
                 >
-                <span
-                  >Manually document actions in spreadsheet for audit</span
-                >
+                <span>Manually document actions in spreadsheet for audit</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
@@ -1063,11 +1088,15 @@
           </h3>
         </div>
 
-        <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-slate-700">
+        <div
+          class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-slate-700"
+        >
           <div class="p-6">
             <div class="flex items-center gap-2 mb-4">
               <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                <CheckCircle2 class="w-5 h-5 text-green-600 dark:text-green-400" />
+                <CheckCircle2
+                  class="w-5 h-5 text-green-600 dark:text-green-400"
+                />
               </div>
               <h4 class="font-semibold text-gray-900 dark:text-white">
                 Employee Envoy
@@ -1079,9 +1108,7 @@
                   class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >1</span
                 >
-                <span
-                  >View unified dashboard with all 20 clients at once</span
-                >
+                <span>View unified dashboard with all 20 clients at once</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
@@ -1089,8 +1116,7 @@
                   >2</span
                 >
                 <span
-                  >Export monthly onboarding/offboarding report (one
-                  click)</span
+                  >Export monthly onboarding/offboarding report (one click)</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -1133,9 +1159,7 @@
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >1</span
                 >
-                <span
-                  >Log into Client 1's Rippling account, export report</span
-                >
+                <span>Log into Client 1's Rippling account, export report</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
@@ -1149,18 +1173,14 @@
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >3</span
                 >
-                <span
-                  >Manually consolidate 20 reports into spreadsheet</span
-                >
+                <span>Manually consolidate 20 reports into spreadsheet</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >4</span
                 >
-                <span
-                  >Manually cross-reference with ConnectWise tickets</span
-                >
+                <span>Manually cross-reference with ConnectWise tickets</span>
               </li>
             </ol>
             <div class="mt-4 p-3 bg-red-50 dark:bg-red-900/20 rounded-lg">
@@ -1184,8 +1204,8 @@
       Ready to See the Difference?
     </h2>
     <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-      Join MSPs who've switched from Rippling to Employee Envoy and never
-      looked back
+      Join MSPs who've switched from Rippling to Employee Envoy and never looked
+      back
     </p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -1249,10 +1269,7 @@
   }
 
   .bg-grid-pattern {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.05) 1px,
-        transparent 1px
-      ),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
       linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
     background-size: 20px 20px;
   }
