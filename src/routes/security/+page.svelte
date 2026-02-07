@@ -10,61 +10,59 @@
     Server,
     Globe,
     AlertTriangle,
-    ArrowRight
-  } from '@lucide/svelte';
-  import Logo from '$lib/components/Logo.svelte';
+    ArrowRight,
+  } from "@lucide/svelte";
+  import Logo from "$lib/components/Logo.svelte";
 </script>
 
 <svelte:head>
   <title>Security & Compliance - Employee Envoy</title>
-  <meta name="description" content="Learn about Employee Envoy's security practices, compliance, encryption, and data protection measures. GDPR & CCPA compliant." />
+  <meta
+    name="description"
+    content="Learn about Employee Envoy's security practices, compliance, encryption, and data protection measures. GDPR & CCPA compliant."
+  />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://employeeenvoy.com/security" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Security & Compliance - Employee Envoy" />
-  <meta property="og:description" content="Enterprise-grade security with AES-256 encryption, TOTP MFA, audit logging, and GDPR/CCPA compliance." />
+  <meta
+    property="og:description"
+    content="Enterprise-grade security with AES-256 encryption, TOTP MFA, audit logging, and GDPR/CCPA compliance."
+  />
   <meta property="og:url" content="https://employeeenvoy.com/security" />
   <meta property="og:image" content="https://employeeenvoy.com/og-image.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:title" content="Security & Compliance - Employee Envoy" />
-  <meta name="twitter:description" content="Enterprise-grade security with AES-256 encryption, TOTP MFA, and GDPR/CCPA compliance." />
+  <meta
+    name="twitter:description"
+    content="Enterprise-grade security with AES-256 encryption, TOTP MFA, and GDPR/CCPA compliance."
+  />
   <meta name="twitter:image" content="https://employeeenvoy.com/og-image.png" />
 </svelte:head>
 
-<!-- Navigation -->
-<nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-slate-800">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      <a href="/">
-        <Logo size="sm" variant="default" />
-      </a>
-      <div class="flex items-center gap-3">
-        <a href="/" class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">
-          Back to Home
-        </a>
-        <a href="/contact" class="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg hover:from-amber-400 hover:to-orange-400 transition-all">
-          Get Started
-        </a>
-      </div>
-    </div>
-  </div>
-</nav>
-
 <!-- Hero Section -->
-<section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-white to-amber-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+<section
+  class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-white to-amber-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"
+>
   <div class="max-w-4xl mx-auto text-center">
-    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 text-sm font-medium mb-8">
+    <div
+      class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 text-sm font-medium mb-8"
+    >
       <Shield class="w-4 h-4" />
       <span>Enterprise-Grade Security</span>
     </div>
-    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+    <h1
+      class="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6"
+    >
       Your Data is Protected
     </h1>
     <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-      We take security seriously. Employee Envoy uses industry-leading encryption, access controls, and compliance standards to protect your employee data.
+      We take security seriously. Employee Envoy uses industry-leading
+      encryption, access controls, and compliance standards to protect your
+      employee data.
     </p>
   </div>
 </section>
@@ -83,13 +81,20 @@
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Encryption -->
-      <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-        <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4">
+      <div
+        class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4"
+        >
           <Lock class="w-6 h-6 text-amber-600 dark:text-amber-400" />
         </div>
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">End-to-End Encryption</h3>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+          End-to-End Encryption
+        </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          All data is encrypted at rest and in transit using AES-256 encryption. Credentials are encrypted with industry-standard algorithms.
+          All data is encrypted at rest and in transit using AES-256 encryption.
+          Credentials are encrypted with industry-standard algorithms.
         </p>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">
@@ -108,13 +113,20 @@
       </div>
 
       <!-- Authentication -->
-      <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-        <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4">
+      <div
+        class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4"
+        >
           <Key class="w-6 h-6 text-amber-600 dark:text-amber-400" />
         </div>
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Strong Authentication</h3>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+          Strong Authentication
+        </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Multi-factor authentication and secure password hashing protect user accounts from unauthorized access.
+          Multi-factor authentication and secure password hashing protect user
+          accounts from unauthorized access.
         </p>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">
@@ -133,13 +145,20 @@
       </div>
 
       <!-- Access Control -->
-      <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-        <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4">
+      <div
+        class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4"
+        >
           <Users class="w-6 h-6 text-amber-600 dark:text-amber-400" />
         </div>
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Role-Based Access</h3>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+          Role-Based Access
+        </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Granular permissions ensure users only access data and features they need for their role.
+          Granular permissions ensure users only access data and features they
+          need for their role.
         </p>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">
@@ -158,13 +177,20 @@
       </div>
 
       <!-- Audit Logging -->
-      <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-        <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4">
+      <div
+        class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4"
+        >
           <FileCheck class="w-6 h-6 text-amber-600 dark:text-amber-400" />
         </div>
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Complete Audit Trail</h3>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+          Complete Audit Trail
+        </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Every action is logged with timestamps, user identification, and context for compliance and security.
+          Every action is logged with timestamps, user identification, and
+          context for compliance and security.
         </p>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">
@@ -183,13 +209,20 @@
       </div>
 
       <!-- Infrastructure -->
-      <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-        <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4">
+      <div
+        class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4"
+        >
           <Server class="w-6 h-6 text-amber-600 dark:text-amber-400" />
         </div>
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Secure Infrastructure</h3>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+          Secure Infrastructure
+        </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Built on Cloudflare's global network with enterprise-grade security and reliability.
+          Built on Cloudflare's global network with enterprise-grade security
+          and reliability.
         </p>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">
@@ -208,13 +241,20 @@
       </div>
 
       <!-- Privacy -->
-      <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-        <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4">
+      <div
+        class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mb-4"
+        >
           <Eye class="w-6 h-6 text-amber-600 dark:text-amber-400" />
         </div>
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Data Privacy</h3>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+          Data Privacy
+        </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          We never sell your data. Your employee information is used solely to provide the service.
+          We never sell your data. Your employee information is used solely to
+          provide the service.
         </p>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">
@@ -236,7 +276,9 @@
 </section>
 
 <!-- Compliance -->
-<section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+<section
+  class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800"
+>
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
       <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -249,15 +291,22 @@
 
     <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       <!-- GDPR -->
-      <div class="p-8 rounded-2xl bg-white dark:bg-slate-800 border-2 border-gray-200 dark:border-slate-700">
+      <div
+        class="p-8 rounded-2xl bg-white dark:bg-slate-800 border-2 border-gray-200 dark:border-slate-700"
+      >
         <div class="flex items-center gap-4 mb-4">
-          <div class="w-16 h-16 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+          <div
+            class="w-16 h-16 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center"
+          >
             <Globe class="w-8 h-8 text-blue-600 dark:text-blue-400" />
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white">GDPR Compliant</h3>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+            GDPR Compliant
+          </h3>
         </div>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Full compliance with the General Data Protection Regulation (GDPR) for European users.
+          Full compliance with the General Data Protection Regulation (GDPR) for
+          European users.
         </p>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">
@@ -276,15 +325,22 @@
       </div>
 
       <!-- CCPA/CPRA -->
-      <div class="p-8 rounded-2xl bg-white dark:bg-slate-800 border-2 border-gray-200 dark:border-slate-700">
+      <div
+        class="p-8 rounded-2xl bg-white dark:bg-slate-800 border-2 border-gray-200 dark:border-slate-700"
+      >
         <div class="flex items-center gap-4 mb-4">
-          <div class="w-16 h-16 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center">
+          <div
+            class="w-16 h-16 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center"
+          >
             <Shield class="w-8 h-8 text-amber-600 dark:text-amber-400" />
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white">CCPA/CPRA Compliant</h3>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+            CCPA/CPRA Compliant
+          </h3>
         </div>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Compliant with California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA).
+          Compliant with California Consumer Privacy Act (CCPA) and California
+          Privacy Rights Act (CPRA).
         </p>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">
@@ -304,13 +360,21 @@
     </div>
 
     <!-- SOC 2 Roadmap -->
-    <div class="mt-12 p-8 rounded-2xl bg-slate-100 dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 max-w-4xl mx-auto">
+    <div
+      class="mt-12 p-8 rounded-2xl bg-slate-100 dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 max-w-4xl mx-auto"
+    >
       <div class="flex items-start gap-4">
-        <Shield class="w-6 h-6 text-slate-600 dark:text-slate-400 flex-shrink-0 mt-1" />
+        <Shield
+          class="w-6 h-6 text-slate-600 dark:text-slate-400 flex-shrink-0 mt-1"
+        />
         <div>
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">SOC 2 Roadmap</h3>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+            SOC 2 Roadmap
+          </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            We are building our security controls with SOC 2 Trust Service Criteria in mind. Our current infrastructure includes many controls required for SOC 2 compliance:
+            We are building our security controls with SOC 2 Trust Service
+            Criteria in mind. Our current infrastructure includes many controls
+            required for SOC 2 compliance:
           </p>
           <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-4">
             <li class="flex items-start gap-2">
@@ -331,7 +395,12 @@
             </li>
           </ul>
           <p class="text-sm text-gray-500 dark:text-gray-400">
-            We plan to pursue formal SOC 2 certification as we scale. Enterprise customers requiring SOC 2 attestation can <a href="/contact" class="text-amber-600 dark:text-amber-400 hover:underline">contact us</a> to discuss our security controls and roadmap.
+            We plan to pursue formal SOC 2 certification as we scale. Enterprise
+            customers requiring SOC 2 attestation can <a
+              href="/contact"
+              class="text-amber-600 dark:text-amber-400 hover:underline"
+              >contact us</a
+            > to discuss our security controls and roadmap.
           </p>
         </div>
       </div>
@@ -349,51 +418,91 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-      <div class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
+      <div
+        class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
         <Check class="w-6 h-6 text-amber-500 flex-shrink-0 mt-1" />
         <div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Rate Limiting</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">API endpoints are protected with rate limiting to prevent abuse and brute force attacks.</p>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">
+            Rate Limiting
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            API endpoints are protected with rate limiting to prevent abuse and
+            brute force attacks.
+          </p>
         </div>
       </div>
 
-      <div class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
+      <div
+        class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
         <Check class="w-6 h-6 text-amber-500 flex-shrink-0 mt-1" />
         <div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Content Security Policy</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">CSP headers protect against XSS attacks and unauthorized script execution.</p>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">
+            Content Security Policy
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            CSP headers protect against XSS attacks and unauthorized script
+            execution.
+          </p>
         </div>
       </div>
 
-      <div class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
+      <div
+        class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
         <Check class="w-6 h-6 text-amber-500 flex-shrink-0 mt-1" />
         <div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Regular Security Updates</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">We regularly update dependencies and patch security vulnerabilities.</p>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">
+            Regular Security Updates
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            We regularly update dependencies and patch security vulnerabilities.
+          </p>
         </div>
       </div>
 
-      <div class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
+      <div
+        class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
         <Check class="w-6 h-6 text-amber-500 flex-shrink-0 mt-1" />
         <div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Automated Backups</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Daily automated backups ensure data recovery in case of incidents.</p>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">
+            Automated Backups
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            Daily automated backups ensure data recovery in case of incidents.
+          </p>
         </div>
       </div>
 
-      <div class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
+      <div
+        class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
         <Check class="w-6 h-6 text-amber-500 flex-shrink-0 mt-1" />
         <div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Health Monitoring</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">24/7 monitoring and alerting for security incidents and system health.</p>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">
+            Health Monitoring
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            24/7 monitoring and alerting for security incidents and system
+            health.
+          </p>
         </div>
       </div>
 
-      <div class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
+      <div
+        class="flex items-start gap-4 p-6 rounded-xl bg-slate-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
+      >
         <Check class="w-6 h-6 text-amber-500 flex-shrink-0 mt-1" />
         <div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Secure Credential Storage</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Integration credentials are encrypted and stored securely, never exposed in logs or UI.</p>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">
+            Secure Credential Storage
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            Integration credentials are encrypted and stored securely, never
+            exposed in logs or UI.
+          </p>
         </div>
       </div>
     </div>
@@ -401,30 +510,46 @@
 </section>
 
 <!-- Reporting Security Issues -->
-<section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+<section
+  class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800"
+>
   <div class="max-w-4xl mx-auto text-center">
-    <div class="w-16 h-16 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mx-auto mb-6">
+    <div
+      class="w-16 h-16 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mx-auto mb-6"
+    >
       <AlertTriangle class="w-8 h-8 text-amber-600 dark:text-amber-400" />
     </div>
     <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
       Found a Security Issue?
     </h2>
     <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
-      We take security vulnerabilities seriously. If you discover a security issue, please report it responsibly.
+      We take security vulnerabilities seriously. If you discover a security
+      issue, please report it responsibly.
     </p>
-    <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-left max-w-2xl mx-auto">
+    <div
+      class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-left max-w-2xl mx-auto"
+    >
       <p class="text-gray-700 dark:text-gray-300 mb-4">
-        <strong>Email:</strong> <a href="mailto:security@employeeenvoy.com" class="text-amber-600 dark:text-amber-400 hover:underline">security@employeeenvoy.com</a>
+        <strong>Email:</strong>
+        <a
+          href="mailto:security@employeeenvoy.com"
+          class="text-amber-600 dark:text-amber-400 hover:underline"
+          >security@employeeenvoy.com</a
+        >
       </p>
       <p class="text-sm text-gray-600 dark:text-gray-400">
-        Please include details about the vulnerability, steps to reproduce, and potential impact. We will respond within 48 hours and work with you to resolve the issue responsibly.
+        Please include details about the vulnerability, steps to reproduce, and
+        potential impact. We will respond within 48 hours and work with you to
+        resolve the issue responsibly.
       </p>
     </div>
   </div>
 </section>
 
 <!-- CTA Section -->
-<section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-amber-500 to-orange-500">
+<section
+  class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-amber-500 to-orange-500"
+>
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-4xl font-bold text-white mb-4">
       Secure Employee Lifecycle Management
@@ -450,38 +575,71 @@
         <div class="mb-4">
           <Logo size="sm" variant="light" />
         </div>
-        <p class="text-sm">
-          Your Trusted Partner for Employee Transitions
-        </p>
+        <p class="text-sm">Your Trusted Partner for Employee Transitions</p>
       </div>
       <div>
         <h4 class="text-white font-semibold mb-4">Product</h4>
         <ul class="space-y-2 text-sm">
-          <li><a href="/#features" class="hover:text-amber-400 transition-colors">Features</a></li>
-          <li><a href="/#pricing" class="hover:text-amber-400 transition-colors">Pricing</a></li>
-          <li><a href="/security" class="hover:text-amber-400 transition-colors">Security</a></li>
+          <li>
+            <a href="/#features" class="hover:text-amber-400 transition-colors"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a href="/#pricing" class="hover:text-amber-400 transition-colors"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a href="/security" class="hover:text-amber-400 transition-colors"
+              >Security</a
+            >
+          </li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-semibold mb-4">Company</h4>
         <ul class="space-y-2 text-sm">
-          <li><a href="/contact" class="hover:text-amber-400 transition-colors">Contact</a></li>
+          <li>
+            <a href="/contact" class="hover:text-amber-400 transition-colors"
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-semibold mb-4">Legal</h4>
         <ul class="space-y-2 text-sm">
-          <li><a href="/privacy" class="hover:text-amber-400 transition-colors">Privacy</a></li>
-          <li><a href="/terms" class="hover:text-amber-400 transition-colors">Terms</a></li>
-          <li><a href="/privacy#do-not-sell" class="hover:text-amber-400 transition-colors">Do Not Sell My Info</a></li>
+          <li>
+            <a href="/privacy" class="hover:text-amber-400 transition-colors"
+              >Privacy</a
+            >
+          </li>
+          <li>
+            <a href="/terms" class="hover:text-amber-400 transition-colors"
+              >Terms</a
+            >
+          </li>
+          <li>
+            <a
+              href="/privacy#do-not-sell"
+              class="hover:text-amber-400 transition-colors"
+              >Do Not Sell My Info</a
+            >
+          </li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-sm">
+    <div
+      class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-sm"
+    >
       <p>&copy; 2026 Employee Envoy. All rights reserved.</p>
       <div class="flex items-center gap-6 mt-4 sm:mt-0">
-        <a href="/privacy" class="hover:text-amber-400 transition-colors">Privacy</a>
-        <a href="/terms" class="hover:text-amber-400 transition-colors">Terms</a>
+        <a href="/privacy" class="hover:text-amber-400 transition-colors"
+          >Privacy</a
+        >
+        <a href="/terms" class="hover:text-amber-400 transition-colors">Terms</a
+        >
       </div>
     </div>
   </div>
