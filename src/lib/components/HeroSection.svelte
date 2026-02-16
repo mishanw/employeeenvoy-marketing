@@ -92,7 +92,7 @@
                         Automate onboarding, offboarding, and status changes
                         across <span
                             class="font-semibold text-amber-600 dark:text-amber-400"
-                            >180+ business applications</span
+                            >184 business applications</span
                         >. Built for MSPs and enterprises.
                     </p>
 
@@ -149,7 +149,7 @@
                                     class="w-3.5 h-3.5 text-green-500"
                                 />
                             </div>
-                            <span>180+ integrations</span>
+                            <span>184 integrations</span>
                         </div>
                     </div>
                 {/if}

@@ -26,6 +26,7 @@
     AlertCircle,
     UserPlus,
     UserMinus,
+    RefreshCw,
   } from "@lucide/svelte";
   import Logo from "$lib/components/Logo.svelte";
 
@@ -48,7 +49,7 @@
   >
   <meta
     name="description"
-    content="Streamline employee onboarding, offboarding, and status changes across 180+ business applications. Built for MSPs and IT teams."
+    content="Streamline employee onboarding, offboarding, and status changes across 184 business applications. HRIS sync, analytics, SLA tracking, and proactive alerts built for MSPs and IT teams."
   />
 </svelte:head>
 
@@ -89,7 +90,7 @@
           <p
             class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-3 group-hover:scale-110 transition-transform"
           >
-            180+
+            184
           </p>
           <div
             class="absolute -top-2 -right-2 w-4 h-4 bg-white/30 rounded-full"
@@ -264,10 +265,10 @@
             Automated Workflows
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Automate onboarding and offboarding across <span
+            Visual workflow builder with <span
               class="font-semibold text-amber-600 dark:text-amber-400"
-              >180+ applications</span
-            > with customizable playbooks
+              >55 automation nodes</span
+            > for onboarding, offboarding, and custom provisioning flows
           </p>
         </div>
       </SpotlightCard>
@@ -315,13 +316,13 @@
             <Globe class="w-8 h-8 text-white" />
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            180+ Integrations
+            184 Integrations
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
             Connect Microsoft 365, Google Workspace, Slack, Okta, and dozens
             more with <span
               class="font-semibold text-purple-600 dark:text-purple-400"
-              >guided setup</span
+              >health monitoring and guided setup</span
             >
           </p>
         </div>
@@ -343,13 +344,13 @@
             <BarChart3 class="w-8 h-8 text-white" />
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            Real-Time Dashboard
+            Analytics & Insights
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Monitor requests, track progress, and view metrics with <span
+            Interactive charts, CSV export, SLA tracking, and <span
               class="font-semibold text-green-600 dark:text-green-400"
-              >persona-based views</span
-            > for each role
+              >proactive alert monitoring</span
+            > with 5 delivery channels
           </p>
         </div>
       </SpotlightCard>
@@ -394,16 +395,16 @@
           <div
             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-400 to-teal-500 flex items-center justify-center mb-5 shadow-lg shadow-cyan-500/25 group-hover:scale-110 group-hover:rotate-3 transition-all"
           >
-            <Users class="w-8 h-8 text-white" />
+            <RefreshCw class="w-8 h-8 text-white" />
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            Role-Based Access
+            HRIS Sync & Scheduling
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Persona-based UI adapts to <span
+            Auto-detect employee changes from <span
               class="font-semibold text-cyan-600 dark:text-cyan-400"
-              >MSP Admin, Technician, Customer HR</span
-            >, and Enterprise Admin roles
+              >Rippling, BambooHR, Gusto, and Namely</span
+            > with scheduled provisioning
           </p>
         </div>
       </SpotlightCard>
@@ -638,7 +639,7 @@
       <p
         class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
       >
-        Connect with 180+ business applications your team already uses
+        Connect with 184 business applications your team already uses
       </p>
     </div>
 
@@ -778,7 +779,7 @@
         href="/integrations"
         class="group inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl hover:from-amber-400 hover:to-orange-400 shadow-xl shadow-amber-500/25 hover:shadow-2xl hover:shadow-amber-500/30 hover:scale-105 transition-all"
       >
-        Browse All 180+ Integrations
+        Browse All 184 Integrations
         <ArrowRight
           class="w-5 h-5 group-hover:translate-x-1 transition-transform"
         />
@@ -866,13 +867,11 @@
           <Shield class="w-8 h-8 text-white" />
         </div>
         <h3 class="font-bold text-gray-900 dark:text-white mb-2 text-lg">
-          Multi-Factor Auth
+          Passkeys & MFA
         </h3>
         <p class="text-sm text-gray-600 dark:text-gray-400">
-          TOTP-based MFA with <span
-            class="font-medium text-blue-600 dark:text-blue-400"
-            >backup codes</span
-          > for all accounts
+          <span class="font-medium text-blue-600 dark:text-blue-400">Passkeys</span>,
+          TOTP-based MFA &amp; backup codes for all accounts
         </p>
       </div>
 
@@ -1311,7 +1310,7 @@
             class="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed"
           >
             We support <span class="font-medium text-gray-900 dark:text-white"
-              >180+ integrations</span
+              >184 integrations</span
             >
             including Microsoft 365, Google Workspace, Slack, Okta, Azure AD, Active
             Directory, GitHub, Jira, and many more.
@@ -1358,9 +1357,9 @@
             Absolutely. We use <span
               class="font-medium text-gray-900 dark:text-white"
               >end-to-end encryption</span
-            >, PBKDF2 password hashing, MFA support, role-based access control,
-            and comprehensive audit logging. All data is encrypted at rest and
-            in transit.
+            >, passkeys (Face ID, Touch ID, security keys), PBKDF2 password hashing,
+            MFA support, role-based access control, and comprehensive audit logging.
+            All data is encrypted at rest and in transit.
             <a
               href="/security"
               class="text-amber-600 dark:text-amber-400 hover:underline font-medium"

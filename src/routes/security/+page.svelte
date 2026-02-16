@@ -11,6 +11,7 @@
     Globe,
     AlertTriangle,
     ArrowRight,
+    Fingerprint,
   } from "@lucide/svelte";
   import Logo from "$lib/components/Logo.svelte";
 </script>
@@ -125,10 +126,14 @@
           Strong Authentication
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Multi-factor authentication and secure password hashing protect user
-          accounts from unauthorized access.
+          Multi-factor authentication, passkeys, and secure password hashing
+          protect user accounts from unauthorized access.
         </p>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+          <li class="flex items-start gap-2">
+            <Check class="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
+            <span>Passkeys (Face ID, Touch ID, security keys)</span>
+          </li>
           <li class="flex items-start gap-2">
             <Check class="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
             <span>PBKDF2-SHA512 password hashing</span>
@@ -139,7 +144,7 @@
           </li>
           <li class="flex items-start gap-2">
             <Check class="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
-            <span>Session management with secure tokens</span>
+            <span>Phishing-resistant WebAuthn/FIDO2</span>
           </li>
         </ul>
       </div>
