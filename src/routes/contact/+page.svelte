@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import { Mail, Phone, Building2, Send } from "@lucide/svelte";
+  import Footer from "$lib/components/Footer.svelte";
 
   const planParam = $derived($page.url.searchParams.get("plan") || "");
 
@@ -413,3 +414,5 @@
     </div>
   </div>
 </div>
+
+<Footer />

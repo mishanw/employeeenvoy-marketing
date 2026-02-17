@@ -59,6 +59,15 @@
           <li>
             <a href="/terms" class="hover:text-amber-400 transition-colors">Terms of Service</a>
           </li>
+          <li>
+            <a href="/eula" class="hover:text-amber-400 transition-colors">EULA</a>
+          </li>
+          <li>
+            <a href="/cookies" class="hover:text-amber-400 transition-colors">Cookie Policy</a>
+          </li>
+          <li>
+            <a href="/privacy#do-not-sell" class="hover:text-amber-400 transition-colors">Do Not Sell My Info</a>
+          </li>
         </ul>
       </div>
     </div>

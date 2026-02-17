@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -390,7 +391,7 @@
         non-essential cookies. You can change your preferences at any time by:
       </p>
       <ul>
-        <li>Clicking the "Cookie Settings" link in our website footer</li>
+        <li>Clicking "Cookie Settings" on the cookie consent banner that appears when you visit our site</li>
         <li>Adjusting your browser settings</li>
         <li>Contacting us to update your preferences</li>
       </ul>
@@ -494,13 +495,7 @@
       </div>
     </div>
 
-    <div class="mt-8 text-center">
-      <a
-        href="/"
-        class="text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 font-medium"
-      >
-        ← Back to Home
-      </a>
-    </div>
   </div>
 </div>
+
+<Footer />

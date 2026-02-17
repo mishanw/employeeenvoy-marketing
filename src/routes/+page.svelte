@@ -1725,6 +1725,24 @@
           </li>
           <li>
             <a
+              href="/eula"
+              class="hover:text-amber-400 transition-colors inline-flex items-center gap-1 group"
+              ><ChevronRight
+                class="w-4 h-4 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all"
+              />EULA</a
+            >
+          </li>
+          <li>
+            <a
+              href="/cookies"
+              class="hover:text-amber-400 transition-colors inline-flex items-center gap-1 group"
+              ><ChevronRight
+                class="w-4 h-4 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all"
+              />Cookie Policy</a
+            >
+          </li>
+          <li>
+            <a
               href="/privacy#do-not-sell"
               class="hover:text-amber-400 transition-colors inline-flex items-center gap-1 group"
               ><ChevronRight

@@ -1,5 +1,6 @@
 <script lang="ts">
   import Logo from "$lib/components/Logo.svelte";
+  import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -622,13 +623,7 @@
       </div>
     </div>
 
-    <div class="mt-8 text-center">
-      <a
-        href="/"
-        class="text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 font-medium"
-      >
-        ← Back to Home
-      </a>
-    </div>
   </div>
 </div>
+
+<Footer />

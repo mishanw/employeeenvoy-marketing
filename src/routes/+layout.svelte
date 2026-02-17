@@ -1,6 +1,7 @@
 <script lang="ts">
   import "../app.css";
   import Navigation from "$lib/components/Navigation.svelte";
+  import CookieConsent from "$lib/components/CookieConsent.svelte";
 </script>
 
 <svelte:head>
@@ -42,3 +43,4 @@
 
 <Navigation />
 <slot />
+<CookieConsent />
