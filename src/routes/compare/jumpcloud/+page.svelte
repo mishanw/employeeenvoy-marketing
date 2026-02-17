@@ -10,8 +10,8 @@
     Zap,
     Building2,
     DollarSign,
-    TrendingUp,
     Shield,
+    Workflow,
   } from "@lucide/svelte";
   import Navigation from "$lib/components/Navigation.svelte";
   import Footer from "$lib/components/Footer.svelte";
@@ -31,7 +31,7 @@
   interface ComparisonRow {
     feature: string;
     envoy: "yes" | "no" | "partial";
-    bamboohr: "yes" | "no" | "partial";
+    jumpcloud: "yes" | "no" | "partial";
     description?: string;
   }
 
@@ -39,75 +39,86 @@
     {
       feature: "Multi-Tenant MSP Architecture",
       envoy: "yes",
-      bamboohr: "no",
-      description: "Manage multiple client organizations in one dashboard",
+      jumpcloud: "partial",
+      description: "Employee Envoy: native multi-tenant | JumpCloud: Multi-Tenant Portal (MTP) add-on",
     },
     {
       feature: "PSA Integration (ConnectWise, Autotask)",
       envoy: "yes",
-      bamboohr: "no",
+      jumpcloud: "no",
       description: "Auto-create tickets and sync status bidirectionally",
     },
     {
       feature: "Visual Workflow Builder",
       envoy: "yes",
-      bamboohr: "no",
-      description: "55 employee-specific workflow nodes with no-code editor",
+      jumpcloud: "no",
+      description: "67 drag-and-drop automation nodes for employee lifecycle",
     },
     {
-      feature: "Google Workspace Actions",
+      feature: "Employee Lifecycle Focus",
       envoy: "yes",
-      bamboohr: "no",
-      description: "12 actions including drive transfer, calendar delegation",
+      jumpcloud: "partial",
+      description: "Employee Envoy: full onboard/offboard | JumpCloud: directory-focused",
     },
     {
-      feature: "MDM Integration Depth",
-      envoy: "yes",
-      bamboohr: "no",
-      description: "Full device lifecycle with Jamf, Intune, Kandji",
+      feature: "Directory-as-a-Service",
+      envoy: "no",
+      jumpcloud: "yes",
+      description: "JumpCloud replaces AD/LDAP; Employee Envoy integrates with existing directories",
     },
     {
-      feature: "SCIM 2.0 Provisioning",
+      feature: "HRIS Sync (Rippling, BambooHR, Gusto)",
       envoy: "yes",
-      bamboohr: "partial",
-      description: "Employee Envoy: Full | BambooHR: Via partners only",
+      jumpcloud: "partial",
+      description: "Employee Envoy: 4 native HRIS adapters | JumpCloud: HR directory import",
     },
     {
       feature: "Welcome Letter Templates",
       envoy: "yes",
-      bamboohr: "no",
-      description: "Advanced editor with branding and custom sections",
+      jumpcloud: "no",
+      description: "Branded welcome letters with custom sections and checklists",
     },
     {
-      feature: "Manager Prep Checklists",
+      feature: "SCIM 2.0 Provisioning",
       envoy: "yes",
-      bamboohr: "no",
-      description: "Smart reminders for hiring managers",
+      jumpcloud: "yes",
+      description: "Both support full SCIM user and group provisioning",
     },
     {
-      feature: "IT-First Approach",
+      feature: "MDM Integration",
       envoy: "yes",
-      bamboohr: "no",
-      description: "Purpose-built for IT teams managing employee lifecycle",
+      jumpcloud: "yes",
+      description: "Both integrate with Jamf, Intune, and other MDM platforms",
+    },
+    {
+      feature: "SSO / Identity Provider",
+      envoy: "yes",
+      jumpcloud: "yes",
+      description: "Employee Envoy: 8 IdPs supported | JumpCloud: built-in SSO",
+    },
+    {
+      feature: "Manager Prep & Approval Workflows",
+      envoy: "yes",
+      jumpcloud: "no",
+      description: "Smart reminders, checklists, and multi-level approval chains",
     },
     {
       feature: "Number of Integrations",
       envoy: "partial",
-      bamboohr: "yes",
-      description:
-        "Employee Envoy: 184 (IT-focused), BambooHR: 700+ (HR-focused)",
+      jumpcloud: "yes",
+      description: "Employee Envoy: 189 (IT lifecycle) | JumpCloud: 300+ (directory connectors)",
     },
     {
-      feature: "HR & Compliance Features",
-      envoy: "partial",
-      bamboohr: "yes",
-      description: "BambooHR excels at HR; Employee Envoy focuses on IT",
+      feature: "SLA Tracking & Analytics",
+      envoy: "yes",
+      jumpcloud: "no",
+      description: "Per-customer SLA targets, breach alerts, and compliance dashboards",
     },
     {
       feature: "MSP-Friendly Pricing",
       envoy: "yes",
-      bamboohr: "partial",
-      description: "Volume discounts for MSPs managing multiple clients",
+      jumpcloud: "partial",
+      description: "Employee Envoy: flat-rate | JumpCloud: per-user with MSP discount",
     },
   ];
 
@@ -133,44 +144,38 @@
 </script>
 
 <svelte:head>
-  <title>Employee Envoy vs. BambooHR: Which is Better for MSPs?</title>
+  <title>Employee Envoy vs. JumpCloud: Which is Better for IT Teams?</title>
   <meta
     name="description"
-    content="Compare Employee Envoy and BambooHR for IT teams. Learn why Employee Envoy's IT-first approach and MSP multi-tenancy make it the better choice for managing employee lifecycles."
+    content="Compare Employee Envoy and JumpCloud for MSPs and IT teams. See why Employee Envoy's lifecycle automation and PSA integration complement JumpCloud's directory services."
   />
   <meta
     name="keywords"
-    content="BambooHR alternative for IT, employee lifecycle management, IT-first onboarding, MSP tools, automated provisioning, workflow automation"
+    content="JumpCloud alternative, employee lifecycle management, MSP tools, IT automation, directory service, employee onboarding offboarding"
   />
 
   <!-- Open Graph -->
-  <meta
-    property="og:title"
-    content="Employee Envoy vs. BambooHR for IT Teams"
-  />
+  <meta property="og:title" content="Employee Envoy vs. JumpCloud for IT Teams" />
   <meta
     property="og:description"
-    content="IT-first employee lifecycle management vs. HR software. Compare features, pricing, and see why IT teams prefer Employee Envoy."
+    content="Employee lifecycle automation vs. directory-as-a-service. Compare features, pricing, and find the right fit for your IT team."
   />
   <meta property="og:type" content="website" />
   <meta
     property="og:url"
-    content="https://employeeenvoy.com/compare/bamboohr"
+    content="https://employeeenvoy.com/compare/jumpcloud"
   />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta
-    name="twitter:title"
-    content="Employee Envoy vs. BambooHR for IT Teams"
-  />
+  <meta name="twitter:title" content="Employee Envoy vs. JumpCloud for IT Teams" />
   <meta
     name="twitter:description"
-    content="IT-first employee lifecycle management. Compare features and pricing."
+    content="Employee lifecycle automation vs. directory-as-a-service. Compare features and pricing."
   />
 </svelte:head>
 
-<Navigation {scrollY} currentPage="compare-bamboohr" />
+<Navigation {scrollY} currentPage="compare-jumpcloud" />
 
 <!-- Hero Section -->
 <section
@@ -194,7 +199,7 @@
       >
       <span class="text-sm text-gray-400 mx-2">/</span>
       <span class="text-sm text-gray-900 dark:text-gray-100 font-medium"
-        >Compare with BambooHR</span
+        >Compare with JumpCloud</span
       >
     </div>
 
@@ -202,19 +207,20 @@
       <h1
         class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6"
       >
-        Employee Envoy vs. BambooHR
+        Employee Envoy vs. JumpCloud
         <span
           class="block mt-2 text-3xl sm:text-4xl lg:text-5xl bg-gradient-to-r from-amber-600 via-orange-600 to-amber-600 bg-clip-text text-transparent"
         >
-          For IT Teams & MSPs
+          Lifecycle Automation vs. Directory Service
         </span>
       </h1>
 
       <p
         class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
       >
-        BambooHR is HR software with IT features. Employee Envoy is IT software
-        with HR capabilities.
+        JumpCloud is an excellent directory-as-a-service. Employee Envoy
+        automates the employee lifecycle workflows that happen around your
+        directory.
       </p>
 
       <!-- Quick Verdict -->
@@ -233,9 +239,9 @@
             </h3>
           </div>
           <p class="text-sm text-gray-700 dark:text-gray-300">
-            <strong>Best for:</strong> IT teams and MSPs managing employee provisioning,
-            organizations needing workflow automation, teams requiring PSA integration
-            and device management
+            <strong>Best for:</strong> MSPs and IT teams who need to automate the
+            full employee lifecycle &mdash; onboarding workflows, offboarding checklists,
+            PSA ticket sync, welcome letters, and SLA tracking across multiple clients.
           </p>
         </div>
 
@@ -247,14 +253,33 @@
               <Building2 class="w-6 h-6 text-blue-600 dark:text-blue-400" />
             </div>
             <h3 class="text-lg font-bold text-gray-900 dark:text-white">
-              BambooHR
+              JumpCloud
             </h3>
           </div>
           <p class="text-sm text-gray-700 dark:text-gray-300">
-            <strong>Best for:</strong> HR departments managing employee records,
-            organizations needing compliance tracking, companies where HR leads onboarding
-            processes
+            <strong>Best for:</strong> Organizations needing a cloud directory to
+            replace Active Directory, centralize SSO/MFA, manage device policies,
+            and unify identity across platforms.
           </p>
+        </div>
+      </div>
+
+      <!-- Complementary callout -->
+      <div
+        class="max-w-3xl mx-auto bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-6 text-left"
+      >
+        <div class="flex items-start gap-3">
+          <Zap class="w-6 h-6 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+          <div>
+            <h4 class="font-semibold text-gray-900 dark:text-white mb-1">
+              They can work together
+            </h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              Many MSPs use JumpCloud as their directory and Employee Envoy to automate
+              the lifecycle workflows around it. Employee Envoy integrates with JumpCloud's
+              directory via SCIM and SSO.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -295,12 +320,12 @@
             <th
               class="px-6 py-4 text-center text-sm font-semibold text-gray-900 dark:text-white w-1/3"
             >
-              BambooHR
+              JumpCloud
             </th>
           </tr>
         </thead>
         <tbody class="divide-y divide-gray-200 dark:divide-slate-800">
-          {#each comparisonData as row, index}
+          {#each comparisonData as row}
             <tr
               class="hover:bg-gray-50 dark:hover:bg-slate-800/50 transition-colors"
             >
@@ -334,12 +359,12 @@
                 <div class="flex justify-center">
                   <div
                     class="inline-flex items-center justify-center w-8 h-8 rounded-full {getIconBgClass(
-                      row.bamboohr,
+                      row.jumpcloud,
                     )}"
                   >
                     <svelte:component
-                      this={getIcon(row.bamboohr)}
-                      class="w-5 h-5 {getIconClass(row.bamboohr)}"
+                      this={getIcon(row.jumpcloud)}
+                      class="w-5 h-5 {getIconClass(row.jumpcloud)}"
                     />
                   </div>
                 </div>
@@ -392,17 +417,17 @@
               <div
                 class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
               >
-                BambooHR
+                JumpCloud
               </div>
               <div class="flex items-center gap-2">
                 <div
                   class="inline-flex items-center justify-center w-8 h-8 rounded-full {getIconBgClass(
-                    row.bamboohr,
+                    row.jumpcloud,
                   )}"
                 >
                   <svelte:component
-                    this={getIcon(row.bamboohr)}
-                    class="w-5 h-5 {getIconClass(row.bamboohr)}"
+                    this={getIcon(row.jumpcloud)}
+                    class="w-5 h-5 {getIconClass(row.jumpcloud)}"
                   />
                 </div>
               </div>
@@ -442,7 +467,7 @@
   </div>
 </section>
 
-<!-- Why IT Teams Prefer Employee Envoy -->
+<!-- Why IT Teams Choose Employee Envoy -->
 <section
   class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/10 dark:to-emerald-900/10"
 >
@@ -451,10 +476,10 @@
       <h2
         class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4"
       >
-        Why IT Teams Prefer Employee Envoy
+        Why IT Teams Add Employee Envoy
       </h2>
       <p class="text-lg text-gray-600 dark:text-gray-300">
-        Built for IT teams managing employee technology lifecycle
+        JumpCloud manages your directory. Employee Envoy automates the workflows around it.
       </p>
     </div>
 
@@ -465,19 +490,19 @@
         <div
           class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
         >
-          <Zap class="w-6 h-6 text-green-600 dark:text-green-400" />
+          <Workflow class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-          IT-First, Not HR-First
+          Lifecycle Automation
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Starts with account provisioning, device setup, and system access. HR
-          features complement IT workflows. BambooHR starts with HR forms and
-          paperwork, IT is secondary.
+          JumpCloud provisions directory accounts. Employee Envoy orchestrates
+          the entire lifecycle &mdash; onboarding workflows, manager approvals,
+          welcome letters, SLA tracking, and offboarding checklists &mdash; across
+          189 integrations.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
-          Example: Day 1 workflow creates Google account, enrolls device,
-          provisions credentials - then sends HR paperwork
+          67 drag-and-drop workflow nodes for complete automation
         </p>
       </div>
 
@@ -490,36 +515,15 @@
           <Zap class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-          Visual Workflow Automation
+          PSA Ticket Sync
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          55-node workflow builder with triggers, actions, and conditions. No
-          coding required. BambooHR lacks visual workflow automation - relies on
-          basic task lists.
+          When an onboarding or offboarding request is created, Employee Envoy
+          auto-creates tickets in ConnectWise Manage or Autotask PSA with
+          bidirectional status sync. JumpCloud has no PSA integration.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
-          Example: Build "if contractor, then skip MDM" logic in minutes
-        </p>
-      </div>
-
-      <div
-        class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
-      >
-        <div
-          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
-        >
-          <Shield class="w-6 h-6 text-green-600 dark:text-green-400" />
-        </div>
-        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-          Deep MDM Integration
-        </h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Full device lifecycle with Jamf Pro, Microsoft Intune, and Kandji.
-          Device enrollment, compliance tracking, remote lock/wipe. BambooHR has
-          no MDM integration.
-        </p>
-        <p class="text-sm font-medium text-green-600 dark:text-green-400">
-          Example: Offboarding triggers device lock + remote wipe automatically
+          Eliminates manual ticket creation for every employee change
         </p>
       </div>
 
@@ -532,15 +536,15 @@
           <Building2 class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-          MSP Multi-Tenancy
+          Native Multi-Tenant
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Manage multiple client organizations with complete data isolation.
-          Perfect for MSPs and IT consultants. BambooHR requires separate
-          accounts for each organization.
+          Employee Envoy is built from the ground up for MSPs managing dozens of
+          clients. JumpCloud's Multi-Tenant Portal is an add-on with limitations.
+          Employee Envoy gives you a unified dashboard with instant client switching.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
-          Example: Switch between 50 clients in one dashboard
+          One login, all clients, complete data isolation
         </p>
       </div>
 
@@ -553,15 +557,15 @@
           <Users class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-          PSA Integration
+          Manager & HR Workflows
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Auto-create tickets in ConnectWise Manage and Autotask PSA.
-          Bidirectional sync keeps everything aligned. BambooHR has zero PSA
-          integration for MSP workflows.
+          Hiring managers get prep checklists, smart reminders, and approval
+          workflows. HR gets lifecycle dashboards and compliance tracking.
+          JumpCloud focuses on IT admin tasks, not manager enablement.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
-          Example: Onboarding request → ConnectWise ticket → Status syncs back
+          Bridges the gap between HR, managers, and IT
         </p>
       </div>
 
@@ -571,18 +575,39 @@
         <div
           class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
         >
-          <TrendingUp class="w-6 h-6 text-green-600 dark:text-green-400" />
+          <Shield class="w-6 h-6 text-green-600 dark:text-green-400" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-          Google Workspace Automation
+          SLA & Compliance Tracking
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          12 Google Workspace actions including drive transfer, calendar
-          delegation, email delegation, group management. BambooHR requires
-          manual Google Workspace administration.
+          Set per-customer SLA targets, track breach risk with color-coded
+          badges, and generate compliance reports. Alert rules notify your team
+          via Slack, email, or webhook when SLAs are at risk.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
-          Example: Auto-transfer Drive files during offboarding
+          Prove your value to clients with hard data
+        </p>
+      </div>
+
+      <div
+        class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-green-200 dark:border-green-800"
+      >
+        <div
+          class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg inline-block mb-4"
+        >
+          <DollarSign class="w-6 h-6 text-green-600 dark:text-green-400" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+          Flat-Rate Pricing
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Employee Envoy charges a flat monthly rate based on employee buckets,
+          not per-user. JumpCloud charges per-user per-month, which adds up fast
+          across multiple clients.
+        </p>
+        <p class="text-sm font-medium text-green-600 dark:text-green-400">
+          Predictable costs that don't scale with headcount
         </p>
       </div>
     </div>
@@ -599,7 +624,7 @@
         Pricing Comparison
       </h2>
       <p class="text-lg text-gray-600 dark:text-gray-300">
-        Transparent pricing for IT teams and MSPs
+        Different pricing models for different needs
       </p>
     </div>
 
@@ -654,15 +679,7 @@
               class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
             />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >All 184 integrations included</span
-            >
-          </div>
-          <div class="flex items-start gap-3">
-            <Check
-              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
-            />
-            <span class="text-sm text-gray-700 dark:text-gray-300"
-              >Unlimited playbooks & workflows</span
+              >All 189 integrations included in every plan</span
             >
           </div>
         </div>
@@ -673,46 +690,62 @@
           <div
             class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
           >
-            Example: Company with 100 employees
+            Example: MSP with 150 employees across 10 clients
           </div>
           <div class="text-xl font-bold text-gray-900 dark:text-white">
             $399/month
           </div>
           <div class="text-xs text-green-600 dark:text-green-400 mt-1">
-            (Professional plan, flat rate)
+            (Professional plan, flat rate regardless of client count)
           </div>
         </div>
       </div>
 
-      <!-- BambooHR Pricing -->
+      <!-- JumpCloud Pricing -->
       <div
         class="bg-white dark:bg-slate-800 p-8 rounded-2xl border-2 border-gray-200 dark:border-slate-700 shadow-xl"
       >
         <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-          BambooHR
+          JumpCloud
         </h3>
 
         <div class="mb-6">
           <div class="flex items-baseline gap-2 mb-2">
             <span class="text-4xl font-bold text-gray-900 dark:text-white"
-              >$5-$20</span
+              >$7-$24</span
             >
             <span class="text-gray-600 dark:text-gray-400"
-              >per employee/month</span
+              >per user/month</span
             >
           </div>
           <div class="text-sm font-medium text-gray-600 dark:text-gray-400">
-            Varies by plan tier and features needed
+            Per-user pricing, varies by package
           </div>
         </div>
 
         <div class="space-y-3 mb-6">
           <div class="flex items-start gap-3">
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
+            <span class="text-sm text-gray-700 dark:text-gray-300"
+              >Cloud directory and SSO</span
+            >
+          </div>
+          <div class="flex items-start gap-3">
+            <Check
+              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+            />
+            <span class="text-sm text-gray-700 dark:text-gray-300"
+              >Device management included</span
+            >
+          </div>
+          <div class="flex items-start gap-3">
             <X
               class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5"
             />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >No multi-tenant architecture</span
+              >No lifecycle workflow automation</span
             >
           </div>
           <div class="flex items-start gap-3">
@@ -723,30 +756,6 @@
               >No PSA integration</span
             >
           </div>
-          <div class="flex items-start gap-3">
-            <X
-              class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5"
-            />
-            <span class="text-sm text-gray-700 dark:text-gray-300"
-              >No visual workflow automation</span
-            >
-          </div>
-          <div class="flex items-start gap-3">
-            <Check
-              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
-            />
-            <span class="text-sm text-gray-700 dark:text-gray-300"
-              >700+ integrations (HR-focused)</span
-            >
-          </div>
-          <div class="flex items-start gap-3">
-            <Check
-              class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
-            />
-            <span class="text-sm text-gray-700 dark:text-gray-300"
-              >Strong HR & compliance features</span
-            >
-          </div>
         </div>
 
         <div
@@ -755,13 +764,13 @@
           <div
             class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2"
           >
-            Example: Company with 100 employees
+            Example: 150 users (Platform Plus package)
           </div>
           <div class="text-xl font-bold text-gray-900 dark:text-white">
-            $500-$2,000/month
+            ~$2,250/month
           </div>
           <div class="text-xs text-gray-600 dark:text-gray-400 mt-1">
-            (Depends on plan tier and add-ons)
+            ($15/user/month, scales linearly with headcount)
           </div>
         </div>
       </div>
@@ -772,10 +781,11 @@
       class="mt-12 max-w-4xl mx-auto bg-gradient-to-r from-amber-500 to-orange-500 p-8 rounded-2xl shadow-xl text-white"
     >
       <div class="text-center">
-        <h3 class="text-2xl font-bold mb-3">See How Much Time You'll Save</h3>
+        <h3 class="text-2xl font-bold mb-3">
+          Calculate Your ROI with Employee Envoy
+        </h3>
         <p class="text-white/90 mb-6">
-          Calculate ROI by switching from manual HR processes to automated IT
-          workflows
+          See how much time and money you'll save by adding lifecycle automation
         </p>
         <a
           href="/roi-calculator"
@@ -799,7 +809,7 @@
         Real-World Use Cases
       </h2>
       <p class="text-lg text-gray-600 dark:text-gray-300">
-        How Employee Envoy and BambooHR handle common IT scenarios
+        How Employee Envoy and JumpCloud handle common IT scenarios
       </p>
     </div>
 
@@ -810,7 +820,7 @@
       >
         <div class="p-6 border-b border-gray-200 dark:border-slate-700">
           <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-            Scenario: Onboarding a developer with IT provisioning on Day 1
+            Scenario: New employee starting Monday across 3 systems
           </h3>
         </div>
 
@@ -834,7 +844,7 @@
                   class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >1</span
                 >
-                <span>Workflow triggers: Create Google Workspace account</span>
+                <span>Create onboarding request &mdash; workflow auto-triggers</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
@@ -842,7 +852,7 @@
                   >2</span
                 >
                 <span
-                  >Add to GitHub org, Slack workspace, development tools</span
+                  >Google Workspace account created, JumpCloud directory entry synced, MDM profile applied</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -850,84 +860,71 @@
                   class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >3</span
                 >
-                <span>Enroll MacBook in Jamf Pro for compliance</span>
+                <span>ConnectWise ticket auto-created for audit trail</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
                   class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >4</span
                 >
-                <span
-                  >Generate secure credentials, send welcome email with links</span
-                >
-              </li>
-              <li class="flex items-start gap-2">
-                <span
-                  class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
-                  >5</span
-                >
-                <span>Developer ready to code on Day 1</span>
+                <span>Welcome letter with credentials sent to manager</span>
               </li>
             </ol>
             <div class="mt-4 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
               <p class="text-sm font-medium text-green-600 dark:text-green-400">
-                Time to full productivity: 2 hours
+                Time: 3 minutes (automated)
+              </p>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                Everything tracked in one dashboard
               </p>
             </div>
           </div>
 
           <div class="p-6">
             <div class="flex items-center gap-2 mb-4">
-              <div class="p-2 bg-red-100 dark:bg-red-900/30 rounded-lg">
-                <AlertTriangle class="w-5 h-5 text-red-600 dark:text-red-400" />
+              <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                <Building2 class="w-5 h-5 text-blue-600 dark:text-blue-400" />
               </div>
               <h4 class="font-semibold text-gray-900 dark:text-white">
-                BambooHR
+                JumpCloud
               </h4>
             </div>
             <ol class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
               <li class="flex items-start gap-2">
                 <span
-                  class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
+                  class="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >1</span
                 >
-                <span>HR adds employee to BambooHR, fills out forms</span>
+                <span>Create user in JumpCloud directory with SSO access</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
-                  class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
+                  class="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >2</span
                 >
-                <span>HR notifies IT via email or ticket</span>
+                <span>Assign to groups for LDAP/SAML app access</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >3</span
                 >
-                <span>IT manually creates Google account, adds to services</span
-                >
+                <span>Manually create ConnectWise ticket (no integration)</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >4</span
                 >
-                <span>IT manually enrolls device, generates credentials</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span
-                  class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
-                  >5</span
-                >
-                <span
-                  >Developer waits 1-2 days for access, productivity lost</span
-                >
+                <span>Manually send welcome info and credentials to manager</span>
               </li>
             </ol>
-            <div class="mt-4 p-3 bg-red-50 dark:bg-red-900/20 rounded-lg">
-              <p class="text-sm font-medium text-red-600 dark:text-red-400">
-                Time to full productivity: 1-2 days
+            <div class="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+              <p class="text-sm font-medium text-blue-600 dark:text-blue-400">
+                Time: 10-15 minutes (partly manual)
+              </p>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                Directory provisioning is fast; surrounding tasks are manual
               </p>
             </div>
           </div>
@@ -940,7 +937,7 @@
       >
         <div class="p-6 border-b border-gray-200 dark:border-slate-700">
           <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-            Scenario: Employee offboarding with Google Drive transfer
+            Scenario: Emergency offboarding &mdash; revoke access across all systems
           </h3>
         </div>
 
@@ -964,105 +961,79 @@
                   class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >1</span
                 >
-                <span>Create offboarding request with successor info</span>
+                <span>Create offboarding request with "Immediate" priority</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
                   class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >2</span
                 >
-                <span
-                  >Workflow triggers: Transfer Drive ownership to manager</span
-                >
+                <span>Workflow disables accounts across all 189 connected integrations</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
                   class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >3</span
                 >
-                <span>Set up email delegation, calendar access</span>
+                <span>MDM device lock/wipe triggered automatically</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
                   class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >4</span
                 >
-                <span>Disable Google account after 30-day grace period</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span
-                  class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
-                  >5</span
-                >
-                <span>Full audit trail for compliance</span>
+                <span>Full audit trail with compliance report</span>
               </li>
             </ol>
             <div class="mt-4 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
               <p class="text-sm font-medium text-green-600 dark:text-green-400">
-                Time to secure offboard: 5 minutes
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                Zero data loss, complete transition
+                Time to secure: 2 minutes (fully automated)
               </p>
             </div>
           </div>
 
           <div class="p-6">
             <div class="flex items-center gap-2 mb-4">
-              <div class="p-2 bg-red-100 dark:bg-red-900/30 rounded-lg">
-                <AlertTriangle class="w-5 h-5 text-red-600 dark:text-red-400" />
+              <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                <Building2 class="w-5 h-5 text-blue-600 dark:text-blue-400" />
               </div>
               <h4 class="font-semibold text-gray-900 dark:text-white">
-                BambooHR
+                JumpCloud
               </h4>
             </div>
             <ol class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
               <li class="flex items-start gap-2">
                 <span
-                  class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
+                  class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >1</span
                 >
-                <span>HR marks employee as terminated in BambooHR</span>
+                <span>Suspend user in JumpCloud &mdash; SSO access revoked instantly</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
-                  class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
+                  class="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >2</span
                 >
-                <span>HR sends manual email to IT with offboarding tasks</span>
+                <span>Device lock via JumpCloud MDM commands</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >3</span
                 >
-                <span
-                  >IT logs into Google Admin, manually transfers Drive ownership</span
-                >
+                <span>Manually revoke access to non-SSO apps (standalone SaaS)</span>
               </li>
               <li class="flex items-start gap-2">
                 <span
                   class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
                   >4</span
                 >
-                <span
-                  >IT manually delegates email, calendar (often forgotten)</span
-                >
-              </li>
-              <li class="flex items-start gap-2">
-                <span
-                  class="flex-shrink-0 w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-xs font-bold"
-                  >5</span
-                >
-                <span>Risk of data loss, incomplete transitions</span>
+                <span>Manually document everything for compliance</span>
               </li>
             </ol>
-            <div class="mt-4 p-3 bg-red-50 dark:bg-red-900/20 rounded-lg">
-              <p class="text-sm font-medium text-red-600 dark:text-red-400">
-                Time to complete offboard: 1-2 hours
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                High risk of missing steps
+            <div class="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+              <p class="text-sm font-medium text-blue-600 dark:text-blue-400">
+                SSO apps: instant | Non-SSO apps: 10-20 min manual
               </p>
             </div>
           </div>
@@ -1078,11 +1049,11 @@
 >
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-      Ready to See the Difference?
+      Automate Your Employee Lifecycle
     </h2>
     <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-      Join IT teams who've switched from BambooHR to Employee Envoy for true
-      IT-first automation
+      Add lifecycle automation on top of your directory service. Works with JumpCloud,
+      Active Directory, Okta, and more.
     </p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -1090,19 +1061,19 @@
         href="/contact"
         class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-amber-600 font-bold rounded-lg hover:bg-gray-100 transition-all shadow-2xl hover:shadow-3xl hover:scale-105 text-lg"
       >
-        Book a Demo
+        Start Free Trial
         <ArrowRight class="w-5 h-5" />
       </a>
       <a
         href="/contact"
         class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-600/20 text-white font-bold rounded-lg hover:bg-amber-600/30 transition-all border-2 border-white/30 text-lg"
       >
-        Start Free Trial
+        Book a Demo
       </a>
     </div>
 
     <p class="text-sm text-white/80 mt-6">
-      No credit card required • 14-day free trial • Setup in minutes
+      No credit card required &bull; 14-day free trial &bull; Setup in minutes
     </p>
   </div>
 </section>

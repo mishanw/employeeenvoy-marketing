@@ -49,7 +49,7 @@
   >
   <meta
     name="description"
-    content="Streamline employee onboarding, offboarding, and status changes across 184 business applications. HRIS sync, analytics, SLA tracking, and proactive alerts built for MSPs and IT teams."
+    content="Streamline employee onboarding, offboarding, and status changes across 189 business applications. HRIS sync, analytics, SLA tracking, and proactive alerts built for MSPs and IT teams."
   />
 </svelte:head>
 
@@ -90,7 +90,7 @@
           <p
             class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-3 group-hover:scale-110 transition-transform"
           >
-            184
+            189
           </p>
           <div
             class="absolute -top-2 -right-2 w-4 h-4 bg-white/30 rounded-full"
@@ -267,7 +267,7 @@
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
             Visual workflow builder with <span
               class="font-semibold text-amber-600 dark:text-amber-400"
-              >55 automation nodes</span
+              >67 automation nodes</span
             > for onboarding, offboarding, and custom provisioning flows
           </p>
         </div>
@@ -316,7 +316,7 @@
             <Globe class="w-8 h-8 text-white" />
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            184 Integrations
+            189 Integrations
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
             Connect Microsoft 365, Google Workspace, Slack, Okta, and dozens
@@ -508,7 +508,7 @@
                 <Check class="w-4 h-4 text-amber-600 dark:text-amber-400" />
               </div>
               <span class="text-gray-700 dark:text-gray-300"
-                >Desktop app for offline credential access</span
+                >AI-powered request triage with Slack approval workflows</span
               >
             </li>
           </ul>
@@ -639,7 +639,7 @@
       <p
         class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
       >
-        Connect with 184 business applications your team already uses
+        Connect with 189 business applications your team already uses
       </p>
     </div>
 
@@ -779,7 +779,7 @@
         href="/integrations"
         class="group inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl hover:from-amber-400 hover:to-orange-400 shadow-xl shadow-amber-500/25 hover:shadow-2xl hover:shadow-amber-500/30 hover:scale-105 transition-all"
       >
-        Browse All 184 Integrations
+        Browse All 189 Integrations
         <ArrowRight
           class="w-5 h-5 group-hover:translate-x-1 transition-transform"
         />
@@ -1310,7 +1310,7 @@
             class="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed"
           >
             We support <span class="font-medium text-gray-900 dark:text-white"
-              >184 integrations</span
+              >189 integrations</span
             >
             including Microsoft 365, Google Workspace, Slack, Okta, Azure AD, Active
             Directory, GitHub, Jira, and many more.

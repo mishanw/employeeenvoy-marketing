@@ -20,7 +20,7 @@
   <title>Security & Compliance - Employee Envoy</title>
   <meta
     name="description"
-    content="Learn about Employee Envoy's security practices, compliance, encryption, and data protection measures. GDPR & CCPA compliant."
+    content="Learn about Employee Envoy's security practices, compliance, encryption, and data protection measures. GDPR-ready & CCPA compliant."
   />
 
   <!-- Canonical URL -->
@@ -30,7 +30,7 @@
   <meta property="og:title" content="Security & Compliance - Employee Envoy" />
   <meta
     property="og:description"
-    content="Enterprise-grade security with AES-256 encryption, TOTP MFA, audit logging, and GDPR/CCPA compliance."
+    content="Enterprise-grade security with AES-256 encryption, TOTP MFA, audit logging, and GDPR-ready/CCPA compliance."
   />
   <meta property="og:url" content="https://employeeenvoy.com/security" />
   <meta property="og:image" content="https://employeeenvoy.com/og-image.png" />
@@ -39,7 +39,7 @@
   <meta name="twitter:title" content="Security & Compliance - Employee Envoy" />
   <meta
     name="twitter:description"
-    content="Enterprise-grade security with AES-256 encryption, TOTP MFA, and GDPR/CCPA compliance."
+    content="Enterprise-grade security with AES-256 encryption, TOTP MFA, and GDPR-ready/CCPA compliance."
   />
   <meta name="twitter:image" content="https://employeeenvoy.com/og-image.png" />
 </svelte:head>
@@ -236,7 +236,7 @@
           </li>
           <li class="flex items-start gap-2">
             <Check class="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
-            <span>99.9% uptime SLA</span>
+            <span>High availability on Cloudflare's global network</span>
           </li>
           <li class="flex items-start gap-2">
             <Check class="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
@@ -306,12 +306,12 @@
             <Globe class="w-8 h-8 text-blue-600 dark:text-blue-400" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
-            GDPR Compliant
+            GDPR-Ready
           </h3>
         </div>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Full compliance with the General Data Protection Regulation (GDPR) for
-          European users.
+          Built with GDPR principles in mind to support European users' data
+          protection rights.
         </p>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">

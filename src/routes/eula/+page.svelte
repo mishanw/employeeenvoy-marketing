@@ -65,7 +65,7 @@
         End User License Agreement
       </h1>
       <p class="text-gray-600 dark:text-gray-400">
-        Last updated: February 2, 2026
+        Last updated: February 16, 2026
       </p>
     </div>
 
@@ -93,8 +93,7 @@
       </p>
       <ul>
         <li>The Employee Envoy web application ("Web App")</li>
-        <li>The Employee Envoy desktop application ("Desktop App")</li>
-        <li>Associated documentation, updates, and support services</li>
+        <li>Associated APIs, documentation, updates, and support services</li>
         <li>Any trial, beta, or early access versions of the software</li>
       </ul>
       <p>
@@ -110,10 +109,8 @@
         limited, non-exclusive, non-transferable, revocable license to:
       </p>
       <ul>
-        <li>
-          Install and use the Desktop App on devices owned or controlled by you
-        </li>
         <li>Access and use the Web App through a supported web browser</li>
+        <li>Use the associated APIs in accordance with our API documentation</li>
         <li>Use the software solely for your internal business purposes</li>
       </ul>
 
@@ -214,35 +211,34 @@
         <li>Time-limited access to certain features</li>
       </ul>
 
-      <h2>4. Desktop Application Specific Terms</h2>
+      <h2>4. Web Application Terms</h2>
 
-      <h3>4.1 Installation</h3>
+      <h3>4.1 Access Requirements</h3>
       <p>
-        The Desktop App may be installed on devices you own or control. You are
-        responsible for ensuring your system meets the minimum requirements for
-        the software.
+        The Web App is accessed through a supported web browser. You are
+        responsible for maintaining a compatible browser and internet connection
+        to use the software.
       </p>
 
-      <h3>4.2 Local Data Storage</h3>
-      <p>The Desktop App may store data locally on your device, including:</p>
+      <h3>4.2 Data Storage</h3>
+      <p>Your data is stored securely in our cloud infrastructure, including:</p>
       <ul>
-        <li>Cached data for offline access</li>
+        <li>Employee records and lifecycle data</li>
         <li>
-          Credentials in the system keychain (macOS Keychain, Windows Credential
-          Manager)
+          Integration credentials (encrypted with AES-256-GCM)
         </li>
-        <li>Application preferences and settings</li>
-        <li>Log files for troubleshooting</li>
+        <li>Workflow configurations and execution history</li>
+        <li>Audit logs and activity records</li>
       </ul>
       <p>
-        You are responsible for the security of your device and any locally
-        stored data.
+        You are responsible for the security of your account credentials and any
+        devices used to access the service.
       </p>
 
       <h3>4.3 Updates</h3>
       <p>
-        The software may automatically check for and install updates. These
-        updates may include:
+        The Web App is updated continuously without requiring action on your part. Updates
+        may include:
       </p>
       <ul>
         <li>Bug fixes and security patches</li>
@@ -250,24 +246,23 @@
         <li>Changes required for compatibility</li>
       </ul>
       <p>
-        You agree that the Company may automatically update the software.
         Continued use after updates constitutes acceptance of the updated
         software.
       </p>
 
-      <h3>4.4 Telemetry and Analytics</h3>
+      <h3>4.4 Analytics</h3>
       <p>
-        The Desktop App may collect anonymous usage data to improve the product.
+        The Web App may collect anonymous usage data to improve the product.
         This may include:
       </p>
       <ul>
         <li>Feature usage statistics</li>
-        <li>Error reports and crash data</li>
+        <li>Error reports</li>
         <li>Performance metrics</li>
       </ul>
       <p>
-        Personal data and business data are NOT collected through telemetry. You
-        may disable telemetry in the application settings where available.
+        Personal data and business data are NOT collected through analytics. See
+        our Privacy Policy for full details on data collection.
       </p>
 
       <h2>5. Intellectual Property</h2>
@@ -387,8 +382,8 @@
 
       <h3>9.2 Termination by You</h3>
       <p>
-        You may terminate this Agreement at any time by uninstalling the Desktop
-        App, closing your account, and ceasing all use of the software.
+        You may terminate this Agreement at any time by closing your account
+        and ceasing all use of the software.
       </p>
 
       <h3>9.3 Termination by Us</h3>
@@ -404,8 +399,7 @@
       <p>Upon termination:</p>
       <ul>
         <li>All rights granted under this Agreement cease immediately</li>
-        <li>You must uninstall and destroy all copies of the Desktop App</li>
-        <li>You must cease all use of the Web App</li>
+        <li>You must cease all use of the Web App and associated APIs</li>
         <li>We may delete your data after a reasonable retention period</li>
         <li>Sections 5, 6, 7, 8, and 10 survive termination</li>
       </ul>

@@ -28,8 +28,8 @@
   ];
 
   const compareItems = [
-    { href: "/compare/bamboohr", label: "vs BambooHR" },
     { href: "/compare/rippling", label: "vs Rippling" },
+    { href: "/compare/jumpcloud", label: "vs JumpCloud" },
   ];
 
   function isActive(path: string) {

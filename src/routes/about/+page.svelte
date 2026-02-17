@@ -150,7 +150,7 @@
             Integration Native
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400">
-            184 integrations and growing every month.
+            189 integrations and growing every month.
           </p>
         </div>
         <div

@@ -116,29 +116,29 @@
 </script>
 
 <svelte:head>
-  <title>127 Integrations - Employee Envoy</title>
+  <title>189 Integrations - Employee Envoy</title>
   <meta
     name="description"
-    content="Browse 127 integrations supported by Employee Envoy. Connect your identity providers, productivity tools, HR systems, and more."
+    content="Browse 189 integrations supported by Employee Envoy. Connect your identity providers, productivity tools, HR systems, and more."
   />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://employeeenvoy.com/integrations" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="127 Integrations - Employee Envoy" />
+  <meta property="og:title" content="189 Integrations - Employee Envoy" />
   <meta
     property="og:description"
-    content="Connect with Microsoft 365, Google Workspace, Slack, Okta, and 123 more business applications."
+    content="Connect with Microsoft 365, Google Workspace, Slack, Okta, and 185 more business applications."
   />
   <meta property="og:url" content="https://employeeenvoy.com/integrations" />
   <meta property="og:image" content="https://employeeenvoy.com/og-image.png" />
 
   <!-- Twitter Card -->
-  <meta name="twitter:title" content="127 Integrations - Employee Envoy" />
+  <meta name="twitter:title" content="189 Integrations - Employee Envoy" />
   <meta
     name="twitter:description"
-    content="Connect with Microsoft 365, Google Workspace, Slack, Okta, and 123 more business applications."
+    content="Connect with Microsoft 365, Google Workspace, Slack, Okta, and 185 more business applications."
   />
   <meta name="twitter:image" content="https://employeeenvoy.com/og-image.png" />
 </svelte:head>

@@ -626,7 +626,7 @@
         Trusted by Leading MSPs
       </h3>
       <p class="text-gray-600 dark:text-gray-400">
-        Automating employee lifecycles across 184 integrations
+        Automating employee lifecycles across 189 integrations
       </p>
     </div>
 
@@ -642,7 +642,7 @@
       </div>
       <div class="text-center p-6">
         <div class="text-4xl font-bold text-amber-600 dark:text-amber-400 mb-2">
-          184
+          189
         </div>
         <p class="text-gray-600 dark:text-gray-400">Integrations</p>
         <p class="text-sm text-gray-500 dark:text-gray-500 mt-2">

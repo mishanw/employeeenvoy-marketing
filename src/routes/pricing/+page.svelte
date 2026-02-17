@@ -16,7 +16,7 @@
   // Feature comparison table
   const comparisonFeatures = [
     { name: 'Employees', starter: 'Up to 50', professional: 'Up to 200', enterprise: 'Up to 500' },
-    { name: 'Integrations', starter: '184', professional: '184', enterprise: '184' },
+    { name: 'Integrations', starter: '189', professional: '189', enterprise: '189' },
     { name: 'Visual Workflow Builder', starter: true, professional: true, enterprise: true },
     { name: 'Playbooks', starter: 'Unlimited', professional: 'Unlimited', enterprise: 'Unlimited' },
     { name: 'Welcome Letters', starter: true, professional: true, enterprise: true },
@@ -68,7 +68,7 @@
 
 <svelte:head>
   <title>Pricing - Employee Envoy | Simple, Transparent Plans</title>
-  <meta name="description" content="Employee Envoy pricing plans for MSPs and IT teams. Starting at $199/month. 14-day free trial, no credit card required. 184 integrations, HRIS sync, analytics, SLA tracking, and alerts included." />
+  <meta name="description" content="Employee Envoy pricing plans for MSPs and IT teams. Starting at $199/month. 14-day free trial, no credit card required. 189 integrations, HRIS sync, analytics, SLA tracking, and alerts included." />
 </svelte:head>
 
 <!-- Pricing Cards (reuse existing component) -->
@@ -139,7 +139,7 @@
       </div>
       <div class="text-center p-6 rounded-2xl bg-white dark:bg-slate-800/50 border border-gray-100 dark:border-slate-700/50">
         <Zap class="w-8 h-8 text-blue-500 mx-auto mb-3" />
-        <div class="text-3xl font-bold text-gray-900 dark:text-white">184</div>
+        <div class="text-3xl font-bold text-gray-900 dark:text-white">189</div>
         <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Integrations ready</p>
       </div>
       <div class="text-center p-6 rounded-2xl bg-white dark:bg-slate-800/50 border border-gray-100 dark:border-slate-700/50">

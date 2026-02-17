@@ -30,10 +30,10 @@
         <h3 class="text-white font-bold mb-4">Compare</h3>
         <ul class="space-y-2 text-sm">
           <li>
-            <a href="/compare/bamboohr" class="hover:text-amber-400 transition-colors">vs. BambooHR</a>
+            <a href="/compare/rippling" class="hover:text-amber-400 transition-colors">vs. Rippling</a>
           </li>
           <li>
-            <a href="/compare/rippling" class="hover:text-amber-400 transition-colors">vs. Rippling</a>
+            <a href="/compare/jumpcloud" class="hover:text-amber-400 transition-colors">vs. JumpCloud</a>
           </li>
         </ul>
       </div>

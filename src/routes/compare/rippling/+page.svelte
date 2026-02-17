@@ -52,7 +52,7 @@
       feature: "Visual Workflow Builder",
       envoy: "yes",
       rippling: "no",
-      description: "55 employee-specific workflow nodes",
+      description: "67 employee-specific workflow nodes",
     },
     {
       feature: "Google Workspace Actions",
@@ -94,7 +94,7 @@
       feature: "Number of Integrations",
       envoy: "partial",
       rippling: "yes",
-      description: "Employee Envoy: 184 (IT-focused), Rippling: 600+",
+      description: "Employee Envoy: 189 (IT-focused), Rippling: 600+",
     },
     {
       feature: "MSP-Friendly Pricing",
@@ -510,7 +510,7 @@
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
           Starts with IT provisioning, extends to HR workflows. Visual workflow
-          builder with 55 employee-specific nodes. Rippling is HR-first,
+          builder with 67 employee-specific nodes. Rippling is HR-first,
           IT-second.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
@@ -649,7 +649,7 @@
               class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
             />
             <span class="text-sm text-gray-700 dark:text-gray-300"
-              >All 184 integrations included</span
+              >All 189 integrations included</span
             >
           </div>
           <div class="flex items-start gap-3">

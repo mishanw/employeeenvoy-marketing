@@ -14,7 +14,7 @@
       annualPrice: 1990,
       employeeLimit: 50,
       features: [
-        "All 184 integrations",
+        "All 189 integrations",
         "Visual workflow builder",
         "Welcome letter portal",
         "HRIS sync (Rippling, BambooHR, Gusto, Namely)",
