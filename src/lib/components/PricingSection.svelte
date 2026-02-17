@@ -192,7 +192,7 @@
           href="/contact?plan=starter"
           class="block w-full text-center px-6 py-4 font-semibold text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-slate-700/50 rounded-xl hover:bg-gray-100 dark:hover:bg-slate-700 transition-all border border-gray-200 dark:border-slate-600"
         >
-          Start Free Trial
+          Get Started
         </a>
       </div>
 
@@ -253,7 +253,7 @@
             href="/contact?plan=professional"
             class="block w-full text-center px-6 py-4 font-bold text-amber-600 bg-white rounded-xl hover:bg-amber-50 transition-all shadow-lg hover:shadow-xl"
           >
-            Start Free Trial
+            Get Started
           </a>
         </div>
       </div>
@@ -313,7 +313,7 @@
           href="/contact?plan=enterprise"
           class="block w-full text-center px-6 py-4 font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl hover:from-amber-400 hover:to-orange-400 shadow-lg hover:shadow-xl transition-all"
         >
-          Start Free Trial
+          Get Started
         </a>
       </div>
     </div>
@@ -325,7 +325,7 @@
       >
         <div class="flex items-center gap-2">
           <CheckCircle2 class="w-5 h-5 text-green-500" />
-          <span>14-day free trial</span>
+          <span>No setup fees</span>
         </div>
         <div class="flex items-center gap-2">
           <CheckCircle2 class="w-5 h-5 text-green-500" />

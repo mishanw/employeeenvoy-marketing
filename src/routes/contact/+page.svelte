@@ -104,7 +104,7 @@
   <title>Contact Us - Employee Envoy</title>
   <meta
     name="description"
-    content="Get in touch with Employee Envoy. Start your free trial, request a demo, or ask questions about employee lifecycle management."
+    content="Get in touch with Employee Envoy. Request a demo, get a quote, or ask questions about employee lifecycle management."
   />
 
   <!-- Canonical URL -->
@@ -114,7 +114,7 @@
   <meta property="og:title" content="Contact Employee Envoy" />
   <meta
     property="og:description"
-    content="Get in touch with us. Start your free trial, request a demo, or ask questions about employee lifecycle management."
+    content="Get in touch with us. Request a demo, get a quote, or ask questions about employee lifecycle management."
   />
   <meta property="og:url" content="https://employeeenvoy.com/contact" />
   <meta property="og:image" content="https://employeeenvoy.com/og-image.png" />
@@ -123,7 +123,7 @@
   <meta name="twitter:title" content="Contact Employee Envoy" />
   <meta
     name="twitter:description"
-    content="Get in touch with us. Start your free trial or request a demo."
+    content="Get in touch with us. Request a demo or get a personalized quote."
   />
   <meta name="twitter:image" content="https://employeeenvoy.com/og-image.png" />
 </svelte:head>

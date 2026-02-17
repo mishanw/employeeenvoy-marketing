@@ -127,12 +127,13 @@
         number of customers, employees, and integrations.
       </p>
 
-      <h3>4.2 Free Trial</h3>
+      <h3>4.2 Evaluation Period</h3>
       <p>
-        We may offer a free trial period. During the trial, you have full access
-        to the Service. At the end of the trial period, your subscription will
-        automatically convert to a paid plan unless you cancel before the trial
-        ends. No credit card is required for the trial period.
+        We may offer an evaluation or trial period at our discretion. During any
+        such period, you may have access to some or all features of the Service.
+        At the end of the evaluation period, you must subscribe to a paid plan
+        to continue access. Terms of any evaluation period will be communicated
+        at the time of offer.
       </p>
 
       <h3>4.3 Billing</h3>

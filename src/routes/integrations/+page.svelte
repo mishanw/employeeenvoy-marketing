@@ -474,7 +474,7 @@
         href="/contact"
         class="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold text-white border-2 border-white rounded-xl hover:bg-white/10 transition-all"
       >
-        Start Free Trial
+        Get Started
       </a>
     </div>
   </div>

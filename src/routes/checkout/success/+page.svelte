@@ -66,7 +66,7 @@
 
         <div class="inline-flex items-center gap-2 px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full text-sm font-medium">
           <CheckCircle class="w-4 h-4" />
-          <span>14-day free trial started</span>
+          <span>Subscription active</span>
         </div>
       {/if}
     </div>

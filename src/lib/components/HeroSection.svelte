@@ -103,7 +103,7 @@
                             href="/contact"
                             class="group w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl hover:from-amber-400 hover:to-orange-400 transition-all shadow-xl shadow-amber-500/25 hover:shadow-2xl hover:shadow-amber-500/30 hover:scale-105 flex items-center justify-center gap-2 animate-pulse-glow"
                         >
-                            Start Free Trial
+                            Get Started
                             <ArrowRight
                                 class="w-5 h-5 group-hover:translate-x-1 transition-transform"
                             />
@@ -129,7 +129,7 @@
                                     class="w-3.5 h-3.5 text-green-500"
                                 />
                             </div>
-                            <span>14-day free trial</span>
+                            <span>Free to get started</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <div

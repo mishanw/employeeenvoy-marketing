@@ -95,10 +95,10 @@
 
         <div class="p-6 rounded-xl bg-gray-50 dark:bg-slate-800 border border-gray-100 dark:border-slate-700">
           <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
-            Can I try Employee Envoy for free?
+            Can I see a demo before committing?
           </h3>
           <p class="text-gray-600 dark:text-gray-400">
-            Yes! All our plans include a 14-day free trial with no credit card required. You can explore all features before committing.
+            Absolutely! Contact our team for a personalized demo and guided setup. We'll walk you through the features relevant to your business.
           </p>
         </div>
 

@@ -145,22 +145,21 @@
 
       <h2>3. Trial and Beta Software</h2>
 
-      <h3>3.1 Trial Period</h3>
+      <h3>3.1 Evaluation Period</h3>
       <p>
-        We may offer a free trial period for evaluation purposes. During the
-        trial:
+        We may offer an evaluation or trial period for assessment purposes. During
+        any such period:
       </p>
       <ul>
-        <li>You have access to the full functionality of the software</li>
-        <li>No payment information is required to begin the trial</li>
-        <li>The trial period is limited (typically 14-30 days as specified)</li>
+        <li>You may have access to some or all functionality of the software</li>
+        <li>The evaluation period duration will be communicated at the time of offer</li>
         <li>
           We may limit the number of employees, customers, or integrations
         </li>
-        <li>Trial access may be terminated at our discretion</li>
+        <li>Evaluation access may be terminated at our discretion</li>
       </ul>
       <p>
-        At the end of the trial period, you must either subscribe to a paid plan
+        At the end of the evaluation period, you must either subscribe to a paid plan
         or cease using the software. Your data may be retained for a limited
         time to allow for subscription conversion.
       </p>
@@ -375,8 +374,8 @@
 
       <h3>9.1 Term</h3>
       <p>
-        This Agreement is effective until terminated. For trial users, this
-        Agreement terminates at the end of the trial period unless you
+        This Agreement is effective until terminated. For evaluation users, this
+        Agreement terminates at the end of the evaluation period unless you
         subscribe. For subscribers, this Agreement continues for the duration of
         your subscription.
       </p>

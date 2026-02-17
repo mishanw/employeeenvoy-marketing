@@ -1215,7 +1215,7 @@
             </div>
             <span
               class="text-base sm:text-lg font-semibold text-gray-900 dark:text-white pr-2 sm:pr-4"
-              >How does the 14-day free trial work?</span
+              >How do I get started?</span
             >
           </div>
           <div
@@ -1230,10 +1230,10 @@
           <p
             class="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed"
           >
-            Start your free trial with full access to all features. <span
+            Contact our team and we'll set you up with full access to all features. <span
               class="font-medium text-gray-900 dark:text-white"
-              >No credit card required.</span
-            > You can cancel anytime during the trial period with no charges.
+              >Personalized onboarding included.</span
+            > Our team will walk you through setup and configuration.
           </p>
         </div>
       </details>
@@ -1385,7 +1385,7 @@
             </div>
             <span
               class="text-base sm:text-lg font-semibold text-gray-900 dark:text-white pr-2 sm:pr-4"
-              >What happens after my trial ends?</span
+              >What if I need to cancel?</span
             >
           </div>
           <div
@@ -1400,9 +1400,9 @@
           <p
             class="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed"
           >
-            After your 14-day trial, you can choose to subscribe to any plan.
-            Your data and configurations will be preserved. If you don't
-            subscribe, your account will be paused but <span
+            You can cancel anytime with no penalties.
+            Your data and configurations will be preserved. If you cancel,
+            your account will be paused and <span
               class="font-medium text-gray-900 dark:text-white"
               >your data will be retained for 30 days</span
             > in case you decide to come back.
@@ -1528,8 +1528,8 @@
     </h2>
 
     <p class="text-xl sm:text-2xl text-amber-100 mb-10 max-w-2xl mx-auto">
-      Start your 14-day free trial today. <span class="text-white font-semibold"
-        >No credit card required.</span
+      Get started today with personalized onboarding. <span class="text-white font-semibold"
+        >No per-user fees. Cancel anytime.</span
       >
     </p>
 
@@ -1539,7 +1539,7 @@
         class="group w-full sm:w-auto px-10 py-5 text-lg font-bold text-amber-600 bg-white rounded-2xl hover:bg-amber-50 transition-all shadow-2xl shadow-amber-900/20 hover:shadow-amber-900/30 hover:scale-105 flex items-center justify-center gap-3"
       >
         <Zap class="w-5 h-5" />
-        Start Free Trial
+        Get Started
         <ArrowRight
           class="w-5 h-5 group-hover:translate-x-1 transition-transform"
         />
@@ -1562,7 +1562,7 @@
     >
       <div class="flex items-center gap-2">
         <CheckCircle2 class="w-5 h-5 text-white" />
-        <span>Free 14-day trial</span>
+        <span>No setup fees</span>
       </div>
       <div class="flex items-center gap-2">
         <CheckCircle2 class="w-5 h-5 text-white" />

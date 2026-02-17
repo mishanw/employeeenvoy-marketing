@@ -1220,12 +1220,12 @@
         href="/contact"
         class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-600/20 text-white font-bold rounded-lg hover:bg-amber-600/30 transition-all border-2 border-white/30 text-lg"
       >
-        Start Free Trial
+        Get Started
       </a>
     </div>
 
     <p class="text-sm text-white/80 mt-6">
-      No credit card required • 14-day free trial • Setup in minutes
+      No per-user fees • No setup fees • Setup in minutes
     </p>
   </div>
 </section>

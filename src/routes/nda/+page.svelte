@@ -178,7 +178,7 @@
       <p>
         "Beta Software" means any pre-release, beta, alpha, preview, or early
         access version of the Employee Envoy software, including the web
-        application, desktop application, APIs, and related services.
+        application, APIs, and related services.
       </p>
 
       <h3>1.3 "Feedback"</h3>

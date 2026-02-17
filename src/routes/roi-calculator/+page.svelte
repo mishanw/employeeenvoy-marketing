@@ -609,11 +609,11 @@
         onclick={() => trackCTAClick("trial")}
         class="px-8 py-4 text-lg font-semibold text-white border-2 border-white/30 rounded-2xl hover:bg-white/10 transition-colors"
       >
-        Start Free Trial
+        Get Started
       </a>
     </div>
     <p class="text-sm text-amber-100 mt-6">
-      No credit card required • 14-day free trial • Setup in under 10 minutes
+      No per-user fees • No setup fees • Setup in under 10 minutes
     </p>
   </div>
 </section>

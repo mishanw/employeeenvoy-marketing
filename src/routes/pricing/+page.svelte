@@ -38,8 +38,8 @@
 
   const faqs = [
     {
-      question: 'Is there a free trial?',
-      answer: 'Yes! Every plan includes a 14-day free trial with full Professional features. No credit card required.',
+      question: 'Can I try Employee Envoy before committing?',
+      answer: 'Absolutely! Contact our team for a personalized demo and guided setup. We\'ll help you evaluate Employee Envoy with your real workflows.',
     },
     {
       question: 'What counts as an "employee"?',
@@ -58,8 +58,8 @@
       answer: 'We accept all major credit cards (Visa, Mastercard, Amex) and can arrange invoicing for Enterprise plans. Payments are processed securely through Stripe.',
     },
     {
-      question: 'What happens when my trial ends?',
-      answer: 'Your data is preserved for 30 days after trial expiration. You can subscribe at any time to regain full access. After 30 days, your data may be deleted.',
+      question: 'What if I need to cancel?',
+      answer: 'You can cancel anytime. Your data is preserved for 30 days after cancellation so you can re-subscribe and pick up where you left off.',
     },
   ];
 
@@ -68,7 +68,7 @@
 
 <svelte:head>
   <title>Pricing - Employee Envoy | Simple, Transparent Plans</title>
-  <meta name="description" content="Employee Envoy pricing plans for MSPs and IT teams. Starting at $199/month. 14-day free trial, no credit card required. 189 integrations, HRIS sync, analytics, SLA tracking, and alerts included." />
+  <meta name="description" content="Employee Envoy pricing plans for MSPs and IT teams. Starting at $199/month. 189 integrations, HRIS sync, analytics, SLA tracking, and alerts included. No per-user fees." />
 </svelte:head>
 
 <!-- Pricing Cards (reuse existing component) -->
@@ -162,7 +162,7 @@
             Employee Envoy is purpose-built for Managed Service Providers managing employee lifecycles across multiple client organizations.
           </p>
           <a href="https://app.employeeenvoy.com/signup" class="inline-flex items-center gap-2 mt-4 text-violet-600 dark:text-violet-400 font-medium hover:text-violet-700 dark:hover:text-violet-300 transition-colors">
-            Start your free trial
+            Get started today
             <ArrowRight class="w-4 h-4" />
           </a>
         </div>
@@ -205,14 +205,14 @@
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4 font-heading">Ready to streamline employee lifecycle management?</h2>
     <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
-      Start your 14-day free trial. No credit card required.
+      Get started today. No per-user fees. Cancel anytime.
     </p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
       <a
         href="https://app.employeeenvoy.com/signup"
         class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-xl hover:from-amber-400 hover:to-orange-400 transition-all shadow-lg shadow-amber-500/20 text-lg"
       >
-        Start Free Trial
+        Get Started
         <ArrowRight class="w-5 h-5" />
       </a>
       <a

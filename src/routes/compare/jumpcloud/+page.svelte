@@ -1061,7 +1061,7 @@
         href="/contact"
         class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-amber-600 font-bold rounded-lg hover:bg-gray-100 transition-all shadow-2xl hover:shadow-3xl hover:scale-105 text-lg"
       >
-        Start Free Trial
+        Get Started
         <ArrowRight class="w-5 h-5" />
       </a>
       <a
@@ -1073,7 +1073,7 @@
     </div>
 
     <p class="text-sm text-white/80 mt-6">
-      No credit card required &bull; 14-day free trial &bull; Setup in minutes
+      No per-user fees &bull; No setup fees &bull; Setup in minutes
     </p>
   </div>
 </section>

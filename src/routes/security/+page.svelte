@@ -560,13 +560,13 @@
       Secure Employee Lifecycle Management
     </h2>
     <p class="text-xl text-amber-100 mb-8">
-      Start your free 14-day trial with enterprise-grade security
+      Enterprise-grade security from day one
     </p>
     <a
       href="/contact"
       class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-amber-600 bg-white rounded-xl hover:bg-amber-50 transition-all shadow-xl hover:shadow-2xl"
     >
-      Start Free Trial
+      Get Started
       <ArrowRight class="w-5 h-5" />
     </a>
   </div>
