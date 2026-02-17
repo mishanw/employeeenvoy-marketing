@@ -1608,7 +1608,7 @@
     >
       <div class="flex items-center gap-2">
         <CheckCircle2 class="w-5 h-5 text-white" />
-        <span>No setup fees</span>
+        <span>Cancel anytime</span>
       </div>
       <div class="flex items-center gap-2">
         <CheckCircle2 class="w-5 h-5 text-white" />
@@ -1616,7 +1616,7 @@
       </div>
       <div class="flex items-center gap-2">
         <CheckCircle2 class="w-5 h-5 text-white" />
-        <span>Cancel anytime</span>
+        <span>Pro services available</span>
       </div>
     </div>
   </div>

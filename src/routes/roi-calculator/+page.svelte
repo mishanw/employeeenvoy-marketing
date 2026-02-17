@@ -613,7 +613,7 @@
       </a>
     </div>
     <p class="text-sm text-amber-100 mt-6">
-      No per-user fees • No setup fees • Setup in under 10 minutes
+      No per-user fees • Cancel anytime • Pro services available
     </p>
   </div>
 </section>

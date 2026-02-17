@@ -1225,7 +1225,7 @@
     </div>
 
     <p class="text-sm text-white/80 mt-6">
-      No per-user fees • No setup fees • Setup in minutes
+      No per-user fees • Cancel anytime • Pro services available
     </p>
   </div>
 </section>

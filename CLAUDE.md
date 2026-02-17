@@ -39,7 +39,8 @@ These numbers are verified against the platform codebase and safe to use in mark
 - 8 SSO identity providers
 - AES-256-GCM encryption
 - Pricing: Starter $199, Professional $399, Enterprise $799
-- No per-user fees, no setup fees
+- No per-user fees, cancel anytime
+- Professional services / implementation packages available (paid, custom quote)
 
 ## Brand Assets
 

@@ -99,38 +99,13 @@
 
                     <!-- Trust indicators -->
                     <div
-                        class="animate-fade-in-delay-3 flex flex-wrap items-center justify-center lg:justify-start gap-x-8 gap-y-3 text-sm text-gray-600 dark:text-gray-400"
+                        class="animate-fade-in-delay-3 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-500 dark:text-gray-400"
                     >
-                        <div class="flex items-center gap-2">
-                            <div
-                                class="w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/40 flex items-center justify-center"
-                            >
-                                <CheckCircle2
-                                    class="w-3.5 h-3.5 text-green-600 dark:text-green-400"
-                                />
-                            </div>
-                            <span>No credit card required</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <div
-                                class="w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/40 flex items-center justify-center"
-                            >
-                                <CheckCircle2
-                                    class="w-3.5 h-3.5 text-green-600 dark:text-green-400"
-                                />
-                            </div>
-                            <span>No per-user fees</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <div
-                                class="w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/40 flex items-center justify-center"
-                            >
-                                <CheckCircle2
-                                    class="w-3.5 h-3.5 text-green-600 dark:text-green-400"
-                                />
-                            </div>
-                            <span>189 integrations</span>
-                        </div>
+                        <span>189 integrations</span>
+                        <span class="text-gray-300 dark:text-gray-600">·</span>
+                        <span>No per-user fees</span>
+                        <span class="text-gray-300 dark:text-gray-600">·</span>
+                        <span>Multi-tenant ready</span>
                     </div>
                 {/if}
             </div>

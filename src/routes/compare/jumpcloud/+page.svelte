@@ -1073,7 +1073,7 @@
     </div>
 
     <p class="text-sm text-white/80 mt-6">
-      No per-user fees &bull; No setup fees &bull; Setup in minutes
+      No per-user fees &bull; Cancel anytime &bull; Pro services available
     </p>
   </div>
 </section>

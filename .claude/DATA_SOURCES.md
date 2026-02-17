@@ -25,7 +25,8 @@ Contains 189 integrations with scimSupport/ssoSupport flags.
 - SCIM/SSO support (verified)
 - Target audience: MSPs, IT teams, growing businesses
 - Pricing: Starter $199/mo, Professional $399/mo, Enterprise $799/mo
-- No per-user fees, no setup fees, cancel anytime
+- No per-user fees, cancel anytime
+- Professional services available (paid implementation packages, custom quote)
 
 ## Brand Identity
 
