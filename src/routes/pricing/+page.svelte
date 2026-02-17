@@ -33,7 +33,7 @@
     { name: 'Integration Health Monitoring', starter: false, professional: false, enterprise: true },
     { name: 'PSA Integration', starter: false, professional: false, enterprise: true },
     { name: 'Ops Dashboard', starter: false, professional: false, enterprise: true },
-    { name: 'Support Response', starter: '24 hours', professional: '4 hours', enterprise: 'Priority' },
+    { name: 'Support Response', starter: '2 business days', professional: '1 business day', enterprise: 'Same business day' },
   ];
 
   const faqs = [
@@ -161,7 +161,7 @@
             Multi-customer management, PSA integration (ConnectWise, Autotask), per-customer playbooks, and cross-customer dashboards.
             Employee Envoy is purpose-built for Managed Service Providers managing employee lifecycles across multiple client organizations.
           </p>
-          <a href="https://app.employeeenvoy.com/signup" class="inline-flex items-center gap-2 mt-4 text-violet-600 dark:text-violet-400 font-medium hover:text-violet-700 dark:hover:text-violet-300 transition-colors">
+          <a href="/contact" class="inline-flex items-center gap-2 mt-4 text-violet-600 dark:text-violet-400 font-medium hover:text-violet-700 dark:hover:text-violet-300 transition-colors">
             Get started today
             <ArrowRight class="w-4 h-4" />
           </a>
@@ -171,8 +171,99 @@
   </div>
 </section>
 
-<!-- FAQ Section -->
+<!-- Professional Services -->
 <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 text-sm font-medium mb-4">
+        <Users class="w-4 h-4" />
+        <span>Professional Services</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4 font-heading">Need help getting set up?</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        Every plan includes a free onboarding call. For hands-on implementation support, our professional services team can help.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- Free Onboarding -->
+      <div class="p-8 rounded-2xl bg-gray-50 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-green-100 dark:bg-green-900/40 flex items-center justify-center">
+            <Zap class="w-5 h-5 text-green-600 dark:text-green-400" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Onboarding Call</h3>
+            <span class="text-sm font-semibold text-green-600 dark:text-green-400">Included with every plan</span>
+          </div>
+        </div>
+        <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+          <li class="flex items-start gap-2">
+            <Check class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+            <span>30-minute guided setup call</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <Check class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+            <span>Account configuration walkthrough</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <Check class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+            <span>First integration setup assistance</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <Check class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+            <span>Q&A and best practices overview</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Paid Implementation -->
+      <div class="p-8 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border border-amber-200 dark:border-amber-800/30">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-900/40 flex items-center justify-center">
+            <Star class="w-5 h-5 text-amber-600 dark:text-amber-400" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Implementation Package</h3>
+            <span class="text-sm font-semibold text-amber-600 dark:text-amber-400">Custom quote</span>
+          </div>
+        </div>
+        <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+          <li class="flex items-start gap-2">
+            <Check class="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" />
+            <span>Full integration configuration across your stack</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <Check class="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" />
+            <span>Custom workflow and playbook creation</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <Check class="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" />
+            <span>Data import and migration assistance</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <Check class="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" />
+            <span>Team training sessions</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <Check class="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" />
+            <span>PSA and HRIS sync setup</span>
+          </li>
+        </ul>
+        <a
+          href="/contact?subject=implementation"
+          class="inline-flex items-center gap-2 mt-6 text-amber-600 dark:text-amber-400 font-medium hover:text-amber-700 dark:hover:text-amber-300 transition-colors"
+        >
+          Get a quote
+          <ArrowRight class="w-4 h-4" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-slate-800 dark:to-slate-900">
   <div class="max-w-3xl mx-auto">
     <div class="text-center mb-12">
       <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4 font-heading">Frequently Asked Questions</h2>
@@ -209,7 +300,7 @@
     </p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
       <a
-        href="https://app.employeeenvoy.com/signup"
+        href="/contact"
         class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-xl hover:from-amber-400 hover:to-orange-400 transition-all shadow-lg shadow-amber-500/20 text-lg"
       >
         Get Started

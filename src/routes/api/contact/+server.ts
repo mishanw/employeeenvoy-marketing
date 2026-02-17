@@ -244,7 +244,7 @@ Reply directly to this email to respond to ${name}.
             </p>
 
             <p style="color: #374151; font-size: 16px; line-height: 1.6; margin: 0 0 16px 0;">
-              Thank you for reaching out to Employee Envoy! We've received your message and our team will get back to you within 24 hours.
+              Thank you for reaching out to Employee Envoy! We've received your message and our team will get back to you within 2 business days.
             </p>
 
             <p style="color: #374151; font-size: 16px; line-height: 1.6; margin: 0 0 24px 0;">
@@ -275,7 +275,7 @@ Reply directly to this email to respond to ${name}.
       text: `
 Hi ${name},
 
-Thank you for reaching out to Employee Envoy! We've received your message and our team will get back to you within 24 hours.
+Thank you for reaching out to Employee Envoy! We've received your message and our team will get back to you within 2 business days.
 
 In the meantime, feel free to explore our website to learn more about how we can help streamline your employee lifecycle management.
 

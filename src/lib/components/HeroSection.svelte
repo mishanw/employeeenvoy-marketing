@@ -129,7 +129,7 @@
                                     class="w-3.5 h-3.5 text-green-500"
                                 />
                             </div>
-                            <span>Free to get started</span>
+                            <span>No per-user fees</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <div
@@ -139,7 +139,7 @@
                                     class="w-3.5 h-3.5 text-green-500"
                                 />
                             </div>
-                            <span>No credit card required</span>
+                            <span>Free onboarding call</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <div

@@ -139,7 +139,7 @@
       </h1>
       <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
         Have questions? We're here to help. Reach out and we'll get back to you
-        within 24 hours.
+        within 2 business days.
       </p>
     </div>
 
@@ -237,7 +237,7 @@
                 Message Sent!
               </h2>
               <p class="text-gray-600 dark:text-gray-300 mb-6">
-                We'll get back to you within 24 hours.
+                We'll get back to you within 2 business days.
               </p>
               <button
                 onclick={() => (submitted = false)}

@@ -19,7 +19,7 @@
         "Welcome letter portal",
         "HRIS sync (Rippling, BambooHR, Gusto, Namely)",
         "Analytics dashboard & CSV export",
-        "Email support (24hr response)",
+        "Email support (2 business days)",
       ],
       popular: false,
     },
@@ -37,7 +37,7 @@
         "Alert rules with Slack/email/webhook",
         "Scheduled reports & provisioning",
         "SSO (Google/Microsoft/Okta)",
-        "API access & priority support (4hr)",
+        "API access & priority support (1 business day)",
       ],
       popular: true,
     },
@@ -325,15 +325,15 @@
       >
         <div class="flex items-center gap-2">
           <CheckCircle2 class="w-5 h-5 text-green-500" />
-          <span>No setup fees</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <CheckCircle2 class="w-5 h-5 text-green-500" />
-          <span>No credit card required</span>
+          <span>No per-user fees</span>
         </div>
         <div class="flex items-center gap-2">
           <CheckCircle2 class="w-5 h-5 text-green-500" />
           <span>Cancel anytime</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <CheckCircle2 class="w-5 h-5 text-green-500" />
+          <span>Free onboarding call</span>
         </div>
       </div>
       <p class="text-sm text-gray-500 dark:text-gray-500">
