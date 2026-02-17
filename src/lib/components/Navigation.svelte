@@ -96,6 +96,12 @@
 
       <div class="flex items-center gap-3">
         <a
+          href="https://app.employeeenvoy.com/login"
+          class="hidden sm:inline-flex text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors"
+        >
+          Sign In
+        </a>
+        <a
           href="/contact"
           class="hidden sm:inline-flex px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg hover:from-amber-400 hover:to-orange-400 transition-all shadow-lg hover:shadow-xl hover:scale-105"
         >
@@ -150,10 +156,17 @@
         </div>
 
         <a
-          href="/contact"
-          class="block w-full text-center px-4 py-3 text-base font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg mt-4"
+          href="https://app.employeeenvoy.com/login"
+          onclick={() => (mobileMenuOpen = false)}
+          class="block w-full text-center px-4 py-3 text-base font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-700 rounded-lg mt-4 hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors"
         >
-          Get Started Free
+          Sign In
+        </a>
+        <a
+          href="/contact"
+          class="block w-full text-center px-4 py-3 text-base font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg mt-2"
+        >
+          Get Started
         </a>
       </div>
     </div>
