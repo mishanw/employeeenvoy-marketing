@@ -1,24 +1,13 @@
-<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="brand_gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F59E0B" />
-      <stop offset="1" stop-color="#EA580C" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Icon Mark: Abstract Shield/Arrow/Envoy -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" fill="none">
+  <!-- Employee Envoy Full Logo (Color on Light) -->
   <g transform="translate(5, 5)">
-    <path d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm0 36c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16-7.163 16-16 16z" fill="url(#brand_gradient)" opacity="0.2"/>
-    <path d="M12 20l6 6 12-12" stroke="url(#brand_gradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- Abstract E shape / Shield protection wrapper -->
-    <path d="M20 8c-6.627 0-12 5.373-12 12s5.373 12 12 12" stroke="url(#brand_gradient)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="20" cy="20" r="20" fill="#F59E0B"/>
+    <g transform="rotate(-35, 20, 20)">
+      <rect x="11" y="10.5" width="14" height="3.5" rx="1.75" fill="white"/>
+      <rect x="8.5" y="18.25" width="19" height="3.5" rx="1.75" fill="white"/>
+      <rect x="11" y="26" width="14" height="3.5" rx="1.75" fill="white"/>
+    </g>
   </g>
-
-  <!-- Wordmark -->
-  <text x="55" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="24" fill="#0f172a">
-    Employee
-  </text>
-  <text x="172" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="24" fill="#475569">
-    Envoy
-  </text>
+  <text x="55" y="33" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="700" font-size="24" fill="#1E293B">Employee</text>
+  <text x="183" y="33" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="700" font-size="24" fill="#F59E0B">Envoy</text>
 </svg>

@@ -1,21 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48">
-  <defs>
-    <linearGradient id="envoyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#F59E0B"/>
-      <stop offset="100%" style="stop-color:#EA580C"/>
-    </linearGradient>
-  </defs>
-  <!-- Icon: Abstract person/arrow representing employee journey -->
-  <g transform="translate(0, 4)">
-    <!-- Person silhouette with forward momentum -->
-    <circle cx="16" cy="10" r="8" fill="url(#envoyGradient)"/>
-    <path d="M6 42 L16 24 L26 42 L20 42 L20 32 L12 32 L12 42 Z" fill="url(#envoyGradient)"/>
-    <!-- Arrow representing journey/transition -->
-    <path d="M30 20 L42 20 L42 16 L52 24 L42 32 L42 28 L30 28 Z" fill="#1E293B"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" fill="none">
+  <!-- Employee Envoy Full Logo (Light Mode) -->
+  <!-- Icon: Orange circle with diagonal motion lines -->
+  <g transform="translate(5, 5)">
+    <circle cx="20" cy="20" r="20" fill="#F59E0B"/>
+    <g transform="rotate(-35, 20, 20)">
+      <rect x="11" y="10.5" width="14" height="3.5" rx="1.75" fill="white"/>
+      <rect x="8.5" y="18.25" width="19" height="3.5" rx="1.75" fill="white"/>
+      <rect x="11" y="26" width="14" height="3.5" rx="1.75" fill="white"/>
+    </g>
   </g>
-  <!-- Text: Employee Envoy -->
-  <text x="62" y="32" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#1E293B">
-    <tspan>Employee</tspan>
-    <tspan fill="url(#envoyGradient)">Envoy</tspan>
-  </text>
+  <!-- Wordmark -->
+  <text x="55" y="33" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="700" font-size="24" fill="#1E293B">Employee</text>
+  <text x="183" y="33" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="700" font-size="24" fill="#F59E0B">Envoy</text>
 </svg>

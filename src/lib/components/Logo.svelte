@@ -13,9 +13,6 @@
     class: className = ''
   }: LogoProps = $props();
 
-  // Generate unique ID for gradient (using random to avoid SSR conflicts)
-  const gradientId = `brandGradient-${Math.random().toString(36).substr(2, 9)}`;
-
   const sizeClasses = {
     sm: { icon: 'w-7 h-7', text: 'text-lg', gap: 'gap-2' },
     md: { icon: 'w-9 h-9', text: 'text-xl', gap: 'gap-2.5' },
@@ -24,9 +21,9 @@
   };
 
   const variantClasses = {
-    default: { text: 'text-slate-900 dark:text-white', accent: 'text-slate-600 dark:text-slate-300' },
-    light: { text: 'text-white', accent: 'text-slate-200' },
-    dark: { text: 'text-slate-900', accent: 'text-slate-600' }
+    default: { text: 'text-slate-900 dark:text-white', accent: 'text-amber-500' },
+    light: { text: 'text-white', accent: 'text-amber-400' },
+    dark: { text: 'text-slate-900', accent: 'text-amber-500' }
   };
 
   const currentSize = sizeClasses[size];
@@ -34,44 +31,21 @@
 </script>
 
 <div class="flex items-center {currentSize.gap} {className}">
-  <!-- Brand Icon: Shield with checkmark representing protection & completion -->
+  <!-- Brand Icon: Orange circle with diagonal motion lines -->
   <div class="{currentSize.icon} flex-shrink-0">
-    {#if gradientId}
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-        <defs>
-          <linearGradient id={gradientId} x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#F59E0B" />
-            <stop offset="1" stop-color="#EA580C" />
-          </linearGradient>
-        </defs>
-
-        <!-- Rounded square background with brand gradient -->
-        <rect width="40" height="40" rx="8" fill="url(#{gradientId})" />
-
-        <!-- Checkmark representing completed transitions -->
-        <path
-          d="M10 20l7 7 13-13"
-          stroke="white"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-
-        <!-- Partial arc representing lifecycle/journey -->
-        <path
-          d="M20 8c-6.627 0-12 5.373-12 12s5.373 12 12 12"
-          stroke="white"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-opacity="0.5"
-        />
-      </svg>
-    {/if}
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+      <circle cx="32" cy="32" r="30" fill="#F59E0B"/>
+      <g transform="rotate(-35, 32, 32)">
+        <rect x="19" y="18" width="20" height="5.5" rx="2.75" fill="white"/>
+        <rect x="15" y="29.25" width="28" height="5.5" rx="2.75" fill="white"/>
+        <rect x="19" y="40.5" width="20" height="5.5" rx="2.75" fill="white"/>
+      </g>
+    </svg>
   </div>
 
   {#if showText}
     <span class="{currentSize.text} font-bold tracking-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-      <span class="{currentVariant.text}">Employee</span><span class="bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">Envoy</span>
+      <span class="{currentVariant.text}">Employee</span><span class="{currentVariant.accent}">Envoy</span>
     </span>
   {/if}
 </div>

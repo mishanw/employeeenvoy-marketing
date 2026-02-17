@@ -45,11 +45,11 @@
                     <h1
                         class="animate-fade-in-delay-1 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-[1.1] font-heading tracking-tight"
                     >
-                        Stop Manually Setting Up
+                        Onboard in
                         <span class="relative">
                             <span
                                 class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent"
-                                >189 Apps</span
+                                >Minutes</span
                             >
                             <svg
                                 class="absolute -bottom-2 left-0 w-full h-3 text-amber-400/30"
@@ -64,17 +64,16 @@
                                     stroke-linecap="round"
                                 />
                             </svg>
-                        </span>
-                        <br />Every Time Someone Joins
+                        </span>, Not Hours
                     </h1>
 
                     <p
                         class="animate-fade-in-delay-2 text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed"
                     >
-                        Automate onboarding, offboarding, and status changes across your entire stack. One click replaces <span
+                        Automate employee onboarding, offboarding, and app provisioning across <span
                             class="font-semibold text-gray-900 dark:text-white"
-                            >4-6 hours of manual provisioning</span
-                        >.
+                            >189 integrations</span
+                        >. One workflow replaces hours of manual IT work.
                     </p>
 
                     <div
