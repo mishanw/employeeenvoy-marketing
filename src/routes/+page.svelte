@@ -202,7 +202,7 @@
     <p
       class="text-center text-sm font-semibold text-gray-500 dark:text-gray-400 mb-10 uppercase tracking-wider"
     >
-      Built for teams that use
+      Connects with the tools you already use
     </p>
     <div
       class="flex flex-wrap items-center justify-center gap-6 md:gap-10 lg:gap-14"
@@ -300,34 +300,7 @@
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-      <!-- Feature 1 -->
-      <!-- Feature 1 -->
-      <SpotlightCard
-        class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-      >
-        <div
-          class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-amber-100/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
-        ></div>
-        <div class="relative z-10">
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center mb-5 shadow-lg shadow-amber-500/25 group-hover:scale-110 group-hover:rotate-3 transition-all"
-          >
-            <Zap class="w-8 h-8 text-white" />
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            Automated Workflows
-          </h3>
-          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Visual workflow builder with <span
-              class="font-semibold text-amber-600 dark:text-amber-400"
-              >67 automation nodes</span
-            > for onboarding, offboarding, and custom provisioning flows
-          </p>
-        </div>
-      </SpotlightCard>
-
-      <!-- Feature 2 -->
-      <!-- Feature 2 -->
+      <!-- Feature 1: Multi-Tenant (MSP-first) -->
       <SpotlightCard
         class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
         spotlightColor="rgba(59, 130, 246, 0.15)"
@@ -342,19 +315,43 @@
             <Building2 class="w-8 h-8 text-white" />
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            Multi-Tenant Support
+            Manage All Your Clients in One Place
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Manage multiple customer organizations from a single dashboard with <span
+            Switch between customer organizations instantly. Each client gets <span
               class="font-semibold text-blue-600 dark:text-blue-400"
-              >complete data isolation</span
-            >
+              >their own workflows, integrations, and SLA targets</span
+            > with complete data isolation
           </p>
         </div>
       </SpotlightCard>
 
-      <!-- Feature 3 -->
-      <!-- Feature 3 -->
+      <!-- Feature 2: Automated Workflows -->
+      <SpotlightCard
+        class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+      >
+        <div
+          class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-amber-100/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
+        ></div>
+        <div class="relative z-10">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center mb-5 shadow-lg shadow-amber-500/25 group-hover:scale-110 group-hover:rotate-3 transition-all"
+          >
+            <Zap class="w-8 h-8 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+            Onboard in Minutes, Not Hours
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            Build provisioning playbooks with a visual workflow builder. <span
+              class="font-semibold text-amber-600 dark:text-amber-400"
+              >67 automation nodes</span
+            > handle triggers, actions, and conditions &mdash; no coding required
+          </p>
+        </div>
+      </SpotlightCard>
+
+      <!-- Feature 3: 189 Integrations -->
       <SpotlightCard
         class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
         spotlightColor="rgba(168, 85, 247, 0.15)"
@@ -369,74 +366,18 @@
             <Globe class="w-8 h-8 text-white" />
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            189 Integrations
+            Your Entire Stack, Connected
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Connect Microsoft 365, Google Workspace, Slack, Okta, and dozens
-            more with <span
+            189 integrations across identity, productivity, security, DevOps, and more. Each with <span
               class="font-semibold text-purple-600 dark:text-purple-400"
-              >health monitoring and guided setup</span
+              >health monitoring and guided setup wizards</span
             >
           </p>
         </div>
       </SpotlightCard>
 
-      <!-- Feature 4 -->
-      <!-- Feature 4 -->
-      <SpotlightCard
-        class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-        spotlightColor="rgba(34, 197, 94, 0.15)"
-      >
-        <div
-          class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-green-100/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
-        ></div>
-        <div class="relative z-10">
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center mb-5 shadow-lg shadow-green-500/25 group-hover:scale-110 group-hover:rotate-3 transition-all"
-          >
-            <BarChart3 class="w-8 h-8 text-white" />
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            Analytics & Insights
-          </h3>
-          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Interactive charts, CSV export, SLA tracking, and <span
-              class="font-semibold text-green-600 dark:text-green-400"
-              >proactive alert monitoring</span
-            > with 5 delivery channels
-          </p>
-        </div>
-      </SpotlightCard>
-
-      <!-- Feature 5 -->
-      <!-- Feature 5 -->
-      <SpotlightCard
-        class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-        spotlightColor="rgba(239, 68, 68, 0.15)"
-      >
-        <div
-          class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-red-100/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
-        ></div>
-        <div class="relative z-10">
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-400 to-rose-500 flex items-center justify-center mb-5 shadow-lg shadow-red-500/25 group-hover:scale-110 group-hover:rotate-3 transition-all"
-          >
-            <Shield class="w-8 h-8 text-white" />
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            Enterprise Security
-          </h3>
-          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            End-to-end encryption, audit logs, MFA, and <span
-              class="font-semibold text-red-600 dark:text-red-400"
-              >role-based access control</span
-            > built in
-          </p>
-        </div>
-      </SpotlightCard>
-
-      <!-- Feature 6 -->
-      <!-- Feature 6 -->
+      <!-- Feature 4: HRIS Sync -->
       <SpotlightCard
         class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
         spotlightColor="rgba(6, 182, 212, 0.15)"
@@ -451,13 +392,65 @@
             <RefreshCw class="w-8 h-8 text-white" />
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-            HRIS Sync & Scheduling
+            HR Changes Trigger Automatically
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Auto-detect employee changes from <span
+            Sync with <span
               class="font-semibold text-cyan-600 dark:text-cyan-400"
               >Rippling, BambooHR, Gusto, and Namely</span
-            > with scheduled provisioning
+            >. Employee joins in HR? Provisioning starts automatically &mdash; even days before their start date
+          </p>
+        </div>
+      </SpotlightCard>
+
+      <!-- Feature 5: Analytics -->
+      <SpotlightCard
+        class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+        spotlightColor="rgba(34, 197, 94, 0.15)"
+      >
+        <div
+          class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-green-100/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
+        ></div>
+        <div class="relative z-10">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center mb-5 shadow-lg shadow-green-500/25 group-hover:scale-110 group-hover:rotate-3 transition-all"
+          >
+            <BarChart3 class="w-8 h-8 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+            Know Exactly Where Things Stand
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            Dashboards for requests, SLA compliance, and team performance. Get <span
+              class="font-semibold text-green-600 dark:text-green-400"
+              >proactive alerts via Email, Slack, PagerDuty, SMS, or webhooks</span
+            > before issues escalate
+          </p>
+        </div>
+      </SpotlightCard>
+
+      <!-- Feature 6: Security -->
+      <SpotlightCard
+        class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+        spotlightColor="rgba(239, 68, 68, 0.15)"
+      >
+        <div
+          class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-red-100/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
+        ></div>
+        <div class="relative z-10">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-400 to-rose-500 flex items-center justify-center mb-5 shadow-lg shadow-red-500/25 group-hover:scale-110 group-hover:rotate-3 transition-all"
+          >
+            <Shield class="w-8 h-8 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+            Security That Passes Audits
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            AES-256 encryption, full audit logs, MFA with passkeys, and <span
+              class="font-semibold text-red-600 dark:text-red-400"
+              >role-based access control</span
+            >. SSO via 8 identity providers including Okta, Azure AD, and Google
           </p>
         </div>
       </SpotlightCard>

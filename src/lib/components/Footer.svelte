@@ -1,10 +1,43 @@
 <script lang="ts">
   import Logo from "./Logo.svelte";
+  import { Mail } from "@lucide/svelte";
+
+  let email = $state("");
+  let subscribed = $state(false);
+  let subscribing = $state(false);
+
+  async function handleSubscribe(e: Event) {
+    e.preventDefault();
+    if (!email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return;
+
+    subscribing = true;
+    try {
+      // Submit to the contact API with a newsletter subject
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: "Newsletter Subscriber",
+          email: email,
+          company: "N/A",
+          message: "Newsletter signup from footer",
+          subject: "Newsletter",
+          _ts: Date.now().toString(),
+        }),
+      });
+      subscribed = true;
+    } catch {
+      // Silently handle - still show success to not leak info
+      subscribed = true;
+    } finally {
+      subscribing = false;
+    }
+  }
 </script>
 
 <footer class="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-4 gap-8 mb-8">
+    <div class="grid md:grid-cols-5 gap-8 mb-8">
       <div>
         <h3 class="text-white font-bold mb-4">Product</h3>
         <ul class="space-y-2 text-sm">
@@ -69,6 +102,35 @@
             <a href="/privacy#do-not-sell" class="hover:text-amber-400 transition-colors">Do Not Sell My Info</a>
           </li>
         </ul>
+      </div>
+
+      <!-- Newsletter signup -->
+      <div>
+        <h3 class="text-white font-bold mb-4">Stay Updated</h3>
+        <p class="text-sm text-gray-400 mb-4">Product updates and tips for MSPs and IT teams.</p>
+        {#if subscribed}
+          <div class="flex items-center gap-2 text-sm text-green-400">
+            <Mail class="w-4 h-4" />
+            <span>You're on the list!</span>
+          </div>
+        {:else}
+          <form onsubmit={handleSubscribe} class="flex gap-2">
+            <input
+              type="email"
+              bind:value={email}
+              placeholder="you@company.com"
+              required
+              class="flex-1 min-w-0 px-3 py-2 text-sm bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+            />
+            <button
+              type="submit"
+              disabled={subscribing}
+              class="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg hover:from-amber-400 hover:to-orange-400 transition-all disabled:opacity-50 flex-shrink-0"
+            >
+              {subscribing ? "..." : "Subscribe"}
+            </button>
+          </form>
+        {/if}
       </div>
     </div>
 

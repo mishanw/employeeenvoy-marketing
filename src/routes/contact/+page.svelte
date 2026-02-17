@@ -9,6 +9,7 @@
     name: "",
     email: "",
     company: "",
+    companySize: "",
     phone: "",
     plan: "enterprise",
     message: "",
@@ -370,6 +371,27 @@
                     {errors.company}
                   </p>
                 {/if}
+              </div>
+
+              <div>
+                <label
+                  for="companySize"
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  Company Size
+                </label>
+                <select
+                  id="companySize"
+                  bind:value={formData.companySize}
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                >
+                  <option value="">Select company size</option>
+                  <option value="1-10">1-10 employees</option>
+                  <option value="11-50">11-50 employees</option>
+                  <option value="51-200">51-200 employees</option>
+                  <option value="201-500">201-500 employees</option>
+                  <option value="500+">500+ employees</option>
+                </select>
               </div>
 
               <div>
