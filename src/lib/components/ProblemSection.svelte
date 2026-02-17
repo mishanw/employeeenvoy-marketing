@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { AlertCircle, Clock, TrendingUp } from "@lucide/svelte";
+    import { AlertCircle, Clock, ShieldAlert, Eye } from "@lucide/svelte";
 </script>
 
-<!-- Problem Section - Lead with Pain Points -->
+<!-- Problem Section - Speak directly to the visitor -->
 <section
     id="problem"
     class="relative py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-slate-50/50 to-white dark:from-slate-900 dark:via-slate-800/50 dark:to-slate-900 overflow-hidden"
@@ -16,18 +16,17 @@
                 class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 text-sm font-medium mb-4"
             >
                 <AlertCircle class="w-4 h-4" />
-                <span>The Challenge</span>
+                <span>Sound Familiar?</span>
             </div>
             <h2
                 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 font-heading"
             >
-                The Problem You're Solving
+                Your IT Team Shouldn't Be Doing This
             </h2>
             <p
-                class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
+                class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             >
-                Employee lifecycle management is fragmented, time-consuming, and
-                error-prone
+                Every new hire means hours of repetitive setup. Every departure means chasing down accounts you might have missed.
             </p>
         </div>
 
@@ -43,13 +42,13 @@
                 <h3
                     class="text-xl font-bold text-gray-900 dark:text-white mb-3"
                 >
-                    Hours of Manual Work
+                    4-6 Hours per New Hire
                 </h3>
                 <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    IT teams spend <span
+                    Creating accounts in Microsoft 365, Slack, Okta, your CRM, project tools, and more &mdash; <span
                         class="font-semibold text-red-600 dark:text-red-400"
-                        >4-6 hours per employee</span
-                    > manually provisioning accounts across multiple systems
+                        >one app at a time, every single time</span
+                    >
                 </p>
             </div>
 
@@ -59,19 +58,18 @@
                 <div
                     class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center mb-5 shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform"
                 >
-                    <AlertCircle class="w-7 h-7 text-white" />
+                    <ShieldAlert class="w-7 h-7 text-white" />
                 </div>
                 <h3
                     class="text-xl font-bold text-gray-900 dark:text-white mb-3"
                 >
-                    Security Risks
+                    Offboarding That Leaks
                 </h3>
                 <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    Forgotten accounts, incomplete offboarding, and manual
-                    errors create <span
+                    That contractor who left 3 months ago? They <span
                         class="font-semibold text-amber-600 dark:text-amber-400"
-                        >security vulnerabilities</span
-                    >
+                        >still have access</span
+                    > to Slack, GitHub, and your cloud console
                 </p>
             </div>
 
@@ -81,18 +79,18 @@
                 <div
                     class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center mb-5 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform"
                 >
-                    <TrendingUp class="w-7 h-7 text-white" />
+                    <Eye class="w-7 h-7 text-white" />
                 </div>
                 <h3
                     class="text-xl font-bold text-gray-900 dark:text-white mb-3"
                 >
-                    Lack of Visibility
+                    No Single Source of Truth
                 </h3>
                 <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    No centralized view of employee status, pending tasks, or <span
+                    Spreadsheets, sticky notes, tribal knowledge &mdash; <span
                         class="font-semibold text-blue-600 dark:text-blue-400"
-                        >integration health</span
-                    > across customers
+                        >who has access to what?</span
+                    > Nobody actually knows
                 </p>
             </div>
         </div>

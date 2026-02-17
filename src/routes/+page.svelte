@@ -49,7 +49,7 @@
   >
   <meta
     name="description"
-    content="Streamline employee onboarding, offboarding, and status changes across 189 business applications. HRIS sync, analytics, SLA tracking, and proactive alerts built for MSPs and IT teams."
+    content="Stop manually provisioning 189 apps every time someone joins or leaves. Automate employee onboarding, offboarding, and lifecycle changes. Built for MSPs and IT teams with multi-tenant management, HRIS sync, and workflow automation."
   />
 </svelte:head>
 
@@ -60,6 +60,59 @@
 
 <!-- Problem Section - Lead with Pain Points -->
 <ProblemSection />
+
+<!-- Why Employee Envoy differentiator strip -->
+<section class="relative py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+  <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+  <div class="relative max-w-6xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white font-heading">
+        The only lifecycle platform <span class="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">built for multi-tenant IT</span>
+      </h2>
+      <p class="mt-3 text-slate-400 max-w-2xl mx-auto">
+        Not a repurposed HR tool. Not an identity provider side-feature. Purpose-built for MSPs and IT teams managing employee access across organizations.
+      </p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10">
+        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
+          <Building2 class="w-5 h-5 text-amber-400" />
+        </div>
+        <div>
+          <p class="text-white font-semibold text-sm">Multi-Customer Native</p>
+          <p class="text-slate-400 text-xs mt-1">Per-customer workflows, SLAs, and configs from day one</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10">
+        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
+          <Zap class="w-5 h-5 text-amber-400" />
+        </div>
+        <div>
+          <p class="text-white font-semibold text-sm">67 Workflow Nodes</p>
+          <p class="text-slate-400 text-xs mt-1">Triggers, actions, conditions &mdash; no coding required</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10">
+        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
+          <Shield class="w-5 h-5 text-amber-400" />
+        </div>
+        <div>
+          <p class="text-white font-semibold text-sm">PSA Integration</p>
+          <p class="text-slate-400 text-xs mt-1">ConnectWise & Autotask with bidirectional ticket sync</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10">
+        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
+          <Sparkles class="w-5 h-5 text-amber-400" />
+        </div>
+        <div>
+          <p class="text-white font-semibold text-sm">AI-Powered Triage</p>
+          <p class="text-slate-400 text-xs mt-1">LLM-powered request routing with Slack approvals</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- How It Works Section -->
 <HowItWorksSection />
@@ -116,13 +169,13 @@
           <p
             class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-3 group-hover:scale-110 transition-transform"
           >
-            99.9<span class="text-3xl">%</span>
+            67
           </p>
           <div
             class="absolute -top-2 -right-2 w-4 h-4 bg-white/30 rounded-full"
           ></div>
         </div>
-        <p class="text-amber-100 font-semibold text-lg">Uptime SLA</p>
+        <p class="text-amber-100 font-semibold text-lg">Workflow Nodes</p>
       </div>
       <div class="text-center group">
         <div class="relative inline-block">
@@ -1145,7 +1198,7 @@
       class="group inline-flex items-center gap-3 px-10 py-5 text-lg font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl hover:from-amber-400 hover:to-orange-400 transition-all shadow-2xl shadow-amber-500/30 hover:shadow-amber-500/40 hover:scale-105 animate-pulse-glow"
     >
       <Sparkles class="w-5 h-5" />
-      Join Early Access
+      Book a Demo
       <ArrowRight
         class="w-5 h-5 group-hover:translate-x-1 transition-transform"
       />
@@ -1539,17 +1592,17 @@
         class="group w-full sm:w-auto px-10 py-5 text-lg font-bold text-amber-600 bg-white rounded-2xl hover:bg-amber-50 transition-all shadow-2xl shadow-amber-900/20 hover:shadow-amber-900/30 hover:scale-105 flex items-center justify-center gap-3"
       >
         <Zap class="w-5 h-5" />
-        Get Started
+        Book a Demo
         <ArrowRight
           class="w-5 h-5 group-hover:translate-x-1 transition-transform"
         />
       </a>
       <a
-        href="/contact"
+        href="/roi-calculator"
         class="group w-full sm:w-auto px-10 py-5 text-lg font-semibold text-white bg-white/10 backdrop-blur-sm border-2 border-white/30 rounded-2xl hover:bg-white/20 hover:border-white/50 transition-all flex items-center justify-center gap-3"
       >
-        <Play class="w-5 h-5" />
-        Schedule a Demo
+        <BarChart3 class="w-5 h-5" />
+        Calculate Your ROI
         <ChevronRight
           class="w-5 h-5 group-hover:translate-x-1 transition-transform"
         />
@@ -1562,11 +1615,11 @@
     >
       <div class="flex items-center gap-2">
         <CheckCircle2 class="w-5 h-5 text-white" />
-        <span>No setup fees</span>
+        <span>14-day free trial</span>
       </div>
       <div class="flex items-center gap-2">
         <CheckCircle2 class="w-5 h-5 text-white" />
-        <span>No setup fees</span>
+        <span>No per-user fees</span>
       </div>
       <div class="flex items-center gap-2">
         <CheckCircle2 class="w-5 h-5 text-white" />

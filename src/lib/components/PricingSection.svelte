@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Check, CheckCircle2, Star } from "@lucide/svelte";
+  import { Check, CheckCircle2, Star, Calculator, ArrowRight } from "@lucide/svelte";
 
   // Billing interval state
   let billingInterval = $state<"monthly" | "annual">("monthly");
@@ -166,7 +166,7 @@
             {/if}
           </div>
           {#if billingInterval === "annual"}
-            <p class="text-xs text-gray-500 dark:text-gray-500 mt-1">
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
               Billed ${plans.starter.annualPrice}/year
             </p>
           {/if}
@@ -192,7 +192,7 @@
           href="/contact?plan=starter"
           class="block w-full text-center px-6 py-4 font-semibold text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-slate-700/50 rounded-xl hover:bg-gray-100 dark:hover:bg-slate-700 transition-all border border-gray-200 dark:border-slate-600"
         >
-          Get Started
+          Book a Demo
         </a>
       </div>
 
@@ -253,7 +253,7 @@
             href="/contact?plan=professional"
             class="block w-full text-center px-6 py-4 font-bold text-amber-600 bg-white rounded-xl hover:bg-amber-50 transition-all shadow-lg hover:shadow-xl"
           >
-            Get Started
+            Book a Demo
           </a>
         </div>
       </div>
@@ -287,7 +287,7 @@
             {/if}
           </div>
           {#if billingInterval === "annual"}
-            <p class="text-xs text-gray-500 dark:text-gray-500 mt-1">
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
               Billed ${plans.enterprise.annualPrice}/year
             </p>
           {/if}
@@ -313,7 +313,7 @@
           href="/contact?plan=enterprise"
           class="block w-full text-center px-6 py-4 font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl hover:from-amber-400 hover:to-orange-400 shadow-lg hover:shadow-xl transition-all"
         >
-          Get Started
+          Book a Demo
         </a>
       </div>
     </div>
@@ -336,7 +336,7 @@
           <span>Free onboarding call</span>
         </div>
       </div>
-      <p class="text-sm text-gray-500 dark:text-gray-500">
+      <p class="text-sm text-gray-500 dark:text-gray-400">
         {#if billingInterval === "monthly"}
           Switch to annual billing to <span
             class="font-bold text-amber-600 dark:text-amber-400"
@@ -349,6 +349,30 @@
           > with annual billing!
         {/if}
       </p>
+    </div>
+
+    <!-- ROI Snapshot -->
+    <div class="mt-16 max-w-3xl mx-auto">
+      <div class="relative p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-green-50 via-emerald-50 to-green-50 dark:from-green-900/20 dark:via-emerald-900/15 dark:to-green-900/20 border border-green-200/80 dark:border-green-800/50">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+          <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-green-500/30">
+            <Calculator class="w-7 h-7 text-white" />
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Quick math: Is it worth it?</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              If you onboard <span class="font-semibold text-gray-900 dark:text-white">5 employees per month</span> and each takes 4 hours of manual setup at $75/hr, that's <span class="font-semibold text-green-600 dark:text-green-400">$1,500/month in labor</span> &mdash; compared to $199/month with Employee Envoy.
+            </p>
+          </div>
+          <a
+            href="/roi-calculator"
+            class="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-green-700 dark:text-green-400 bg-green-100 dark:bg-green-900/40 rounded-xl hover:bg-green-200 dark:hover:bg-green-900/60 transition-all border border-green-200 dark:border-green-800/50"
+          >
+            Calculate Your ROI
+            <ArrowRight class="w-4 h-4" />
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>

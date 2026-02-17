@@ -1220,7 +1220,7 @@
         href="/contact"
         class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-600/20 text-white font-bold rounded-lg hover:bg-amber-600/30 transition-all border-2 border-white/30 text-lg"
       >
-        Get Started
+        Book a Demo
       </a>
     </div>
 

@@ -105,7 +105,7 @@
           href="/contact"
           class="hidden sm:inline-flex px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg hover:from-amber-400 hover:to-orange-400 transition-all shadow-lg hover:shadow-xl hover:scale-105"
         >
-          Get Started
+          Book a Demo
         </a>
 
         <!-- Mobile menu button -->
@@ -166,7 +166,7 @@
           href="/contact"
           class="block w-full text-center px-4 py-3 text-base font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg mt-2"
         >
-          Get Started
+          Book a Demo
         </a>
       </div>
     </div>

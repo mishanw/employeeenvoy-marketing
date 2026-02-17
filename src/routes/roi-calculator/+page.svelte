@@ -609,7 +609,7 @@
         onclick={() => trackCTAClick("trial")}
         class="px-8 py-4 text-lg font-semibold text-white border-2 border-white/30 rounded-2xl hover:bg-white/10 transition-colors"
       >
-        Get Started
+        Book a Demo
       </a>
     </div>
     <p class="text-sm text-amber-100 mt-6">

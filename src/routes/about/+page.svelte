@@ -255,7 +255,7 @@
         href="/contact"
         class="px-8 py-4 text-lg font-semibold text-amber-600 bg-white rounded-2xl hover:bg-amber-50 transition-colors shadow-xl"
       >
-        Get Started
+        Book a Demo
       </a>
       <a
         href="/integrations"

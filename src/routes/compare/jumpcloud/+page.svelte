@@ -1061,7 +1061,7 @@
         href="/contact"
         class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-amber-600 font-bold rounded-lg hover:bg-gray-100 transition-all shadow-2xl hover:shadow-3xl hover:scale-105 text-lg"
       >
-        Get Started
+        Book a Demo
         <ArrowRight class="w-5 h-5" />
       </a>
       <a

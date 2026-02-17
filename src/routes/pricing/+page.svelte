@@ -303,7 +303,7 @@
         href="/contact"
         class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-xl hover:from-amber-400 hover:to-orange-400 transition-all shadow-lg shadow-amber-500/20 text-lg"
       >
-        Get Started
+        Book a Demo
         <ArrowRight class="w-5 h-5" />
       </a>
       <a
