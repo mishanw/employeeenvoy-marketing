@@ -109,7 +109,7 @@
                                     class="w-3.5 h-3.5 text-green-600 dark:text-green-400"
                                 />
                             </div>
-                            <span>14-day free trial</span>
+                            <span>No credit card required</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <div

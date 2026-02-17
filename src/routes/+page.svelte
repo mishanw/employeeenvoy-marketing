@@ -1608,7 +1608,7 @@
     >
       <div class="flex items-center gap-2">
         <CheckCircle2 class="w-5 h-5 text-white" />
-        <span>14-day free trial</span>
+        <span>No setup fees</span>
       </div>
       <div class="flex items-center gap-2">
         <CheckCircle2 class="w-5 h-5 text-white" />

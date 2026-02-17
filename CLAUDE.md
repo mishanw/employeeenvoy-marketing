@@ -39,7 +39,7 @@ These numbers are verified against the platform codebase and safe to use in mark
 - 8 SSO identity providers
 - AES-256-GCM encryption
 - Pricing: Starter $199, Professional $399, Enterprise $799
-- 14-day free trial, no per-user fees
+- No per-user fees, no setup fees
 
 ## Brand Assets
 
