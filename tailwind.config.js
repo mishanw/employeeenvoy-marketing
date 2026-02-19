@@ -52,8 +52,8 @@ export default {
 				body: ['Inter', 'system-ui', 'sans-serif'],
 			},
 			backgroundImage: {
-				'brand-gradient': 'linear-gradient(135deg, #EB9336 0%, #D97706 100%)',
-				'brand-gradient-hover': 'linear-gradient(135deg, #D48A2F 0%, #C2710C 100%)',
+				'brand-gradient': 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
+				'brand-gradient-hover': 'linear-gradient(135deg, #E09000 0%, #C2710C 100%)',
 			},
 			animation: {
 				'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
