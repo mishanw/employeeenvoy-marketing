@@ -55,7 +55,7 @@
         {#each navItems as item}
           <a
             href={item.href}
-            class="text-sm font-medium transition-all duration-200 {isActive(
+            class="text-sm font-medium font-heading transition-all duration-200 {isActive(
               item.href,
             )
               ? 'text-amber-600 dark:text-amber-400 font-semibold'
@@ -69,7 +69,7 @@
           <button
             onclick={() => (compareMenuOpen = !compareMenuOpen)}
             onblur={() => setTimeout(() => (compareMenuOpen = false), 150)}
-            class="flex items-center gap-1 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
+            class="flex items-center gap-1 text-sm font-medium font-heading text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors"
           >
             Compare
             <ChevronDown
