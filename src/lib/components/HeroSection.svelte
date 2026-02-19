@@ -53,7 +53,7 @@
                     </div>
 
                     <h1
-                        class="animate-fade-in-delay-1 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-[1.1] font-heading tracking-tight"
+                        class="animate-fade-in-delay-1 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-[1.1] font-heading tracking-tighter"
                     >
                         Onboard in <span
                             class="relative inline-block whitespace-nowrap"
@@ -109,7 +109,7 @@
 
                     <!-- Trust indicators -->
                     <div
-                        class="animate-fade-in-delay-3 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-500 dark:text-gray-400"
+                        class="animate-fade-in-delay-3 flex flex-wrap items-center justify-center lg:justify-start gap-x-3 sm:gap-x-6 gap-y-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400"
                     >
                         <span>189 integrations</span>
                         <span class="text-gray-300 dark:text-gray-600">·</span>

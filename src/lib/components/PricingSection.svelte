@@ -1,5 +1,11 @@
 <script lang="ts">
-  import { Check, CheckCircle2, Star, Calculator, ArrowRight } from "@lucide/svelte";
+  import {
+    Check,
+    CheckCircle2,
+    Star,
+    Calculator,
+    ArrowRight,
+  } from "@lucide/svelte";
 
   // Billing interval state
   let billingInterval = $state<"monthly" | "annual">("monthly");
@@ -92,7 +98,7 @@
         <span>Transparent Pricing</span>
       </div>
       <h2
-        class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 font-heading"
+        class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 font-heading tracking-tight"
       >
         Simple, Transparent Pricing
       </h2>
@@ -353,15 +359,30 @@
 
     <!-- ROI Snapshot -->
     <div class="mt-16 max-w-3xl mx-auto">
-      <div class="relative p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-green-50 via-emerald-50 to-green-50 dark:from-green-900/20 dark:via-emerald-900/15 dark:to-green-900/20 border border-green-200/80 dark:border-green-800/50">
-        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-          <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-green-500/30">
+      <div
+        class="relative p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-green-50 via-emerald-50 to-green-50 dark:from-green-900/20 dark:via-emerald-900/15 dark:to-green-900/20 border border-green-200/80 dark:border-green-800/50"
+      >
+        <div
+          class="flex flex-col sm:flex-row items-start sm:items-center gap-6"
+        >
+          <div
+            class="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-green-500/30"
+          >
             <Calculator class="w-7 h-7 text-white" />
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Quick math: Is it worth it?</h3>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">
+              Quick math: Is it worth it?
+            </h3>
             <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-              If you onboard <span class="font-semibold text-gray-900 dark:text-white">5 employees per month</span> and each takes 4 hours of manual setup at $75/hr, that's <span class="font-semibold text-green-600 dark:text-green-400">$1,500/month in labor</span> &mdash; compared to $199/month with Employee Envoy.
+              If you onboard <span
+                class="font-semibold text-gray-900 dark:text-white"
+                >5 employees per month</span
+              >
+              and each takes 4 hours of manual setup at $75/hr, that's
+              <span class="font-semibold text-green-600 dark:text-green-400"
+                >$1,500/month in labor</span
+              > &mdash; compared to $199/month with Employee Envoy.
             </p>
           </div>
           <a

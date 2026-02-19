@@ -48,7 +48,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				heading: ['Elza', '"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+				brand: ['Elza', 'system-ui', 'sans-serif'],
+				heading: ['Outfit', '"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
 				body: ['Inter', 'system-ui', 'sans-serif'],
 			},
 			backgroundImage: {

@@ -55,7 +55,7 @@
         {#each navItems as item}
           <a
             href={item.href}
-            class="text-sm font-medium font-heading transition-all duration-200 {isActive(
+            class="text-sm font-medium font-heading tracking-wide transition-all duration-200 {isActive(
               item.href,
             )
               ? 'text-amber-600 dark:text-amber-400 font-semibold'

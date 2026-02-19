@@ -736,10 +736,10 @@
       <div
         class="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap items-center min-w-full"
       >
-        <div class="flex gap-6 px-3">
+        <div class="flex gap-4 sm:gap-6 px-3">
           <!-- Card 1 -->
           <div
-            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
+            class="w-60 sm:w-72 p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
             <div
               class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 flex items-center justify-center"
@@ -776,7 +776,7 @@
           </div>
           <!-- Card 2 -->
           <div
-            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
+            class="w-60 sm:w-72 p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
             <div
               class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 flex items-center justify-center"
@@ -815,7 +815,7 @@
           </div>
           <!-- Card 3 -->
           <div
-            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
+            class="w-60 sm:w-72 p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
             <div
               class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-purple-100 to-fuchsia-100 dark:from-purple-900/30 dark:to-fuchsia-900/30 flex items-center justify-center"
@@ -895,10 +895,10 @@
         class="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap items-center min-w-full"
         aria-hidden="true"
       >
-        <div class="flex gap-6 px-3">
+        <div class="flex gap-4 sm:gap-6 px-3">
           <!-- Card 1 -->
           <div
-            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
+            class="w-60 sm:w-72 p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
             <div
               class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 flex items-center justify-center"
@@ -935,7 +935,7 @@
           </div>
           <!-- Card 2 -->
           <div
-            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
+            class="w-60 sm:w-72 p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
             <div
               class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 flex items-center justify-center"
@@ -974,7 +974,7 @@
           </div>
           <!-- Card 3 -->
           <div
-            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
+            class="w-60 sm:w-72 p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
             <div
               class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-purple-100 to-fuchsia-100 dark:from-purple-900/30 dark:to-fuchsia-900/30 flex items-center justify-center"
@@ -1011,7 +1011,7 @@
           </div>
           <!-- Card 4 -->
           <div
-            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
+            class="w-60 sm:w-72 p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
             <div
               class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/30 dark:to-amber-900/30 flex items-center justify-center"
@@ -1218,7 +1218,7 @@
             >
               Our Security Commitment
             </h3>
-            <ul class="space-y-4">
+            <ul class="space-y-5 sm:space-y-4">
               <li class="flex items-start gap-4">
                 <div
                   class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5"

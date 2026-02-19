@@ -52,45 +52,45 @@
                 <!-- Content -->
                 <div class="p-6 space-y-5">
                     <!-- Stats Row -->
-                    <div class="grid grid-cols-3 gap-3">
+                    <div class="grid grid-cols-3 gap-2 sm:gap-3">
                         <div
-                            class="animate-fade-in-delay-1 opacity-0 bg-gradient-to-br from-green-50 to-emerald-50/50 dark:from-green-900/30 dark:to-emerald-900/20 rounded-xl p-4 text-center border border-green-100 dark:border-green-800/30"
+                            class="animate-fade-in-delay-1 opacity-0 bg-gradient-to-br from-green-50 to-emerald-50/50 dark:from-green-900/30 dark:to-emerald-900/20 rounded-lg sm:rounded-xl p-2 sm:p-4 text-center border border-green-100 dark:border-green-800/30"
                         >
                             <p
-                                class="text-2xl font-bold text-green-600 dark:text-green-400"
+                                class="text-xl sm:text-2xl font-bold text-green-600 dark:text-green-400"
                             >
                                 24
                             </p>
                             <p
-                                class="text-xs text-gray-600 dark:text-gray-400 font-medium"
+                                class="text-[10px] sm:text-xs text-gray-600 dark:text-gray-400 font-medium truncate"
                             >
                                 Active
                             </p>
                         </div>
                         <div
-                            class="animate-fade-in-delay-2 opacity-0 bg-gradient-to-br from-amber-50 to-orange-50/50 dark:from-amber-900/30 dark:to-orange-900/20 rounded-xl p-4 text-center border border-amber-100 dark:border-amber-800/30"
+                            class="animate-fade-in-delay-2 opacity-0 bg-gradient-to-br from-amber-50 to-orange-50/50 dark:from-amber-900/30 dark:to-orange-900/20 rounded-lg sm:rounded-xl p-2 sm:p-4 text-center border border-amber-100 dark:border-amber-800/30"
                         >
                             <p
-                                class="text-2xl font-bold text-amber-600 dark:text-amber-400"
+                                class="text-xl sm:text-2xl font-bold text-amber-600 dark:text-amber-400"
                             >
                                 8
                             </p>
                             <p
-                                class="text-xs text-gray-600 dark:text-gray-400 font-medium"
+                                class="text-[10px] sm:text-xs text-gray-600 dark:text-gray-400 font-medium truncate"
                             >
                                 Pending
                             </p>
                         </div>
                         <div
-                            class="animate-fade-in-delay-3 opacity-0 bg-gradient-to-br from-blue-50 to-indigo-50/50 dark:from-blue-900/30 dark:to-indigo-900/20 rounded-xl p-4 text-center border border-blue-100 dark:border-blue-800/30"
+                            class="animate-fade-in-delay-3 opacity-0 bg-gradient-to-br from-blue-50 to-indigo-50/50 dark:from-blue-900/30 dark:to-indigo-900/20 rounded-lg sm:rounded-xl p-2 sm:p-4 text-center border border-blue-100 dark:border-blue-800/30"
                         >
                             <p
-                                class="text-2xl font-bold text-blue-600 dark:text-blue-400"
+                                class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400"
                             >
                                 156
                             </p>
                             <p
-                                class="text-xs text-gray-600 dark:text-gray-400 font-medium"
+                                class="text-[10px] sm:text-xs text-gray-600 dark:text-gray-400 font-medium truncate"
                             >
                                 Completed
                             </p>
