@@ -30,7 +30,7 @@ Contains 189 integrations with scimSupport/ssoSupport flags.
 
 ## Brand Identity
 
-- **Logo**: Orange circle (#F59E0B) with 3 diagonal white motion lines
-- **Text**: "Employee" (dark/white) + "Envoy" (amber-500)
+- **Logo**: Orange circle (#EB9336) with 3 diagonal white curved motion strokes (Bézier paths)
+- **Text**: "Employee" (#4F4F51/white) + "Envoy" (#EB9336)
 - **Variants**: Full color, dark mode, monochrome white, wordmark-only
 - Brand assets source of truth: `~/Documents/Cursor Workspace/ipeople/brand-assets/`

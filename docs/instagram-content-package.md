@@ -91,7 +91,7 @@ Rotate through these 5 content themes to maintain variety and engagement:
 ### Brand Colors
 | Color | Hex Code | Usage |
 |-------|----------|-------|
-| **Primary Amber** | `#F59E0B` | CTAs, highlights, accent elements |
+| **Primary Orange** | `#EB9336` | CTAs, highlights, accent elements |
 | **Dark Slate** | `#1E293B` | Headlines, primary text, backgrounds |
 | **Light Slate** | `#64748B` | Secondary text, supporting elements |
 | **White** | `#FFFFFF` | Backgrounds, text on dark |

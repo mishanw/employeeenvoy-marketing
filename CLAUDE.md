@@ -13,8 +13,8 @@ Local `src/lib/data/integrations.ts` is for display only — NOT the source of t
 ## Design System
 
 - **Visual Style**: "Premium SaaS" aesthetic with cinematic noise, glassmorphism, and spotlight effects.
-- **Brand Colors**: Primary orange `#F59E0B`, gradient to `#EA580C`. Text: slate-900 (light) / white (dark).
-- **Logo**: Orange circle with 3 diagonal white motion lines. Icon in `Logo.svelte` (inline SVG). "Employee" in dark/white + "Envoy" in amber-500.
+- **Brand Colors**: Primary orange `#EB9336`, gradient to `#D97706`. Text: `#4F4F51` (light) / white (dark). "Envoy" text: `#EB9336`.
+- **Logo**: Orange circle with 3 diagonal white curved motion strokes (professional Bézier paths). Icon in `Logo.svelte` (inline SVG). "Employee" in `#4F4F51`/white + "Envoy" in `#EB9336`.
 - **Key Components**: `SpotlightCard.svelte` for interactive feature grids, `Logo.svelte` for brand mark.
 - **Global Effects**: Noise texture defined in `+layout.svelte`, strict typography tracking in global CSS.
 - **Font**: Plus Jakarta Sans (headings), Inter (body).

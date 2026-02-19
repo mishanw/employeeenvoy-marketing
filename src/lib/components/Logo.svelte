@@ -21,9 +21,9 @@
   };
 
   const variantClasses = {
-    default: { text: 'text-slate-900 dark:text-white', accent: 'text-amber-500' },
-    light: { text: 'text-white', accent: 'text-amber-400' },
-    dark: { text: 'text-slate-900', accent: 'text-amber-500' }
+    default: { employee: 'text-slate-900 dark:text-white' },
+    light: { employee: 'text-white' },
+    dark: { employee: 'text-slate-900' }
   };
 
   const currentSize = sizeClasses[size];
@@ -31,21 +31,21 @@
 </script>
 
 <div class="flex items-center {currentSize.gap} {className}">
-  <!-- Brand Icon: Orange circle with diagonal motion lines -->
+  <!-- Brand Icon: Orange circle with diagonal motion strokes -->
   <div class="{currentSize.icon} flex-shrink-0">
     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-      <circle cx="32" cy="32" r="30" fill="#F59E0B"/>
-      <g transform="rotate(-35, 32, 32)">
-        <rect x="19" y="18" width="20" height="5.5" rx="2.75" fill="white"/>
-        <rect x="15" y="29.25" width="28" height="5.5" rx="2.75" fill="white"/>
-        <rect x="19" y="40.5" width="20" height="5.5" rx="2.75" fill="white"/>
+      <g transform="translate(-52.0733, 2) scale(0.678887)">
+        <circle cx="123.84" cy="44.19" r="44.19" fill="#EB9336"/>
+        <path d="M123.45,15.92l-1.23-1.23c-2.4-2.4-6.33-2.4-8.73,0l-33.64,33.64c.5,5.34,1.98,10.6,4.42,15.5l39.19-39.19c2.4-2.4,2.4-6.33,0-8.73Z" fill="white"/>
+        <path d="M124,46.65l-2.62-2.62c-2.02-2.02-5.32-2.02-7.34,0l-26.03,26.03c1.36,1.88,2.88,3.68,4.58,5.38s3.5,3.22,5.38,4.58l26.03-26.03c2.02-2.02,2.02-5.32,0-7.34Z" fill="white"/>
+        <path d="M153.33,45.8l-1.23-1.23c-2.4-2.4-6.33-2.4-8.73,0l-39.19,39.19c4.91,2.44,10.16,3.92,15.5,4.42l33.64-33.64c2.4-2.4,2.4-6.33,0-8.73Z" fill="white"/>
       </g>
     </svg>
   </div>
 
   {#if showText}
     <span class="{currentSize.text} font-bold tracking-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-      <span class="{currentVariant.text}">Employee</span><span class="{currentVariant.accent}">Envoy</span>
+      <span class="{currentVariant.employee}">Employee</span><span style="color: #EB9336">Envoy</span>
     </span>
   {/if}
 </div>

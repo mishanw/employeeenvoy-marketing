@@ -155,7 +155,7 @@ export const POST: RequestHandler = async ({ request, platform, getClientAddress
       subject: `[Contact Form] ${safeSubject} - from ${safeName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <div style="background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%); padding: 20px; border-radius: 8px 8px 0 0;">
+          <div style="background: linear-gradient(135deg, #EB9336 0%, #D97706 100%); padding: 20px; border-radius: 8px 8px 0 0;">
             <h1 style="color: white; margin: 0; font-size: 24px;">New Contact Form Submission</h1>
           </div>
 
@@ -171,7 +171,7 @@ export const POST: RequestHandler = async ({ request, platform, getClientAddress
               </tr>
               <tr>
                 <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #6b7280;"><strong>Email:</strong></td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #111827;"><a href="mailto:${safeEmail}" style="color: #f59e0b;">${safeEmail}</a></td>
+                <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #111827;"><a href="mailto:${safeEmail}" style="color: #EB9336;">${safeEmail}</a></td>
               </tr>
               <tr>
                 <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #6b7280;"><strong>Company:</strong></td>
@@ -234,7 +234,7 @@ Reply directly to this email to respond to ${name}.
       subject: 'We received your message - Employee Envoy',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <div style="background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%); padding: 20px; border-radius: 8px 8px 0 0;">
+          <div style="background: linear-gradient(135deg, #EB9336 0%, #D97706 100%); padding: 20px; border-radius: 8px 8px 0 0;">
             <h1 style="color: white; margin: 0; font-size: 24px;">Thank You for Contacting Us!</h1>
           </div>
 
@@ -266,7 +266,7 @@ Reply directly to this email to respond to ${name}.
 
             <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e5e7eb; color: #9ca3af; font-size: 12px;">
               <p style="margin: 0;">
-                Questions? Reply to this email or contact us at <a href="mailto:hello@employeeenvoy.com" style="color: #f59e0b;">hello@employeeenvoy.com</a>
+                Questions? Reply to this email or contact us at <a href="mailto:hello@employeeenvoy.com" style="color: #EB9336;">hello@employeeenvoy.com</a>
               </p>
             </div>
           </div>

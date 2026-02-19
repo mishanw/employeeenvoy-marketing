@@ -26,7 +26,7 @@ This folder contains marketing content and assets for Employee Envoy social medi
 
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Primary Amber | `#F59E0B` | CTAs, highlights |
+| Primary Orange | `#EB9336` | CTAs, highlights |
 | Dark Slate | `#1E293B` | Headlines, backgrounds |
 | Light Slate | `#64748B` | Secondary text |
 | White | `#FFFFFF` | Backgrounds |
