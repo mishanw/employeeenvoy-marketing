@@ -14,10 +14,10 @@
   }: LogoProps = $props();
 
   const sizeClasses = {
-    sm: { icon: 'w-9 h-9', textHeight: 'h-4', gap: 'gap-2.5' },
-    md: { icon: 'w-11 h-11', textHeight: 'h-5', gap: 'gap-3' },
-    lg: { icon: 'w-14 h-14', textHeight: 'h-6', gap: 'gap-3.5' },
-    xl: { icon: 'w-20 h-20', textHeight: 'h-9', gap: 'gap-5' }
+    sm: { icon: 'w-9 h-9', textHeight: 'h-5', gap: 'gap-2.5' },
+    md: { icon: 'w-11 h-11', textHeight: 'h-6', gap: 'gap-3' },
+    lg: { icon: 'w-14 h-14', textHeight: 'h-8', gap: 'gap-3.5' },
+    xl: { icon: 'w-20 h-20', textHeight: 'h-11', gap: 'gap-5' }
   };
 
   const variantColors = {
