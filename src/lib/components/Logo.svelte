@@ -21,9 +21,9 @@
   };
 
   const variantClasses = {
-    default: { employee: 'text-slate-900 dark:text-white' },
+    default: { employee: 'text-[#4F4F51] dark:text-white' },
     light: { employee: 'text-white' },
-    dark: { employee: 'text-slate-900' }
+    dark: { employee: 'text-[#4F4F51]' }
   };
 
   const currentSize = sizeClasses[size];
