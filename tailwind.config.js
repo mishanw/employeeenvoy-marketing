@@ -56,12 +56,25 @@ export default {
 				'brand-gradient-hover': 'linear-gradient(135deg, #E09000 0%, #C2710C 100%)',
 			},
 			animation: {
+				'fade-in': 'fadeIn 0.8s ease-out forwards',
 				'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+				'fade-in-delay-1': 'fadeInUp 0.8s ease-out 0.2s forwards',
+				'fade-in-delay-2': 'fadeInUp 0.8s ease-out 0.4s forwards',
+				'fade-in-delay-3': 'fadeInUp 0.8s ease-out 0.6s forwards',
 				'float': 'float 6s ease-in-out infinite',
+				'float-delayed': 'float 6s ease-in-out 3s infinite',
 				'gradient': 'gradient 8s ease infinite',
 				'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'blob': 'blob 7s infinite',
+				'blob-delay': 'blob 7s infinite 2s',
+				'marquee': 'marquee 40s linear infinite',
+				'marquee-reverse': 'marquee-reverse 40s linear infinite',
 			},
 			keyframes: {
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
 				fadeInUp: {
 					'0%': { opacity: '0', transform: 'translateY(30px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' },
@@ -73,6 +86,20 @@ export default {
 				gradient: {
 					'0%, 100%': { backgroundPosition: '0% 50%' },
 					'50%': { backgroundPosition: '100% 50%' },
+				},
+				blob: {
+					'0%': { transform: 'translate(0px, 0px) scale(1)' },
+					'33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+					'66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+					'100%': { transform: 'translate(0px, 0px) scale(1)' },
+				},
+				marquee: {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-100%)' },
+				},
+				'marquee-reverse': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(0%)' },
 				},
 			},
 		}

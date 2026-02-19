@@ -62,52 +62,83 @@
 <ProblemSection />
 
 <!-- Why Employee Envoy differentiator strip -->
-<section class="relative py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+<section
+  class="relative py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 overflow-hidden"
+>
   <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
   <div class="relative max-w-6xl mx-auto">
     <div class="text-center mb-10">
       <h2 class="text-2xl sm:text-3xl font-bold text-white font-heading">
-        The only lifecycle platform <span class="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">built for multi-tenant IT</span>
+        The only lifecycle platform <span
+          class="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent"
+          >built for multi-tenant IT</span
+        >
       </h2>
       <p class="mt-3 text-slate-400 max-w-2xl mx-auto">
-        Not a repurposed HR tool. Not an identity provider side-feature. Purpose-built for MSPs and IT teams managing employee access across organizations.
+        Not a repurposed HR tool. Not an identity provider side-feature.
+        Purpose-built for MSPs and IT teams managing employee access across
+        organizations.
       </p>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
+      <div
+        class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10"
+      >
+        <div
+          class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center"
+        >
           <Building2 class="w-5 h-5 text-amber-400" />
         </div>
         <div>
           <p class="text-white font-semibold text-sm">Multi-Customer Native</p>
-          <p class="text-slate-400 text-xs mt-1">Per-customer workflows, SLAs, and configs from day one</p>
+          <p class="text-slate-400 text-xs mt-1">
+            Per-customer workflows, SLAs, and configs from day one
+          </p>
         </div>
       </div>
-      <div class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
+      <div
+        class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10"
+      >
+        <div
+          class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center"
+        >
           <Zap class="w-5 h-5 text-amber-400" />
         </div>
         <div>
           <p class="text-white font-semibold text-sm">67 Workflow Nodes</p>
-          <p class="text-slate-400 text-xs mt-1">Triggers, actions, conditions &mdash; no coding required</p>
+          <p class="text-slate-400 text-xs mt-1">
+            Triggers, actions, conditions &mdash; no coding required
+          </p>
         </div>
       </div>
-      <div class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
+      <div
+        class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10"
+      >
+        <div
+          class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center"
+        >
           <Shield class="w-5 h-5 text-amber-400" />
         </div>
         <div>
           <p class="text-white font-semibold text-sm">PSA Integration</p>
-          <p class="text-slate-400 text-xs mt-1">ConnectWise & Autotask with bidirectional ticket sync</p>
+          <p class="text-slate-400 text-xs mt-1">
+            ConnectWise & Autotask with bidirectional ticket sync
+          </p>
         </div>
       </div>
-      <div class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
+      <div
+        class="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10"
+      >
+        <div
+          class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center"
+        >
           <Sparkles class="w-5 h-5 text-amber-400" />
         </div>
         <div>
           <p class="text-white font-semibold text-sm">AI-Powered Triage</p>
-          <p class="text-slate-400 text-xs mt-1">LLM-powered request routing with Slack approvals</p>
+          <p class="text-slate-400 text-xs mt-1">
+            LLM-powered request routing with Slack approvals
+          </p>
         </div>
       </div>
     </div>
@@ -369,7 +400,8 @@
             Your Entire Stack, Connected
           </h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            189 integrations across identity, productivity, security, DevOps, and more. Each with <span
+            189 integrations across identity, productivity, security, DevOps,
+            and more. Each with <span
               class="font-semibold text-purple-600 dark:text-purple-400"
               >health monitoring and guided setup wizards</span
             >
@@ -398,7 +430,8 @@
             Sync with <span
               class="font-semibold text-cyan-600 dark:text-cyan-400"
               >Rippling, BambooHR, Gusto, and Namely</span
-            >. Employee joins in HR? Provisioning starts automatically &mdash; even days before their start date
+            >. Employee joins in HR? Provisioning starts automatically &mdash;
+            even days before their start date
           </p>
         </div>
       </SpotlightCard>
@@ -689,132 +722,329 @@
       </p>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+    <!-- Infinite Marquee Scrolling Container -->
+    <div class="relative flex overflow-hidden group mb-14 max-w-full">
+      <!-- Gradient mask for smooth fade out at edges -->
       <div
-        class="group p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+        class="absolute inset-y-0 left-0 w-16 sm:w-32 z-10 pointer-events-none bg-gradient-to-r from-slate-50 dark:from-slate-800 to-transparent"
+      ></div>
+      <div
+        class="absolute inset-y-0 right-0 w-16 sm:w-32 z-10 pointer-events-none bg-gradient-to-l from-slate-50 dark:from-slate-800 to-transparent"
+      ></div>
+
+      <!-- First track -->
+      <div
+        class="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap items-center min-w-full"
       >
-        <div
-          class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 flex items-center justify-center group-hover:scale-110 transition-transform"
-        >
-          <Code class="w-8 h-8 text-blue-600 dark:text-blue-400" />
-        </div>
-        <h3 class="font-bold text-gray-900 dark:text-white mb-2 text-center">
-          Identity & SSO
-        </h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400 text-center">
-          Okta, Azure AD, JumpCloud, Active Directory
-        </p>
-        <div class="mt-4 flex justify-center gap-2">
+        <div class="flex gap-6 px-3">
+          <!-- Card 1 -->
           <div
-            class="w-7 h-7 rounded-lg bg-blue-500 flex items-center justify-center text-white text-xs font-bold"
+            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
-            O
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 flex items-center justify-center"
+            >
+              <Code class="w-8 h-8 text-blue-600 dark:text-blue-400" />
+            </div>
+            <h3
+              class="font-bold text-gray-900 dark:text-white mb-2 text-center"
+            >
+              Identity & SSO
+            </h3>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-400 text-center whitespace-normal"
+            >
+              Okta, Azure AD, JumpCloud, Active Directory
+            </p>
+            <div class="mt-4 flex justify-center gap-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-blue-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                O
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-cyan-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                A
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-green-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                J
+              </div>
+            </div>
           </div>
+          <!-- Card 2 -->
           <div
-            class="w-7 h-7 rounded-lg bg-cyan-500 flex items-center justify-center text-white text-xs font-bold"
+            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
-            A
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 flex items-center justify-center"
+            >
+              <MessageSquare
+                class="w-8 h-8 text-green-600 dark:text-green-400"
+              />
+            </div>
+            <h3
+              class="font-bold text-gray-900 dark:text-white mb-2 text-center"
+            >
+              Communication
+            </h3>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-400 text-center whitespace-normal"
+            >
+              Slack, Microsoft Teams, Zoom, RingCentral
+            </p>
+            <div class="mt-4 flex justify-center gap-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-purple-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                S
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white text-xs font-bold"
+              >
+                T
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-blue-400 flex items-center justify-center text-white text-xs font-bold"
+              >
+                Z
+              </div>
+            </div>
           </div>
+          <!-- Card 3 -->
           <div
-            class="w-7 h-7 rounded-lg bg-green-500 flex items-center justify-center text-white text-xs font-bold"
+            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
-            J
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-purple-100 to-fuchsia-100 dark:from-purple-900/30 dark:to-fuchsia-900/30 flex items-center justify-center"
+            >
+              <Database class="w-8 h-8 text-purple-600 dark:text-purple-400" />
+            </div>
+            <h3
+              class="font-bold text-gray-900 dark:text-white mb-2 text-center"
+            >
+              Productivity
+            </h3>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-400 text-center whitespace-normal"
+            >
+              Microsoft 365, Google Workspace, Adobe
+            </p>
+            <div class="mt-4 flex justify-center gap-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white text-xs font-bold"
+              >
+                M
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-red-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                G
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-red-600 flex items-center justify-center text-white text-xs font-bold"
+              >
+                A
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/30 dark:to-amber-900/30 flex items-center justify-center"
+            >
+              <Cloud class="w-8 h-8 text-orange-600 dark:text-orange-400" />
+            </div>
+            <h3
+              class="font-bold text-gray-900 dark:text-white mb-2 text-center"
+            >
+              Cloud & DevOps
+            </h3>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-400 text-center whitespace-normal"
+            >
+              AWS, Azure, GCP, GitHub, Jira
+            </p>
+            <div class="mt-4 flex justify-center gap-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-orange-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                A
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-blue-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                Az
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-gray-800 flex items-center justify-center text-white text-xs font-bold"
+              >
+                G
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Second track (clone for seamless loop) -->
       <div
-        class="group p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+        class="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap items-center min-w-full"
+        aria-hidden="true"
       >
-        <div
-          class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 flex items-center justify-center group-hover:scale-110 transition-transform"
-        >
-          <MessageSquare class="w-8 h-8 text-green-600 dark:text-green-400" />
-        </div>
-        <h3 class="font-bold text-gray-900 dark:text-white mb-2 text-center">
-          Communication
-        </h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400 text-center">
-          Slack, Microsoft Teams, Zoom, RingCentral
-        </p>
-        <div class="mt-4 flex justify-center gap-2">
+        <div class="flex gap-6 px-3">
+          <!-- Card 1 -->
           <div
-            class="w-7 h-7 rounded-lg bg-purple-500 flex items-center justify-center text-white text-xs font-bold"
+            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
-            S
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 flex items-center justify-center"
+            >
+              <Code class="w-8 h-8 text-blue-600 dark:text-blue-400" />
+            </div>
+            <h3
+              class="font-bold text-gray-900 dark:text-white mb-2 text-center"
+            >
+              Identity & SSO
+            </h3>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-400 text-center whitespace-normal"
+            >
+              Okta, Azure AD, JumpCloud, Active Directory
+            </p>
+            <div class="mt-4 flex justify-center gap-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-blue-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                O
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-cyan-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                A
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-green-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                J
+              </div>
+            </div>
           </div>
+          <!-- Card 2 -->
           <div
-            class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white text-xs font-bold"
+            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
-            T
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 flex items-center justify-center"
+            >
+              <MessageSquare
+                class="w-8 h-8 text-green-600 dark:text-green-400"
+              />
+            </div>
+            <h3
+              class="font-bold text-gray-900 dark:text-white mb-2 text-center"
+            >
+              Communication
+            </h3>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-400 text-center whitespace-normal"
+            >
+              Slack, Microsoft Teams, Zoom, RingCentral
+            </p>
+            <div class="mt-4 flex justify-center gap-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-purple-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                S
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white text-xs font-bold"
+              >
+                T
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-blue-400 flex items-center justify-center text-white text-xs font-bold"
+              >
+                Z
+              </div>
+            </div>
           </div>
+          <!-- Card 3 -->
           <div
-            class="w-7 h-7 rounded-lg bg-blue-400 flex items-center justify-center text-white text-xs font-bold"
+            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
-            Z
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-purple-100 to-fuchsia-100 dark:from-purple-900/30 dark:to-fuchsia-900/30 flex items-center justify-center"
+            >
+              <Database class="w-8 h-8 text-purple-600 dark:text-purple-400" />
+            </div>
+            <h3
+              class="font-bold text-gray-900 dark:text-white mb-2 text-center"
+            >
+              Productivity
+            </h3>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-400 text-center whitespace-normal"
+            >
+              Microsoft 365, Google Workspace, Adobe
+            </p>
+            <div class="mt-4 flex justify-center gap-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white text-xs font-bold"
+              >
+                M
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-red-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                G
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-red-600 flex items-center justify-center text-white text-xs font-bold"
+              >
+                A
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div
-        class="group p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-      >
-        <div
-          class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-purple-100 to-fuchsia-100 dark:from-purple-900/30 dark:to-fuchsia-900/30 flex items-center justify-center group-hover:scale-110 transition-transform"
-        >
-          <Database class="w-8 h-8 text-purple-600 dark:text-purple-400" />
-        </div>
-        <h3 class="font-bold text-gray-900 dark:text-white mb-2 text-center">
-          Productivity
-        </h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400 text-center">
-          Microsoft 365, Google Workspace, Adobe
-        </p>
-        <div class="mt-4 flex justify-center gap-2">
+          <!-- Card 4 -->
           <div
-            class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white text-xs font-bold"
+            class="w-72 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-md transition-all"
           >
-            M
-          </div>
-          <div
-            class="w-7 h-7 rounded-lg bg-red-500 flex items-center justify-center text-white text-xs font-bold"
-          >
-            G
-          </div>
-          <div
-            class="w-7 h-7 rounded-lg bg-red-600 flex items-center justify-center text-white text-xs font-bold"
-          >
-            A
-          </div>
-        </div>
-      </div>
-      <div
-        class="group p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-      >
-        <div
-          class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/30 dark:to-amber-900/30 flex items-center justify-center group-hover:scale-110 transition-transform"
-        >
-          <Cloud class="w-8 h-8 text-orange-600 dark:text-orange-400" />
-        </div>
-        <h3 class="font-bold text-gray-900 dark:text-white mb-2 text-center">
-          Cloud & DevOps
-        </h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400 text-center">
-          AWS, Azure, GCP, GitHub, Jira
-        </p>
-        <div class="mt-4 flex justify-center gap-2">
-          <div
-            class="w-7 h-7 rounded-lg bg-orange-500 flex items-center justify-center text-white text-xs font-bold"
-          >
-            A
-          </div>
-          <div
-            class="w-7 h-7 rounded-lg bg-blue-500 flex items-center justify-center text-white text-xs font-bold"
-          >
-            Az
-          </div>
-          <div
-            class="w-7 h-7 rounded-lg bg-gray-800 flex items-center justify-center text-white text-xs font-bold"
-          >
-            G
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/30 dark:to-amber-900/30 flex items-center justify-center"
+            >
+              <Cloud class="w-8 h-8 text-orange-600 dark:text-orange-400" />
+            </div>
+            <h3
+              class="font-bold text-gray-900 dark:text-white mb-2 text-center"
+            >
+              Cloud & DevOps
+            </h3>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-400 text-center whitespace-normal"
+            >
+              AWS, Azure, GCP, GitHub, Jira
+            </p>
+            <div class="mt-4 flex justify-center gap-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-orange-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                A
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-blue-500 flex items-center justify-center text-white text-xs font-bold"
+              >
+                Az
+              </div>
+              <div
+                class="w-7 h-7 rounded-lg bg-gray-800 flex items-center justify-center text-white text-xs font-bold"
+              >
+                G
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -916,8 +1146,9 @@
           Passkeys & MFA
         </h3>
         <p class="text-sm text-gray-600 dark:text-gray-400">
-          <span class="font-medium text-blue-600 dark:text-blue-400">Passkeys</span>,
-          TOTP-based MFA &amp; backup codes for all accounts
+          <span class="font-medium text-blue-600 dark:text-blue-400"
+            >Passkeys</span
+          >, TOTP-based MFA &amp; backup codes for all accounts
         </p>
       </div>
 
@@ -1276,8 +1507,8 @@
           <p
             class="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed"
           >
-            Contact our team and we'll set you up with full access to all features. <span
-              class="font-medium text-gray-900 dark:text-white"
+            Contact our team and we'll set you up with full access to all
+            features. <span class="font-medium text-gray-900 dark:text-white"
               >Personalized onboarding included.</span
             > Our team will walk you through setup and configuration.
           </p>
@@ -1403,9 +1634,9 @@
             Absolutely. We use <span
               class="font-medium text-gray-900 dark:text-white"
               >end-to-end encryption</span
-            >, passkeys (Face ID, Touch ID, security keys), PBKDF2 password hashing,
-            MFA support, role-based access control, and comprehensive audit logging.
-            All data is encrypted at rest and in transit.
+            >, passkeys (Face ID, Touch ID, security keys), PBKDF2 password
+            hashing, MFA support, role-based access control, and comprehensive
+            audit logging. All data is encrypted at rest and in transit.
             <a
               href="/security"
               class="text-amber-600 dark:text-amber-400 hover:underline font-medium"
@@ -1446,9 +1677,9 @@
           <p
             class="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed"
           >
-            You can cancel anytime with no penalties.
-            Your data and configurations will be preserved. If you cancel,
-            your account will be paused and <span
+            You can cancel anytime with no penalties. Your data and
+            configurations will be preserved. If you cancel, your account will
+            be paused and <span
               class="font-medium text-gray-900 dark:text-white"
               >your data will be retained for 30 days</span
             > in case you decide to come back.
@@ -1574,8 +1805,8 @@
     </h2>
 
     <p class="text-xl sm:text-2xl text-amber-100 mb-10 max-w-2xl mx-auto">
-      Get started today with personalized onboarding. <span class="text-white font-semibold"
-        >No per-user fees. Cancel anytime.</span
+      Get started today with personalized onboarding. <span
+        class="text-white font-semibold">No per-user fees. Cancel anytime.</span
       >
     </p>
 

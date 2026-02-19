@@ -37,7 +37,9 @@
     bind:this={div}
     onmousemove={handleMouseMove}
     onmouseleave={handleMouseLeave}
-    class="group relative overflow-hidden rounded-2xl border border-gray-100 dark:border-slate-700 bg-white dark:bg-slate-800 transition-colors hover:border-amber-200/50 dark:hover:border-amber-700/50 {className}"
+    role="region"
+    aria-label="Spotlight Feature Card"
+    class="group relative overflow-hidden rounded-2xl border border-white/20 dark:border-white/10 bg-white/60 dark:bg-slate-800/60 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-colors hover:border-amber-200/50 dark:hover:border-amber-700/50 {className}"
 >
     <!-- Mouse Following Spotlight -->
     <div

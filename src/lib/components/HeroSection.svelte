@@ -1,5 +1,11 @@
 <script lang="ts">
-    import { Sparkles, ArrowRight, Play, CheckCircle2, Building2 } from "@lucide/svelte";
+    import {
+        Sparkles,
+        ArrowRight,
+        Play,
+        CheckCircle2,
+        Building2,
+    } from "@lucide/svelte";
     import DashboardMockup from "./DashboardMockup.svelte";
 
     interface Props {
@@ -18,12 +24,16 @@
         class="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-orange-50/50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"
     ></div>
 
-    <!-- Animated gradient blobs (reduced from 3 to 2 for cleaner hero) -->
+    <!-- Animated gradient mesh background -->
     <div
-        class="absolute top-20 right-1/4 w-96 h-96 bg-gradient-to-br from-amber-200/30 to-orange-300/20 rounded-full blur-3xl animate-blob"
+        class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-amber-300/40 via-orange-400/20 to-rose-300/20 dark:from-amber-900/30 dark:via-orange-900/20 dark:to-rose-900/20 rounded-full blur-[100px] animate-blob mix-blend-multiply dark:mix-blend-screen"
     ></div>
     <div
-        class="absolute bottom-20 left-1/4 w-80 h-80 bg-gradient-to-br from-orange-200/20 to-amber-200/15 rounded-full blur-3xl animate-blob-delay"
+        class="absolute top-40 -left-20 w-[500px] h-[500px] bg-gradient-to-br from-blue-300/30 via-cyan-200/20 to-emerald-200/20 dark:from-blue-900/30 dark:via-cyan-900/20 dark:to-emerald-900/20 rounded-full blur-[100px] animate-blob-delay mix-blend-multiply dark:mix-blend-screen"
+    ></div>
+    <div
+        class="absolute -bottom-40 left-1/3 w-[600px] h-[600px] bg-gradient-to-br from-orange-300/30 via-amber-200/20 to-yellow-200/20 dark:from-orange-900/30 dark:via-amber-900/20 dark:to-yellow-900/20 rounded-full blur-[100px] animate-blob mix-blend-multiply dark:mix-blend-screen"
+        style="animation-delay: 4s;"
     ></div>
 
     <!-- Subtle grid pattern overlay -->
@@ -45,13 +55,12 @@
                     <h1
                         class="animate-fade-in-delay-1 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-[1.1] font-heading tracking-tight"
                     >
-                        Onboard in
-                        <span class="relative">
-                            <span
+                        Onboard in <span
+                            class="relative inline-block whitespace-nowrap"
+                            ><span
                                 class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent"
                                 >Minutes</span
-                            >
-                            <svg
+                            ><svg
                                 class="absolute -bottom-2 left-0 w-full h-3 text-amber-400/30"
                                 viewBox="0 0 200 12"
                                 preserveAspectRatio="none"
@@ -63,14 +72,15 @@
                                     fill="none"
                                     stroke-linecap="round"
                                 />
-                            </svg>
-                        </span>, Not Hours
+                            </svg>,</span
+                        > Not Hours
                     </h1>
 
                     <p
                         class="animate-fade-in-delay-2 text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed"
                     >
-                        Automate employee onboarding, offboarding, and app provisioning across <span
+                        Automate employee onboarding, offboarding, and app
+                        provisioning across <span
                             class="font-semibold text-gray-900 dark:text-white"
                             >189 integrations</span
                         >. One workflow replaces hours of manual IT work.
