@@ -62,3 +62,7 @@ All CTAs across the site use "Book a Demo" (links to `/contact`). Do not use "Ge
 - `.claude/STRUCTURE.md` — Directory layout
 - `.claude/DATA_SOURCES.md` — Integration sources, verified claims, related docs
 - `~/Documents/Cursor Workspace/ipeople/CLAUDE.md` — Main app documentation
+
+## Git Workflow (Multi-Device)
+- At the start of each session, run `git pull` before doing any work.
+- When the user says "done", "wrap up", or "switching devices", commit all changes with a descriptive message and push to origin.
