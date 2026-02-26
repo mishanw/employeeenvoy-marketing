@@ -20,10 +20,10 @@ importers:
     devDependencies:
       '@sveltejs/adapter-cloudflare':
         specifier: ^4.0.0
-        version: 4.9.0(@sveltejs/kit@2.52.0(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.51.2)(vite@5.4.21))(svelte@5.51.2)(typescript@5.9.3)(vite@5.4.21))(wrangler@3.114.17(@cloudflare/workers-types@4.20260129.0))
+        version: 4.9.0(@sveltejs/kit@2.53.0(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.51.2)(vite@5.4.21))(svelte@5.51.2)(typescript@5.9.3)(vite@5.4.21))(wrangler@3.114.17(@cloudflare/workers-types@4.20260129.0))
       '@sveltejs/kit':
-        specifier: ^2.52.0
-        version: 2.52.0(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.51.2)(vite@5.4.21))(svelte@5.51.2)(typescript@5.9.3)(vite@5.4.21)
+        specifier: ^2.53.0
+        version: 2.53.0(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.51.2)(vite@5.4.21))(svelte@5.51.2)(typescript@5.9.3)(vite@5.4.21)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^4.0.0
         version: 4.0.4(svelte@5.51.2)(vite@5.4.21)
@@ -822,22 +822,27 @@ packages:
     peerDependencies:
       acorn: ^8.9.0
 
+  '@sveltejs/acorn-typescript@1.0.9':
+    resolution: {integrity: sha512-lVJX6qEgs/4DOcRTpo56tmKzVPtoWAaVbL4hfO7t7NVwl9AAXzQR6cihesW1BmNMPl+bK6dreu2sOKBP2Q9CIA==}
+    peerDependencies:
+      acorn: ^8.9.0
+
   '@sveltejs/adapter-cloudflare@4.9.0':
     resolution: {integrity: sha512-o7o8wXy5zDsEuE9oPWSHO5tAuPEulZZg2QavFdc00fcIHh1dxgCyIRZa5LPjAE8EcdJOh+8SFkhFgVRdCfOBvQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       wrangler: ^3.28.4
 
-  '@sveltejs/kit@2.52.0':
-    resolution: {integrity: sha512-zG+HmJuSF7eC0e7xt2htlOcEMAdEtlVdb7+gAr+ef08EhtwUsjLxcAwBgUCJY3/5p08OVOxVZti91WfXeuLvsg==}
+  '@sveltejs/kit@2.53.0':
+    resolution: {integrity: sha512-Brh/9h8QEg7rWIj+Nnz/2sC49NUeS8g3Qd9H5dTO3EbWG8vCEUl06jE+r5jQVDMHdr1swmCkwZkONFsWelGTpQ==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
-      '@sveltejs/vite-plugin-svelte': ^3.0.0 || ^4.0.0-next.1 || ^5.0.0 || ^6.0.0-next.0
+      '@sveltejs/vite-plugin-svelte': ^3.0.0 || ^4.0.0-next.1 || ^5.0.0 || ^6.0.0-next.0 || ^7.0.0
       svelte: ^4.0.0 || ^5.0.0-next.0
       typescript: ^5.3.3
-      vite: ^5.0.3 || ^6.0.0 || ^7.0.0-beta.0
+      vite: ^5.0.3 || ^6.0.0 || ^7.0.0-beta.0 || ^8.0.0
     peerDependenciesMeta:
       '@opentelemetry/api':
         optional: true
@@ -879,6 +884,11 @@ packages:
 
   acorn@8.15.0:
     resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  acorn@8.16.0:
+    resolution: {integrity: sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -1001,6 +1011,9 @@ packages:
 
   devalue@5.6.2:
     resolution: {integrity: sha512-nPRkjWzzDQlsejL1WVifk5rvcFi/y1onBRxjaFMjZeR9mFpqu2gmAZ9xUB9/IEanEP/vBtGeGganC/GO1fmufg==}
+
+  devalue@5.6.3:
+    resolution: {integrity: sha512-nc7XjUU/2Lb+SvEFVGcWLiKkzfw8+qHI7zn8WYXKkLMgfGSHbgCEaR6bJpev8Cm6Rmrb19Gfd/tZvGqx9is3wg==}
 
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
@@ -1170,10 +1183,6 @@ packages:
     engines: {node: '>=16.13'}
     hasBin: true
 
-  mri@1.2.0:
-    resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
-    engines: {node: '>=4'}
-
   mrmime@2.0.1:
     resolution: {integrity: sha512-Y3wQdFg2Va6etvQ5I82yUhGdsKrcYox6p7FfL1LbK2J4V01F9TGlepTIhnK24t7koZibmg82KGglhA1XK5IsLQ==}
     engines: {node: '>=10'}
@@ -1341,10 +1350,6 @@ packages:
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
-
-  sade@1.8.1:
-    resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
-    engines: {node: '>=6'}
 
   semver@7.7.4:
     resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
@@ -2010,28 +2015,31 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/adapter-cloudflare@4.9.0(@sveltejs/kit@2.52.0(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.51.2)(vite@5.4.21))(svelte@5.51.2)(typescript@5.9.3)(vite@5.4.21))(wrangler@3.114.17(@cloudflare/workers-types@4.20260129.0))':
+  '@sveltejs/acorn-typescript@1.0.9(acorn@8.16.0)':
+    dependencies:
+      acorn: 8.16.0
+
+  '@sveltejs/adapter-cloudflare@4.9.0(@sveltejs/kit@2.53.0(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.51.2)(vite@5.4.21))(svelte@5.51.2)(typescript@5.9.3)(vite@5.4.21))(wrangler@3.114.17(@cloudflare/workers-types@4.20260129.0))':
     dependencies:
       '@cloudflare/workers-types': 4.20260129.0
-      '@sveltejs/kit': 2.52.0(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.51.2)(vite@5.4.21))(svelte@5.51.2)(typescript@5.9.3)(vite@5.4.21)
+      '@sveltejs/kit': 2.53.0(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.51.2)(vite@5.4.21))(svelte@5.51.2)(typescript@5.9.3)(vite@5.4.21)
       esbuild: 0.24.2
       worktop: 0.8.0-next.18
       wrangler: 3.114.17(@cloudflare/workers-types@4.20260129.0)
 
-  '@sveltejs/kit@2.52.0(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.51.2)(vite@5.4.21))(svelte@5.51.2)(typescript@5.9.3)(vite@5.4.21)':
+  '@sveltejs/kit@2.53.0(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.51.2)(vite@5.4.21))(svelte@5.51.2)(typescript@5.9.3)(vite@5.4.21)':
     dependencies:
       '@standard-schema/spec': 1.1.0
-      '@sveltejs/acorn-typescript': 1.0.8(acorn@8.15.0)
+      '@sveltejs/acorn-typescript': 1.0.9(acorn@8.16.0)
       '@sveltejs/vite-plugin-svelte': 4.0.4(svelte@5.51.2)(vite@5.4.21)
       '@types/cookie': 0.6.0
-      acorn: 8.15.0
+      acorn: 8.16.0
       cookie: 0.6.0
-      devalue: 5.6.2
+      devalue: 5.6.3
       esm-env: 1.2.2
       kleur: 4.1.5
       magic-string: 0.30.21
       mrmime: 2.0.1
-      sade: 1.8.1
       set-cookie-parser: 3.0.1
       sirv: 3.0.2
       svelte: 5.51.2
@@ -2072,6 +2080,8 @@ snapshots:
   acorn@8.14.0: {}
 
   acorn@8.15.0: {}
+
+  acorn@8.16.0: {}
 
   any-promise@1.3.0: {}
 
@@ -2177,6 +2187,8 @@ snapshots:
     optional: true
 
   devalue@5.6.2: {}
+
+  devalue@5.6.3: {}
 
   didyoumean@1.2.2: {}
 
@@ -2394,8 +2406,6 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  mri@1.2.0: {}
-
   mrmime@2.0.1: {}
 
   ms@2.1.3: {}
@@ -2550,10 +2560,6 @@ snapshots:
   run-parallel@1.2.0:
     dependencies:
       queue-microtask: 1.2.3
-
-  sade@1.8.1:
-    dependencies:
-      mri: 1.2.0
 
   semver@7.7.4:
     optional: true
