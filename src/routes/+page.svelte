@@ -27,6 +27,9 @@
     UserPlus,
     UserMinus,
     RefreshCw,
+    GitMerge,
+    Upload,
+    ClipboardCheck,
   } from "@lucide/svelte";
   import Logo from "$lib/components/Logo.svelte";
 
@@ -105,7 +108,7 @@
           <Zap class="w-5 h-5 text-amber-400" />
         </div>
         <div>
-          <p class="text-white font-semibold text-sm">67 Workflow Nodes</p>
+          <p class="text-white font-semibold text-sm">55 Workflow Nodes</p>
           <p class="text-slate-400 text-xs mt-1">
             Triggers, actions, conditions &mdash; no coding required
           </p>
@@ -200,7 +203,7 @@
           <p
             class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-3 group-hover:scale-110 transition-transform"
           >
-            67
+            55
           </p>
           <div
             class="absolute -top-2 -right-2 w-4 h-4 bg-white/30 rounded-full"
@@ -376,7 +379,7 @@
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
             Build provisioning playbooks with a visual workflow builder. <span
               class="font-semibold text-amber-600 dark:text-amber-400"
-              >67 automation nodes</span
+              >55 automation nodes</span
             > handle triggers, actions, and conditions &mdash; no coding required
           </p>
         </div>
@@ -484,6 +487,89 @@
               class="font-semibold text-red-600 dark:text-red-400"
               >role-based access control</span
             >. SSO via 8 identity providers including Okta, Azure AD, and Google
+          </p>
+        </div>
+      </SpotlightCard>
+
+      <!-- Feature 7: Approval Workflows -->
+      <SpotlightCard
+        class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+        spotlightColor="rgba(99, 102, 241, 0.15)"
+      >
+        <div
+          class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-indigo-100/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
+        ></div>
+        <div class="relative z-10">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-400 to-violet-500 flex items-center justify-center mb-5 shadow-lg shadow-indigo-500/25 group-hover:scale-110 group-hover:rotate-3 transition-all"
+          >
+            <GitMerge class="w-8 h-8 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+            Approvals That Don't Bottleneck
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            Build <span
+              class="font-semibold text-indigo-600 dark:text-indigo-400"
+              >multi-level approval chains</span
+            > with manager delegation, email notifications, and automatic
+            escalation when approvers are unavailable
+          </p>
+        </div>
+      </SpotlightCard>
+
+      <!-- Feature 8: Bulk Operations -->
+      <SpotlightCard
+        class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+        spotlightColor="rgba(20, 184, 166, 0.15)"
+      >
+        <div
+          class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-teal-100/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
+        ></div>
+        <div class="relative z-10">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-400 to-emerald-500 flex items-center justify-center mb-5 shadow-lg shadow-teal-500/25 group-hover:scale-110 group-hover:rotate-3 transition-all"
+          >
+            <Upload class="w-8 h-8 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+            Onboard 50 People Before Lunch
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            <span
+              class="font-semibold text-teal-600 dark:text-teal-400"
+              >CSV bulk import</span
+            > with validation, duplicate detection, and automatic playbook
+            assignment. Plus post-onboarding surveys to measure employee
+            experience
+          </p>
+        </div>
+      </SpotlightCard>
+
+      <!-- Feature 9: Access Reviews & Compliance -->
+      <SpotlightCard
+        class="p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+        spotlightColor="rgba(244, 63, 94, 0.15)"
+      >
+        <div
+          class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-rose-100/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
+        ></div>
+        <div class="relative z-10">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center mb-5 shadow-lg shadow-rose-500/25 group-hover:scale-110 group-hover:rotate-3 transition-all"
+          >
+            <ClipboardCheck class="w-8 h-8 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+            SOC 2 Ready, Out of the Box
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            Run <span
+              class="font-semibold text-rose-600 dark:text-rose-400"
+              >access review campaigns</span
+            > with automatic evidence collection. Auto-offboarding triggers
+            revocation workflows when employees leave &mdash; no orphaned
+            accounts
           </p>
         </div>
       </SpotlightCard>

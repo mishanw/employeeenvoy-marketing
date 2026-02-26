@@ -52,7 +52,7 @@
       feature: "Visual Workflow Builder",
       envoy: "yes",
       rippling: "no",
-      description: "67 employee-specific workflow nodes",
+      description: "55 employee-specific workflow nodes",
     },
     {
       feature: "Google Workspace Actions",
@@ -95,6 +95,30 @@
       envoy: "partial",
       rippling: "yes",
       description: "Employee Envoy: 189 (IT-focused), Rippling: 600+",
+    },
+    {
+      feature: "Multi-Level Approval Chains",
+      envoy: "yes",
+      rippling: "partial",
+      description: "Employee Envoy: configurable chains with delegation | Rippling: basic manager approval",
+    },
+    {
+      feature: "Access Reviews (SOC 2)",
+      envoy: "yes",
+      rippling: "no",
+      description: "Periodic access review campaigns with automatic evidence collection",
+    },
+    {
+      feature: "CSV Bulk Import",
+      envoy: "yes",
+      rippling: "yes",
+      description: "Both support CSV import; Employee Envoy adds validation and playbook auto-assignment",
+    },
+    {
+      feature: "Auto-Offboarding",
+      envoy: "yes",
+      rippling: "partial",
+      description: "Employee Envoy: HRIS-triggered revocation workflows | Rippling: basic account deprovisioning",
     },
     {
       feature: "MSP-Friendly Pricing",
@@ -510,7 +534,7 @@
         </h3>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
           Starts with IT provisioning, extends to HR workflows. Visual workflow
-          builder with 67 employee-specific nodes. Rippling is HR-first,
+          builder with 55 employee-specific nodes. Rippling is HR-first,
           IT-second.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">

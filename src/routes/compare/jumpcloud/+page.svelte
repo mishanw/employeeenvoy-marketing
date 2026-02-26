@@ -52,7 +52,7 @@
       feature: "Visual Workflow Builder",
       envoy: "yes",
       jumpcloud: "no",
-      description: "67 drag-and-drop automation nodes for employee lifecycle",
+      description: "55 drag-and-drop automation nodes for employee lifecycle",
     },
     {
       feature: "Employee Lifecycle Focus",
@@ -107,6 +107,30 @@
       envoy: "partial",
       jumpcloud: "yes",
       description: "Employee Envoy: 189 (IT lifecycle) | JumpCloud: 300+ (directory connectors)",
+    },
+    {
+      feature: "Multi-Level Approval Chains",
+      envoy: "yes",
+      jumpcloud: "no",
+      description: "Configurable approval workflows with delegation and automatic escalation",
+    },
+    {
+      feature: "Access Reviews (SOC 2)",
+      envoy: "yes",
+      jumpcloud: "no",
+      description: "Periodic access review campaigns with automatic evidence collection",
+    },
+    {
+      feature: "CSV Bulk Import",
+      envoy: "yes",
+      jumpcloud: "partial",
+      description: "Employee Envoy: full CSV import wizard with validation | JumpCloud: directory import",
+    },
+    {
+      feature: "Auto-Offboarding",
+      envoy: "yes",
+      jumpcloud: "no",
+      description: "Automatic offboarding workflows triggered by HRIS departure dates",
     },
     {
       feature: "SLA Tracking & Analytics",
@@ -502,7 +526,7 @@
           189 integrations.
         </p>
         <p class="text-sm font-medium text-green-600 dark:text-green-400">
-          67 drag-and-drop workflow nodes for complete automation
+          55 drag-and-drop workflow nodes for complete automation
         </p>
       </div>
 
