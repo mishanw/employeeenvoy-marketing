@@ -28,5 +28,8 @@ yarn-error.log*
 # Testing
 coverage/
 
+# Generated reports
+.dev-health-check-report.md
+
 # Misc
 *.local
